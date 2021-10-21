@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE GmsArticle SYSTEM "http://www.egms.de/dtd/2.0.34/GmsArticle.dtd">
+<GmsArticle xmlns:xlink="http://www.w3.org/1999/xlink">
+  <MetaData>
+    <Identifier>mbi000478</Identifier>
+    <IdentifierDoi>10.3205/mbi000478</IdentifierDoi>
+    <IdentifierUrn>urn:nbn:de:0183-mbi0004788</IdentifierUrn>
+    <ArticleType>Mitteilung</ArticleType>
+    <TitleGroup>
+      <Title language="de">Keine Zeit für „Irrungen und Wirrungen“: Aufbau des ZB MED COVID-19 Hubs für die Forschungsunterstützung rund um das Corona-Virus SARS-CoV-2</Title>
+      <TitleTranslated language="en">There is no time for “trials and tribulations”: construction of the ZB MED COVID-19 hub for research support around the corona virus SARS-CoV-2</TitleTranslated>
+    </TitleGroup>
+    <CreatorList>
+      <Creator>
+        <PersonNames>
+          <Lastname>Roesner</Lastname>
+          <LastnameHeading>Roesner</LastnameHeading>
+          <Firstname>Elke</Firstname>
+          <Initials>E</Initials>
+        </PersonNames>
+        <Address>ZB MED – Informationszentrum Lebenswissenschaften, Gleueler Str. 60, 50931 Köln, Deutschland<Affiliation>ZB MED – Informationszentrum Lebenswissenschaften, Köln, Deutschland</Affiliation></Address>
+        <Email>roesner@zbmed.de</Email>
+        <Creatorrole corresponding="yes" presenting="no">author</Creatorrole>
+      </Creator>
+    </CreatorList>
+    <PublisherList>
+      <Publisher>
+        <Corporation>
+          <Corporatename>German Medical Science GMS Publishing House</Corporatename>
+        </Corporation>
+        <Address>Düsseldorf</Address>
+      </Publisher>
+    </PublisherList>
+    <SubjectGroup>
+      <SubjectheadingDDB>610</SubjectheadingDDB>
+      <Keyword language="en">ZB MED</Keyword>
+      <Keyword language="en">COVID-19</Keyword>
+      <Keyword language="en">hub</Keyword>
+      <Keyword language="en">corona</Keyword>
+      <Keyword language="en">German MLA (AGMB)</Keyword>
+      <Keyword language="en">pioneer project competition</Keyword>
+      <Keyword language="en">Task Force COVID-19</Keyword>
+      <Keyword language="en">infrastructure centre</Keyword>
+      <Keyword language="en">research centre</Keyword>
+      <Keyword language="en">life sciences</Keyword>
+      <Keyword language="en">information hub</Keyword>
+      <Keyword language="en">research support</Keyword>
+      <Keyword language="en">PrePrintViewer</Keyword>
+      <Keyword language="en">NFDI4Health</Keyword>
+      <Keyword language="de">ZB MED</Keyword>
+      <Keyword language="de">COVID-19</Keyword>
+      <Keyword language="de">Hub</Keyword>
+      <Keyword language="de">Corona</Keyword>
+      <Keyword language="de">AGMB</Keyword>
+      <Keyword language="de">Leuchtturmwettbewerb</Keyword>
+      <Keyword language="de">Task Force COVID-19</Keyword>
+      <Keyword language="de">Infrastruktureinrichtung</Keyword>
+      <Keyword language="de">Forschungszentrum</Keyword>
+      <Keyword language="de">Lebenswissenschaften</Keyword>
+      <Keyword language="de">Information Hub</Keyword>
+      <Keyword language="de">Forschungsunterstützung</Keyword>
+      <Keyword language="de">PrePrintViewer</Keyword>
+      <Keyword language="de">NFDI4Health</Keyword>
+      <SectionHeading language="de">Leuchtturmprojekte</SectionHeading>
+    </SubjectGroup>
+    <DatePublishedList>
+      
+    <DatePublished>20201222</DatePublished></DatePublishedList>
+    <Language>germ</Language>
+    <License license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+      <AltText language="en">This is an Open Access article distributed under the terms of the Creative Commons Attribution 4.0 License.</AltText>
+      <AltText language="de">Dieser Artikel ist ein Open-Access-Artikel und steht unter den Lizenzbedingungen der Creative Commons Attribution 4.0 License (Namensnennung).</AltText>
+    </License>
+    <SourceGroup>
+      <Journal>
+        <ISSN>1865-066X</ISSN>
+        <Volume>20</Volume>
+        <Issue>3</Issue>
+        <JournalTitle>GMS Medizin - Bibliothek - Information</JournalTitle>
+        <JournalTitleAbbr>GMS Med Bibl Inf</JournalTitleAbbr>
+        <IssueTitle>Online-Jahrestagung der AGMB 2020</IssueTitle>
+      </Journal>
+    </SourceGroup>
+    <ArticleNo>21</ArticleNo>
+  </MetaData>
+  <OrigData>
+    <Abstract language="de" linked="yes"><Pgraph>Eine Gruppe von Forscherinnen und Forschern sowie Kolleginnen aus dem Bibliotheksbereich hatte sich gleich zu Beginn der COVID-19-Pandemie die Aufgabe gestellt, die Forschung rund um das Virus SARS-CoV-2 zu unterstützen. Noch im März 2020 baute ZB MED den COVID-19 Hub auf: Auf der Plattform ist seitdem eine Sammlung verschiedener Ressourcen von freier Literatur, aktuellen Quellen und Text-Mining-Korpora zu finden. </Pgraph><Pgraph>Der ZB MED COVID-19 Hub enthält außerdem für molekularbiologisch Forschende interaktive, bioinformatische Werkzeuge wie z.B. Genomebrowser, Multiple Sequence Alignment Viewer und phylogenetische Bäume der kompletten SARS-CoV-2-Genome bereit. ZB MED hat zudem auf dem Suchportal LIVIVO eine automatisierte Recherche zu SARS-CoV-2 aufgebaut.</Pgraph><Pgraph>Innerhalb der NFDI4Health hat ZB MED mit verschiedenen Partnern die Task Force COVID-19 ins Leben gerufen. Als erstes Ergebnis innerhalb der Initiative hat das ZB MED-Team den COVID-19 Preprint Viewer aufgebaut. </Pgraph><Pgraph>Im September 2020 hat das Team von ZB MED den Sonderpreis im AGMB-Wettbewerb „Leuchtturmprojekte an Medizinbibliotheken“ für den ZB MED COVID-19 Hub gewonnen. In der Laudatio heißt es: „Der COVID-19 Hub ist in einem außergewöhnlichen Tempo entstanden und stellt aktuell eine unerlässliche und frei zugängliche Informationsressource für Virologen, Epidemiologen und andere Forschende dar.“</Pgraph></Abstract>
+    <Abstract language="en" linked="yes"><Pgraph>Right at the beginning of the COVID-19 pandemic, a group of researchers and colleagues from the library sector set themselves the task of supporting research on the SARS-Cov-2 virus. In March 2020, ZB MED established the COVID-19 Hub:  Since then, the platform offers a collection of various resources of free literature, current sources and text mining corpora. </Pgraph><Pgraph>The ZB MED COVID-19 Hub also contains interactive bioinformatics tools for molecular biology researchers such as Genome Browser, Multiple Sequence Alignment Viewer and phylogenetic trees of the complete SARS-CoV-2 genomes. ZB MED has also set up an automated search for SARS-CoV-2 on the search portal LIVIVO. </Pgraph><Pgraph>Within NFDI4Health, ZB MED has set up the COVID-19 Task Force with various partners. As a first result within the initiative, the ZB MED team has developed the COVID-19 Preprint Viewer.</Pgraph><Pgraph>In September 2020, the ZB MED team won the special prize in the competition of the German MLA (AGMB) “Pioneer projects in medical libraries” for the ZB MED COVID-19 Hub. In the laudation it is stated: “The COVID-19 Hub has been developed at an extraordinary speed and currently represents an indispensable and freely accessible information resource for virologists, epidemiologists and other researchers”.</Pgraph></Abstract>
+    <TextBlock linked="yes" name="Transformation als Normalzustand bei ZB MED">
+      <MainHeadline>Transformation als Normalzustand bei ZB MED</MainHeadline><Pgraph>Wer die Arbeit von ZB MED in den letzten Jahren verfolgt hat, hat vermutlich gemerkt, dass sich ZB MED kontinuierlich weiterentwickelt <TextLink reference="1"/>, <TextLink reference="2"/>: Von der tradierten Rolle als ausschließlich Zentrale Fachbibliothek zu einem Infrastruktur- und Forschungszentrum für lebenswissenschaftliche Literatur und Daten. Bereits 2018 hat ein Forschungsteam die Arbeit aufgenommen. Zu dem Zeitpunkt war noch nicht klar, wie schnell sich ZB MED einer konkreten Bewährungsprobe stellen musste. Von dem Ausbruch der COVID-19-Pandemie und der vollständig neuen Gesamtsituation wurde ZB MED ebenso überrascht wie die meisten Menschen weltweit. </Pgraph><Pgraph>Die Transformation von ZB MED zu einem zentralen Information Hub für die Lebenswissenschaften ermöglicht inzwischen die Kombination aus überregionaler Informati<TextGroup><PlainText>o</PlainText></TextGroup>nsversorgung, Big-Data-Analysen und Wissenstransfer. Ziel ist dabei die Unterstützung entlang des gesamten Forschungskreislaufs, um so neue Erkenntnisse zu ermöglichen. Es geht um valide Informationen und zuverlässiges Wissen in den Lebenswissenschaften. In der gegenwärtigen Zeit ist dieser Anspruch nachvollziehbarer denn je.</Pgraph><Pgraph>Doch auch wenn die Veränderung bei ZB MED seit einigen Jahren der Normalzustand ist, brachte die Welle an Veränderungen durch COVID-19 ganz besondere Herausforderungen mit sich.</Pgraph></TextBlock>
+    <TextBlock linked="yes" name="Der Ausbruch der Pandemie COVID-19 kommt auch in Deutschland an">
+      <MainHeadline>Der Ausbruch der Pandemie COVID-19 kommt auch in Deutschland an</MainHeadline><Pgraph>Seit Beginn des Jahres 2020 war die Epidemie, die sich rasch zur Pandemie weiterentwickelte, zwar ein Thema für ZB MED, aber zunächst eher am Rande. Doch dann überschlugen sich auch bei ZB MED die Ereignisse. Zur Veranschaulichung werden in der Folge die „ZB MED-Corona-Notizen“ der Autorin angeführt: </Pgraph><Pgraph><UnorderedList><ListItem level="1">10. März: CORONA und COVID-19 wird immer mehr Thema in den Büros, auf den Fluren, in Besprechungen. Der Anspruch, sich in der Rolle als Zentrale Fachbibliothek für Medizin bzw. Informationsinfrastrukturzentrum zu kuratierten Quellen zu äußern, steigt.</ListItem><ListItem level="1">11. März: Veröffentlichung des ersten Blogbeitrags mit verlässlichen Quellen rund um das Corona Virus SARS-CoV-2 bzw. COVID-19, danach zunächst regelmä<TextGroup><PlainText>ß</PlainText></TextGroup>ige Updates mit frei verfügbaren Literatur- und sonstigen Quellen.</ListItem><ListItem level="1">12. März: Entscheidung, dass die Bibliothek ab nächster Woche geschlossen wird. </ListItem><ListItem level="1">13. März: Die Entscheidung, dass Kitas und Schulen geschlossen werden, erhöht die interne Diskussion, wie sich ZB MED dazu verhält. Einberufung einer Krisensitzung am selben Tag. Beschluss, nicht nur die Standorte ab nächster Woche zu schließen, sondern auch so vielen Mitarbeiterinnen und Mitarbeitern wie möglich die Arbeit im Home Office zu ermöglichen.</ListItem><ListItem level="1">Samstag, 14. März: Information der Doppelspitze an alle Mitarbeitenden von ZB MED zum Umgang mit der Krise. Einberufung eines Krisen- und Kommunikationsstabs.</ListItem><ListItem level="1">Sonntag, 15. März: Die Forschungsgruppen von Prof. Dr. Konrad Förstner und Prof. Dr. Juliane Fluck entwickeln Services, um die dringende Forschung rund um COVID-19 zu unterstützten. Der sogenannte ZB MED COVID-19-Hub entsteht in seiner ersten Version.</ListItem><ListItem level="1">16. März: Um 12 Uhr wird der Standort in Köln geschlossen. Die letzten Nutzerinnen und Nutzer werden gebeten, die Lesesäle zu verlassen. Aus den Reaktionen wird die allgemeine Verunsicherung über die nahe Zukunft deutlich. </ListItem><ListItem level="1">Die Abteilungen und Arbeitsgruppen führen Absprachen durch, wie trotz Home Office über VPN im Hintergrund die Bereiche aufrecht gehalten werden können. Der Bibliotheksbereich mit Katalogisierung und Dokumentlieferung definiert sich als systemrelevant – ohne dass das Wort zu diesem Zeitpunkt schon in aller Munde gewesen ist.</ListItem><ListItem level="1">Ab 17. März sind immer mehr Kolleginnen und Kollegen im Home Office. Ganz ZB MED? Nein, die Direktion, die Poststelle, die Dokumentlieferung und ein paar andere Kolleginnen und Kollegen halten vor Ort die Stellung. </ListItem><ListItem level="1">Weitere Aktualisierungen des Blogposts vom 11. März mit der aktuellen Literaturliste bis zum 20. März.</ListItem><ListItem level="1">Die Anzahl der frei zugänglichen Inhalte seitens Verlagen, Aggregatoren und sonstigen validen Quellen steigt so an, dass der Blog nicht länger das richtige Format ist.</ListItem><ListItem level="1">24. März: Gemeinsame Sitzung von wissenschaftliche<TextGroup><PlainText>r L</PlainText></TextGroup>eitung (Prof. Dr. Rebholz-Schuhmann), Dr. Ursula Zängl, Bibliothekarinnen und Marketing, in welcher Form geeignete Literaturlisten geführt werden können; Beschluss in einem frei zugänglichen Dokument eine gemeinsame, verschlagwortete Literaturliste zu führen, die auf der Website ausgespielt werden kann. Die Webredaktion baut gemeinsam mit der Agentur, die uns bei der Website unterstützt, eine sogenannte Akkordeonfunktion auf.</ListItem><ListItem level="1">25. März: Beginn der täglichen „Syn Calls“ via DFN zur koordinierten ZB MED-COVID-19 Aktion von Forschung, Bibliothek und Marketing.</ListItem><ListItem level="1">26. März: Große Mailingaktion zum ZB MED COVID-19-Hub. Tolle Resonanz. Hub wird auf zahlreichen Webseiten anderer Einrichtungen eingebunden – national und international. </ListItem><ListItem level="1">30. März: ZB MED baut die Menüfunktion zu COVID-19 auf der Website aus.</ListItem><ListItem level="1">3. April: Die eigens entwickelte LIVIVO Spezialsuche wird unter „LIVIVO COVID-19 Collection“ geposted. Kontakt mit AGMB wegen Einreichung einer Bewerbung zur Teilnahme am Leuchtturmwettbewerb.</ListItem><ListItem level="1">6. April: Ausbau des Angebots von NFDI4microbiota für die Forschung an COVID-19. Um die Situation zu verbessern, bietet das von ZB MED geleitete NFDI-Konsortium gemeinsam mit Partnerlaboren zur Erforschung von Mikrobiota nun zusätzliche Hilfe: Unterstüt<TextGroup><PlainText>z</PlainText></TextGroup>ung für Forschende bei der Probenvorbereitung, Genomsequenzierung und Assemblierung von SARS-CoV-2 sowie die unverzügliche Ablage der resultierenden Sequenzen in öffentlichen Repositorien. Das Ziel ist, die Anzahl der öffentlich zugänglichen Genome signi<TextGroup><PlainText>fi</PlainText></TextGroup>kant zu erhöhen. Weitere Informationen sind <TextGroup><PlainText>auf der</PlainText></TextGroup> NFDI4Microbiota-Webseite „SARS-CoV-2 <TextGroup><PlainText>genome</PlainText></TextGroup> sequencing and deposition“ zu finden (<Hyperlink href="https://nfdi4microbiota.de/index.php/covid-19/">https://nfdi4microbiota.de/index.php/covid-19/</Hyperlink>). </ListItem></UnorderedList></Pgraph></TextBlock>
+    <TextBlock linked="yes" name="Erste Reaktionen auf die Pandemie: Ein Blogbeitrag mit verlässlichen Quellen">
+      <MainHeadline>Erste Reaktionen auf die Pandemie: Ein Blogbeitrag mit verlässlichen Quellen</MainHeadline><Pgraph>Wie die Chronologie gezeigt hat, startete der nun ausgezeichnete COVID-19 Hub zunächst als Blogbeitrag <TextLink reference="3"/>, in dem Prof. Dietrich Rebholz-Schuhmann und die Autorin des vorliegenden Beitrages auf den schnellen Bedarf an verlässlichen Quellen reagiert haben. Schon zu diesem Zeitpunkt geisterten erste Verschwörungstheorien und unwissenschaftliche Meinungen durch die Welt, denen wir mit validen, evidenzbasierten Quellen entgegentreten wollten. Zudem war ZB MED seine zentrale Aufgabe innerhalb der deutschen und internationalen Bibliothekslandschaft von Anfang an bewusst. Doch schon nach wenigen Tagen überrollten die kostenfrei zur Verfügung gestellten Literaturhinweise das Format eines Blogbeitrags und so wurde ein Team aus Bibliothekarinnen und der Leitung zusammengestellt, um zu überlegen, wie das neue Format zukünftig aussehen sollte. Eine eigenhändig verschlagwortete Literaturliste, die über die Website ausgespielt wurde, war die Antwort. </Pgraph></TextBlock>
+    <TextBlock linked="yes" name="Arbeit im Lockdown an Unterstützung der Forschung zum Corona-Virus SARS-CoV-2">
+      <MainHeadline>Arbeit im Lockdown an Unterstützung der Forschung zum Corona-Virus SARS-CoV-2</MainHeadline><Pgraph>Seit dem 16. März arbeiteten die meisten, die an der Entstehung und Weiterentwicklung des COVID-19 Hubs beteiligt waren, im Home Office. Die Digitalisierung und neue Arbeits- und Abstimmungsmöglichkeiten wurden in rasantem Tempo normal. Um der Aufgabe gerecht werden zu können, musste stringent vorgegangen werden, um einfach effizient zu funktionieren. Tägliche Videokonferenzen waren nach wenigen Tagen „das neue Normal“. In Ergänzung wurde telefoniert und auf allen Kanälen gefunkt. Kollaboratives Arbeiten hat sich seitdem etabliert. Es begann die Zeit der täglichen „Synchronisierungs-Calls“ von Forschenden, Bibliothekarinnen und Marketing, um den Aufbau des COVID-19 Hubs abzustimmen. Es wurden hier Synergien von Bereichen, die vorher zum Teil noch nie zusammengearbeitet haben, geschaffen. Pünktlich um 8 Uhr morgens ging es los, „action items“ wurden besprochen und Aufträge erteilt, die meistens bis zum nächsten Tag umgesetzt wurden. Der selbstgesetzte Druck war ebenso groß wie die Motivation. Bereits Ende März konnte eine Pressemitteilung mit dem Hinweis auf den COVID-19 Hub verschickt werden, denn so schnell waren die Eckpfeiler des Hubs aufgebaut. </Pgraph></TextBlock>
+    <TextBlock linked="yes" name="LIVIVO und der ZB MED COVID-19 Hub">
+      <MainHeadline>LIVIVO und der ZB MED COVID-19 Hub</MainHeadline><Pgraph>Der ZB MED COVID-19 Hub (<Hyperlink href="https://covid-19.zbmed.de/">https://covid-19.zbmed.de/</Hyperlink>) ist über die ZB MED-Website zu erreichen: Die Übersicht enthält frei verfügbare Verlags- und Open-Access-An<TextGroup><PlainText>gebo</PlainText></TextGroup>te, verlinkt Preprint-Server, Datenbanken und Suchportale. Zudem werden Statistiken, Übersichtskarten und Trainingsmaterialien aufgelistet. Der ZB MED COVID-19 Hub enthält außerdem für molekularbiologisch Forschende interaktive, bioinformatische Werkzeuge wie z.B. Genomebrowser, Multiple Sequence Alignment Viewer und phylogenetische Bäume der kompletten SARS-CoV-2-Genome bereit <TextLink reference="4"/>. Alle Einträge sind sowohl nach Publikationstypen als auch thematisch systematisiert und werden regelmäßig aktualisiert (Abbildung 1 <ImgLink imgNo="1" imgType="figure"/>).</Pgraph><Pgraph>Jeder Bereich bei ZB MED hat sich Gedanken gemacht, wie die Forschung rund um das Virus unterstützt werden kann. Aus diesem Grund hat das kleine LIVIVO-Team innerhalb weniger Tage Anfang April die LIVIVO COVID-19 Collection (<Hyperlink href="https://www.livivo.de/covid19">https://www.livivo.de/covid19</Hyperlink>) entwickelt: Etwa 50.000 Einträge aus verschiedenen Quellen zu COVID-19 bzw. SARS-CoV-2 sind in dieser speziellen <TextGroup><PlainText>Anwendung</PlainText></TextGroup> zusammengefasst und können mit den bekannten, komfortablen Recherchemöglichkeiten durchsucht werden. Die „herkömmliche“ LIVIVO-Suche besteht selbstverständlich weiter. </Pgraph><Pgraph>Die AGMB und die AGMB-Jahrestagung spielen für <TextGroup><PlainText>ZB MED</PlainText></TextGroup> schon lange eine große Rolle. Mitten im Lockdown wurde der Vorschlag der Autorin des vorliegenden Berichts, sich mit dem COVID-19 Hub im Leuchturmwettbewerb der AGMB zu bewerben, bei einer der Videokonferenzen einstimmig angenommen. </Pgraph></TextBlock>
+    <TextBlock linked="yes" name="ZB MED wird Teil der Task Force COVID-19">
+      <MainHeadline>ZB MED wird Teil der Task Force COVID-19</MainHeadline><Pgraph>Auch im Sommer überschlagen sich bei ZB MED die Ereignisse: </Pgraph><Pgraph><UnorderedList><ListItem level="1">Mai 2020: Start einer neuen Forschungsoffensive zur Coronavirus-Forschung: Genomforschende schließen sich zur Deutschen COVID-19 OMICS Initiative – DeCOI zusammen <TextLink reference="5"/>.</ListItem><ListItem level="1">Juni 2020: Die Gemeinsame Wissenschaftskonferenz beschließt die Förderung der NFDI4Health – Aufbau einer Forschungsdateninfrastruktur für personenbezogene Gesundheitsdaten. ZB MED ist federführend dabei, denn die Projektleitung liegt bei Prof. Dr. Juliane Fluck, die bei ZB MED den Bereich Wissensmanagement leitet. Der gesamtgesellschaftliche Auftrag des Projekts ist die Wertsteigerung der Forschung in den Bereichen Epidemiologie, Gesundheitswesen und klinische Studien <TextLink reference="6"/>. Die Freude über den erfolgreichen Projektantrag ist groß. </ListItem><ListItem level="1">8. Juli 2020: Die Deutsche Forschungsgemeinschaft (DFG) fördert die Task Force zu COVID-19 der Initiative NFDI4Health ab Juli 2020. Das Ziel: Die Fachcommunity findet relevante Studien leichter und kann Daten besser austauschen. Die Mission dabei ist, „die Pandemie effizienter zu bekämpfen und die negativen Folgen für die Bevölkerung abzufedern“ <TextLink reference="7"/>.</ListItem><ListItem level="1">22. Juli 2020: ZB MED hat im Kontext der NFDI4Health Task Force den Textmining-basierten COVID-19 Preprint Viewer (<Hyperlink href="https://preview.zbmed.de/">https://preview.zbmed.de/</Hyperlink>) entwickelt und reagiert damit auf den Bedarf nach besonders schneller Verfügbarkeit von Informationen zur Bekämpfung der Pandemie <TextLink reference="8"/>. </ListItem></UnorderedList></Pgraph></TextBlock>
+    <TextBlock linked="yes" name="Team von ZB MED gewinnt den Sonderpreis der AGMB-Tagung 2020">
+      <MainHeadline>Team von ZB MED gewinnt den Sonderpreis der AGMB-Tagung 2020</MainHeadline><Pgraph>Im Juli traf die erfreuliche Nachricht von der AGMB ein, dass ZB MED für den COVID-19 Hub auf der AGMB-Tagung 2020 den Sonderpreis im diesjährigen Leuchtturmwettbewerb erhalten wird. Auch hierüber war die Freude groß, denn bei all der intrinsischen Motivation ist so ein Feedback auch immer wieder ein zusätzlicher Ansporn, den eingeschlagenen Weg konsequent weiter zu gehen.</Pgraph><Pgraph>Die Preisverleihung erfolgte am 22. September 2020 im Rahmen der diesmal virtuell stattfindenden Jahrestagung. In der Laudatio begründete Dr. Iris Reimann, Vorsitzende der AGMB, die Preisvergabe: „Der COVID-19 Hub ist in einem außergewöhnlichen Tempo entstanden und stellt aktuell eine unerlässliche und frei zugängliche Informationsressource für Virologen, Epidemiologen und andere Forschende dar. Wir Bibliotheken können diesen Service nachnutzen, davon profitieren wiederum unsere Wissenschaftler und Ärzte im eigenen Haus. Besonders beeindruckt hat die Jury, dass noch im März 2020, als die Pandemie sich in Europa zu manifestieren begann, das Konzept für den Hub entwickelt und in sehr kurzer Zeit auf einem sehr hohen Niveau umgesetzt werden konnte.“ <TextLink reference="9"/> (Abbildung 2 <ImgLink imgNo="2" imgType="figure"/>)</Pgraph></TextBlock>
+    <TextBlock linked="yes" name="Erfolgreiche Bewährungsprobe für ZB MED: Bibliothek und Forschungszentrum in einem">
+      <MainHeadline>Erfolgreiche Bewährungsprobe für ZB MED: Bibliothek und Forschungszentrum in einem</MainHeadline><Pgraph>ZB MED hat sich in der neuen Strategie vorgenommen, die Rolle als zentraler „Information Hub“ für die Lebenswissenschaften weiter auszubauen. Weitere Projektanträge im Rahmen der NFDI-Initiative werden derzeit erstellt. Im Mai hatte ZB MED bereits die deutsche Übersetzung der Medical Subject Headings (MeSH) übernommen und damit gezeigt, welche produktive Zusammenarbeit sich aus bibliothekarischem Fachwissen und Forschung ergibt. ZB MED versteht sich inzwischen als Infrastruktur- und Forschungszentrum für lebenswissenschaftliche Informationen und Daten.</Pgraph><Pgraph>Im – leider – globalen Ernstfall der COVID-19-Pandemie hat ZB MED von Anfang an eine besondere Verantwortung übernommen. Der „Information Hub“ fand eine große Akzeptanz und Resonanz. Ziel von ZB MED ist es weiterhin, entlang des gesamten Forschungskreislaufs Services anzubieten, die die Forschung generell unterstützen. Open Science und gute wissenschaftliche Praxis sind dabei besondere Anliegen. </Pgraph><Pgraph>Um es mit Shakespeare zu sagen: „Begegnen wir der Zeit, wie sie uns sucht.“ <TextLink reference="10"/> Es bleibt spannend. </Pgraph></TextBlock>
+    <TextBlock linked="yes" name="Anmerkung">
+      <MainHeadline>Anmerkung</MainHeadline><SubHeadline>Interessenkonflikte</SubHeadline><Pgraph>Die Autorin ist Leiterin des Querschnittbereichs Marketing bei ZB MED und hat sowohl bei der Erstellung des <TextGroup><PlainText>ZB MED</PlainText></TextGroup> COVID-19 Hubs mitgearbeitet als auch die Bewerbung für den Leuchtturmwettbewerb erstellt. </Pgraph></TextBlock>
+    <References linked="yes">
+      <Reference refNo="4">
+        <RefAuthor>Anonym</RefAuthor>
+        <RefTitle/>
+        <RefYear>2020</RefYear>
+        <RefBookTitle>Genome Browser. Genom-Sequenz COVID-19</RefBookTitle>
+        <RefPage/>
+        <RefTotal>Genome Browser. Genom-Sequenz COVID-19. Köln: ZB MED; 2020 [last accessed 2020 Oct 19]. Available from: 
+https://covid-19.zbmed.de/genome_browser/?data=coronavirus_datasources_pool%2Fcovid19&amp;loc=NC_045512.2%3A11959..17939&amp;tracks=DNA&amp;highlight</RefTotal>
+        <RefLink>https://covid-19.zbmed.de/genome_browser/?data=coronavirus_datasources_pool%2Fcovid19&amp;loc=NC_045512.2%3A11959..17939&amp;tracks=DNA&amp;highlight</RefLink>
+      </Reference>
+      <Reference refNo="1">
+        <RefAuthor>Bauer B</RefAuthor>
+        <RefAuthor>Rebholz-Schuhmann D</RefAuthor>
+        <RefTitle>ZB MED – Informationszentrum Lebenswissenschaften: 10 Fragen von Bruno Bauer an dessen Direktor Dietrich Rebholz-Schuhmann</RefTitle>
+        <RefYear>2019</RefYear>
+        <RefJournal>GMS Med Bibl Inf</RefJournal>
+        <RefPage>Doc32</RefPage>
+        <RefTotal>Bauer B, Rebholz-Schuhmann D. ZB MED – Informationszentrum Lebenswissenschaften: 10 Fragen von Bruno Bauer an dessen Direktor Dietrich Rebholz-Schuhmann. GMS Med Bibl Inf. 2019;19(3):Doc32. DOI: 10.3205/mbi000457</RefTotal>
+        <RefLink>https://doi.org/10.3205/mbi000457</RefLink>
+      </Reference>
+      <Reference refNo="2">
+        <RefAuthor>Nelle D</RefAuthor>
+        <RefTitle>Transformation und Strategieprozess von ZB MED. Gastvortrag [Präsentation]</RefTitle>
+        <RefYear/>
+        <RefBookTitle>Strategisches Kolloquium der ULB am 14. September 2017 in Köln</RefBookTitle>
+        <RefPage/>
+        <RefTotal>Nelle D. Transformation und Strategieprozess von ZB MED. Gastvortrag [Präsentation]. In: Strategisches Kolloquium der ULB am 14. September 2017 in Köln. [last accessed 2020 Nov 20]. Available from: https://www.zbmed.de/fileadmin/user_upload/Profil/Publikationen/Strategisches_Kolloquium_ULB_2017-09-14_v1.7.pdf</RefTotal>
+        <RefLink>https://www.zbmed.de/fileadmin/user_upload/Profil/Publikationen/Strategisches_Kolloquium_ULB_2017-09-14_v1.7.pdf</RefLink>
+      </Reference>
+      <Reference refNo="3">
+        <RefAuthor>Rebholz-Schuhmann D</RefAuthor>
+        <RefAuthor>Roesner E</RefAuthor>
+        <RefTitle>Informationen in Zeiten von Corona</RefTitle>
+        <RefYear>2020</RefYear>
+        <RefBookTitle>ZB MED-Blog</RefBookTitle>
+        <RefPage/>
+        <RefTotal>Rebholz-Schuhmann D, Roesner E. Informationen in Zeiten von Corona. In: ZB MED-Blog. 2020 Mar 11 [updated 2020 Apr 03, last accessed 2020 Oct 19]. Köln: ZB MED; 2020. Available from: http://zbmedblog.de/informationen-in-zeiten-von-corona/</RefTotal>
+        <RefLink>http://zbmedblog.de/informationen-in-zeiten-von-corona/</RefLink>
+      </Reference>
+      <Reference refNo="5">
+        <RefAuthor>ZB MED</RefAuthor>
+        <RefTitle/>
+        <RefYear>2020</RefYear>
+        <RefBookTitle>Coronavirus-Forschung mit vereinten Kräften – Genomforschende schließen sich zur Deutschen COVID-19 OMICS Initiative – DeCOI zusammen [Pressemitteilung]</RefBookTitle>
+        <RefPage/>
+        <RefTotal>ZB MED. Coronavirus-Forschung mit vereinten Kräften – Genomforschende schließen sich zur Deutschen COVID-19 OMICS Initiative – DeCOI zusammen [Pressemitteilung]. Köln: ZB MED; 2020 [last accessed 2020 Oct 19]. Available from: https://www.zbmed.de/ueber-uns/presse/pressemitteilungen/artikel/coronavirus-forschung-mit-vereinten-kraeften-genomforschende-schliessen-sich-zur-deutschen-covid-19/</RefTotal>
+        <RefLink>https://www.zbmed.de/ueber-uns/presse/pressemitteilungen/artikel/coronavirus-forschung-mit-vereinten-kraeften-genomforschende-schliessen-sich-zur-deutschen-covid-19/</RefLink>
+      </Reference>
+      <Reference refNo="6">
+        <RefAuthor>ZB MED</RefAuthor>
+        <RefTitle/>
+        <RefYear>2020</RefYear>
+        <RefBookTitle>Gemeinsame Wissenschaftskonferenz beschließt Förderung der NFDI4Health – Aufbau einer Forschungsdateninfrastruktur für personenbezogene Gesundheitsdaten [Pressemitteilung]</RefBookTitle>
+        <RefPage/>
+        <RefTotal>ZB MED. Gemeinsame Wissenschaftskonferenz beschließt Förderung der NFDI4Health – Aufbau einer Forschungsdateninfrastruktur für personenbezogene Gesundheitsdaten [Pressemitteilung]. Köln: ZB MED; 2020 [last accessed 2020 Oct 19]. Available from: https://www.zbmed.de/ueber-uns/presse/pressemitteilungen/artikel/gemeinsame-wissenschaftskonferenz-beschliesst-foerderung-der-nfdi4health-aufbau-einer-forschungsdate/</RefTotal>
+        <RefLink>https://www.zbmed.de/ueber-uns/presse/pressemitteilungen/artikel/gemeinsame-wissenschaftskonferenz-beschliesst-foerderung-der-nfdi4health-aufbau-einer-forschungsdate/</RefLink>
+      </Reference>
+      <Reference refNo="7">
+        <RefAuthor>ZB MED</RefAuthor>
+        <RefTitle/>
+        <RefYear>2020</RefYear>
+        <RefBookTitle>DFG fördert Task Force zu COVID-19 [Pressemitteilung]</RefBookTitle>
+        <RefPage/>
+        <RefTotal>ZB MED. DFG fördert Task Force zu COVID-19 [Pressemitteilung]. Köln: ZB MED; 2020 [last accessed 2020 Oct 19]. Available from: https://www.zbmed.de/ueber-uns/presse/pressemitteilungen/artikel/dfg-foerdert-task-force-zu-covid-19/</RefTotal>
+        <RefLink>https://www.zbmed.de/ueber-uns/presse/pressemitteilungen/artikel/dfg-foerdert-task-force-zu-covid-19/</RefLink>
+      </Reference>
+      <Reference refNo="8">
+        <RefAuthor>ZB MED</RefAuthor>
+        <RefTitle/>
+        <RefYear>2020</RefYear>
+        <RefBookTitle>COVID-19: Informationssuche in Preprints erleichtert – ZB MED entwickelt Textmining-basierten Preprint Viewer [Pressemitteilung]</RefBookTitle>
+        <RefPage/>
+        <RefTotal>ZB MED. COVID-19: Informationssuche in Preprints erleichtert – ZB MED entwickelt Textmining-basierten Preprint Viewer [Pressemitteilung]. Köln: ZB MED; 2020 [last accessed 2020 Oct 19]. Available from: https://www.zbmed.de/ueber-uns/presse/pressemitteilungen/artikel/covid-19-informationssuche-in-preprints-erleichtert-zb-med-entwickelt-textmining-basierten-prepri/</RefTotal>
+        <RefLink>https://www.zbmed.de/ueber-uns/presse/pressemitteilungen/artikel/covid-19-informationssuche-in-preprints-erleichtert-zb-med-entwickelt-textmining-basierten-prepri/</RefLink>
+      </Reference>
+      <Reference refNo="9">
+        <RefAuthor>ZB MED</RefAuthor>
+        <RefTitle/>
+        <RefYear>2020</RefYear>
+        <RefBookTitle>Leuchtturm-Preis für ZB MED. AGMB verleiht Sonderpreis auf der Jahrestagung</RefBookTitle>
+        <RefPage/>
+        <RefTotal>ZB MED. Leuchtturm-Preis für ZB MED. AGMB verleiht Sonderpreis auf der Jahrestagung. 2020 Oct 22. Available from: https://www.youtube.com/watch?v=znEl9Ff_Zug</RefTotal>
+        <RefLink>https://www.youtube.com/watch?v=znEl9Ff_Zug</RefLink>
+      </Reference>
+      <Reference refNo="10">
+        <RefAuthor>Shakespeare W</RefAuthor>
+        <RefTitle/>
+        <RefYear/>
+        <RefBookTitle>Cymbeline. 4. Akt, 3. Szene</RefBookTitle>
+        <RefPage/>
+        <RefTotal>Shakespeare W. Cymbeline. 4. Akt, 3. Szene.</RefTotal>
+      </Reference>
+    </References>
+    <Media>
+      <Tables>
+        <NoOfTables>0</NoOfTables>
+      </Tables>
+      <Figures>
+        <Figure format="png" height="762" width="842">
+          <MediaNo>1</MediaNo>
+          <MediaID>1</MediaID>
+          <Caption><Pgraph><Mark1>Abbildung 1: Die Übersichtsseite des ZB MED COVID-19 Hubs</Mark1></Pgraph></Caption>
+        </Figure>
+        <Figure format="png" height="570" width="741">
+          <MediaNo>2</MediaNo>
+          <MediaID>2</MediaID>
+          <Caption><Pgraph><Mark1>Abbildung 2: Die Urkunde für den Sonderpreis beim Leuchtturmwettbewerb der AGMB</Mark1></Pgraph></Caption>
+        </Figure>
+        <NoOfPictures>2</NoOfPictures>
+      </Figures>
+      <InlineFigures>
+        <NoOfPictures>0</NoOfPictures>
+      </InlineFigures>
+      <Attachments>
+        <NoOfAttachments>0</NoOfAttachments>
+      </Attachments>
+    </Media>
+  </OrigData>
+</GmsArticle>
