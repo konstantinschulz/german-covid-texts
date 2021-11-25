@@ -7,3 +7,4 @@
 | tweet4.txt |  | :heavy_check_mark: | :heavy_check_mark: | | | :heavy_check_mark: | |  | |  |  | |
 | coronavirus.sachsen-anhalt.de.html  | :heavy_check_mark: |  | | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: |  | |  | :heavy_check_mark:
 | auswaertiges-amt.de_de_quarantaene-einreise.html | :heavy_check_mark: |  | | :heavy_check_mark: | :heavy_check_mark: |  |  | :heavy_check_mark: |  | |  | :heavy_check_mark:
+| COVID19-Zaesur_Beitrag_Neff.pdf | :heavy_check_mark: |  | :heavy_check_mark: |  | :heavy_check_mark: |  |  |  | :heavy_check_mark: | |  | 
