@@ -1,5 +1,5 @@
 # Sample Documents and Selection Criteria
-| Document | Selection Criteria |
-| ----------- | ----------- |
-| rki_17_2020.pdf | Text vom RKI, faktenreich, sachlich und objektiv |
-| gms_medizin_roesner.xml | XML Datei, Forschungsunterstützung (größere Themenvielfalt), Bericht |
+| Document | complex text | simple text | subjective | objective | expert | non-expert | XML/ HTML | legal text |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| rki_17_2020.pdf |  :heavy_check_mark: |  |  | :heavy_check_mark: | :heavy_check_mark: |  |  |  |
+| gms_medizin_roesner.xml | :heavy_check_mark: |  |  |  :heavy_check_mark: |  :heavy_check_mark: |  |  :heavy_check_mark: | |
