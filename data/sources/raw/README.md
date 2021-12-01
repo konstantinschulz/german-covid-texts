@@ -11,3 +11,6 @@
 | tweet5.txt |  | :heavy_check_mark: | :heavy_check_mark: | | | :heavy_check_mark: | |  | | :heavy_check_mark: | | |  | | | |
 | tweet6.txt |  | :heavy_check_mark: | :heavy_check_mark: | | | :heavy_check_mark: | |  | | :heavy_check_mark: | | | | | | :heavy_check_mark:|
 | Corona-ArbSchV.json | :heavy_check_mark:  | |  | :heavy_check_mark: | :heavy_check_mark: |  | |  | | | :heavy_check_mark: | :heavy_check_mark: |  | | :heavy_check_mark: | |
+| tweet8.txt |  | :heavy_check_mark: | :heavy_check_mark: | | | :heavy_check_mark: | |  | | :heavy_check_mark: | | | | | | :heavy_check_mark:|
+| tweet9.txt |  | :heavy_check_mark: | :heavy_check_mark: | | | :heavy_check_mark: | |  | | :heavy_check_mark: | | | | | | :heavy_check_mark:|
+| tweet10.txt |  | :heavy_check_mark: | :heavy_check_mark: | | | :heavy_check_mark: | |  | | :heavy_check_mark: | | | | | | :heavy_check_mark:|
