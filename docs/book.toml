@@ -1,0 +1,6 @@
+[book]
+authors = ["Konstantin Schulz"]
+language = "en"
+multilingual = false
+src = "src"
+title = "German Covid Texts"

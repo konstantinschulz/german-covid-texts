@@ -1,0 +1,25 @@
+name: Build site
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+
+  deploy:
+    name: Build and deploy documentation
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Download and install mdBook
+        run: curl -L -o mdbook.tar.gz https://github.com/rust-lang-nursery/mdBook/releases/download/v$MDBOOK_VERSION/mdbook-v$MDBOOK_VERSION-x86_64-unknown-linux-gnu.tar.gz && tar -C $HOME/.cargo/bin/ -zvxf mdbook.tar.gz
+        env:
+          MDBOOK_VERSION: 0.4.14
+      - run: mdbook build docs
+      - run: mdbook test docs
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: docs/book # The folder the action should deploy.
