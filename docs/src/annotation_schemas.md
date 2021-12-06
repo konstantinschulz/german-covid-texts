@@ -8,3 +8,6 @@ All schemas sorted by layer:
 - [Political Bias](./schemas/political_bias.md)
 - [Named Entities](./schemas/entity.md)
 - [Relations](./schemas/relation.md)
+- [Questions](./schemas/question.md)
+- [Answers](./schemas/answer.md)
+- 

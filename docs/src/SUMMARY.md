@@ -8,3 +8,7 @@
     - [Political Bias](./schemas/political_bias.md)
     - [Named Entities](./schemas/entity.md)
     - [Relations](./schemas/relation.md)
+    - [Questions](./schemas/question.md)
+    - [Answers](./schemas/answer.md)
+- [Data Formats](data_formats.md)
+- [Repository Structure](repository_structure.md)
