@@ -10,4 +10,3 @@ All schemas sorted by layer:
 - [Relations](./schemas/relation.md)
 - [Questions](./schemas/question.md)
 - [Answers](./schemas/answer.md)
-- 

@@ -25,7 +25,7 @@ class DocsTestCase(unittest.TestCase):
                     base_dir: str = os.path.dirname(file_path)
                     target_path: str = os.path.join(base_dir, link)
                     # verify that the target path points to a valid, existing file or folder
-                    self.assertTrue(os.path.exists(target_path))
+                    self.assertTrue(os.path.exists(target_path), msg=f"Dead link: {target_path} in file {file_path}")
 
 
 if __name__ == '__main__':
