@@ -18,6 +18,7 @@ jobs:
           MDBOOK_VERSION: 0.4.14
       - run: mdbook build docs
       - run: mdbook test docs
+      - run: git checkout main
       - run: ls docs/src
       - run: cat docs/src/SUMMARY.md
       - name: Test Internal Links
