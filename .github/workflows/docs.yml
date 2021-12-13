@@ -10,22 +10,14 @@ jobs:
     name: Build and deploy documentation
     runs-on: ubuntu-20.04
     steps:
-#      - run: rm -rf docs/src
-#      - run: git pull
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: '1'
-          ref: 'main'
-      - run: git ls-files --error-unmatch docs/src/
       - name: Download and install mdBook
         run: curl -L -o mdbook.tar.gz https://github.com/rust-lang-nursery/mdBook/releases/download/v$MDBOOK_VERSION/mdbook-v$MDBOOK_VERSION-x86_64-unknown-linux-gnu.tar.gz && tar -C $HOME/.cargo/bin/ -zvxf mdbook.tar.gz
         env:
           MDBOOK_VERSION: 0.4.14
       - run: mdbook build docs
       - run: mdbook test docs
-      - run: ls -l docs/src
-      - run: cat docs/src/SUMMARY.md
       - name: Test Internal Links
         run: python scripts/test_docs.py
       - name: Deploy
