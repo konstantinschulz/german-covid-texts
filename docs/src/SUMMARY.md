@@ -1,5 +1,7 @@
 # Summary
 
+- [Data Formats](data_formats.md)
+- [Repository Structure](repository_structure.md)
 - [Annotation Schemas](./annotation_schemas.md)
     - [Raw Text](./schemas/raw_text.md)
     - [Segment](./schemas/segment.md)
@@ -10,5 +12,4 @@
     - [Relations](./schemas/relation.md)
     - [Questions](./schemas/question.md)
     - [Answers](./schemas/answer.md)
-- [Data Formats](data_formats.md)
-- [Repository Structure](repository_structure.md)
+    - [Contexts](./schemas/context.md)
