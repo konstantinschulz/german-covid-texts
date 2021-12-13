@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: AutoModality/action-clean@v1
+      - run: ls -l docs/src
       - name: Checkout
         uses: actions/checkout@v2
 #      - run: git clone https://github.com/konstantinschulz/german-covid-texts
