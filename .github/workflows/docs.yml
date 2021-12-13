@@ -10,6 +10,7 @@ jobs:
     name: Build and deploy documentation
     runs-on: ubuntu-20.04
     steps:
+      - run: rm -rf docs/src
       - name: Checkout
         uses: actions/checkout@v2
       - name: Download and install mdBook
@@ -18,7 +19,6 @@ jobs:
           MDBOOK_VERSION: 0.4.14
       - run: mdbook build docs
       - run: mdbook test docs
-      - run: git checkout main
       - run: ls docs/src
       - run: cat docs/src/SUMMARY.md
       - name: Test Internal Links
