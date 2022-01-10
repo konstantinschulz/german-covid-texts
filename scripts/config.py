@@ -12,3 +12,4 @@ class Config:
     docs_src_dir: str = os.path.join(docs_dir, "src")
     sample_raw_dir: str = os.path.join(data_raw_dir, "sample")
     sample_tok_dir: str = os.path.join(tok_dir, "sample")
+    sample_txt_dir: str = os.path.join(data_raw_dir, "sample_txt")
