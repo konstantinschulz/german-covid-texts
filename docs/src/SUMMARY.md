@@ -1,7 +1,8 @@
 # Summary
 
-- [Data Formats](data_formats.md)
 - [Repository Structure](repository_structure.md)
+- [Data Formats](data_formats.md)
+- [Data Processing](data_processing.md)
 - [Annotation Schemas](./annotation_schema.md)
     - [Raw Text](./schemas/raw_text.md)
     - [Segment](./schemas/segment.md)
