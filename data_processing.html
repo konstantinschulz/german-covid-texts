@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title></title>
-        <base href="/">
+        <title>Data Processing - German Covid Texts</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -76,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">2.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">3.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">4.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">4.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">4.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">4.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">4.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">4.5.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">4.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">4.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question.html"><strong aria-hidden="true">4.8.</strong> Questions</a></li><li class="chapter-item expanded "><a href="schemas/answer.html"><strong aria-hidden="true">4.9.</strong> Answers</a></li><li class="chapter-item expanded "><a href="schemas/context.html"><strong aria-hidden="true">4.10.</strong> Contexts</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">2.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="data_processing.html" class="active"><strong aria-hidden="true">3.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">4.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">4.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">4.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">4.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">4.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">4.5.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">4.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">4.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question.html"><strong aria-hidden="true">4.8.</strong> Questions</a></li><li class="chapter-item expanded "><a href="schemas/answer.html"><strong aria-hidden="true">4.9.</strong> Answers</a></li><li class="chapter-item expanded "><a href="schemas/context.html"><strong aria-hidden="true">4.10.</strong> Contexts</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -135,19 +134,34 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="document-not-found-404"><a class="header" href="#document-not-found-404">Document not found (404)</a></h1>
-<p>This URL is invalid, sorry. Please use the navigation bar or search to continue.</p>
+                        <h1 id="data-processing"><a class="header" href="#data-processing">Data Processing</a></h1>
+<h2 id="text-extraction"><a class="header" href="#text-extraction">Text Extraction</a></h2>
+<p>Raw source data is processed using <a href="https://tika.apache.org/">Apache Tika</a> to extract plain text from any given file format. </p>
+<h2 id="segmentation--tokenization"><a class="header" href="#segmentation--tokenization">Segmentation &amp; Tokenization</a></h2>
+<p>The plain text is segmented and tokenized using the <a href="https://www.nltk.org/">Natural Language Toolkit</a>.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="data_formats.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="annotation_schema.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="data_formats.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="annotation_schema.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
