@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">2.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">3.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">4.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">4.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">4.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">4.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">4.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">4.5.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">4.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">4.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question.html"><strong aria-hidden="true">4.8.</strong> Questions</a></li><li class="chapter-item expanded "><a href="schemas/answer.html"><strong aria-hidden="true">4.9.</strong> Answers</a></li><li class="chapter-item expanded "><a href="schemas/context.html"><strong aria-hidden="true">4.10.</strong> Contexts</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">2.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">3.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html"><strong aria-hidden="true">4.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">5.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">5.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">5.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">5.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">5.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">5.5.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">5.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">5.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question.html"><strong aria-hidden="true">5.8.</strong> Questions</a></li><li class="chapter-item expanded "><a href="schemas/answer.html"><strong aria-hidden="true">5.9.</strong> Answers</a></li><li class="chapter-item expanded "><a href="schemas/context.html"><strong aria-hidden="true">5.10.</strong> Contexts</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -155,6 +155,22 @@
 <p>Tabs and duplicate whitespaces are removed from the plain text using regular expressions.</p>
 <h2 id="segmentation--tokenization"><a class="header" href="#segmentation--tokenization">Segmentation &amp; Tokenization</a></h2>
 <p>The plain text is segmented and tokenized using the <a href="https://www.nltk.org/">Natural Language Toolkit</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="annotation-platform"><a class="header" href="#annotation-platform">Annotation Platform</a></h1>
+<p>We use version 22.1 of the annotation tool <a href="https://inception-project.github.io/">INCEpTION</a> (Klie et al., 2018), hosted on internal servers at <a href="https://www.dfki.de/">DFKI</a>. The annotation platform is password-protected, but all annotations will be made publicly available in this repository.</p>
+<h2 id="data-import"><a class="header" href="#data-import">Data Import</a></h2>
+<p>Inception is able to import plain text data from .txt files where each segment is on a new line and tokens are separated by a single whitespace.</p>
+<h2 id="data-export"><a class="header" href="#data-export">Data Export</a></h2>
+<h3 id="data-format"><a class="header" href="#data-format">Data Format</a></h3>
+<p>Annotations are exported to XML files based on the <a href="https://uima.apache.org/d/uimaj-current/references.html#ugr.ref.xmi">UIMA CAS XMI</a> specification.</p>
+<h3 id="standoff-annotations"><a class="header" href="#standoff-annotations">Standoff Annotations</a></h3>
+<p>Additional layers and their annotations are serialized in a standoff manner, i.e., with references to their respective base layer (such as IDs of tokens or segments).</p>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<p>Klie, J.-C., Bugert, M., Boullosa, B., de Castilho, R. E., &amp; Gurevych, I. (2018,
+Juni). The INCEpTION Platform: Machine-Assisted and Knowledge-
+Oriented Interactive Annotation. In Proceedings of the 27th International
+Conference on Computational Linguistics: System Demonstrations (pp.
+5–9). Santa Fe, New Mexico: Association for Computational Linguistics.
+Retrieved from https://aclanthology.org/C18-2002</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="annotation-schemas"><a class="header" href="#annotation-schemas">Annotation Schemas</a></h1>
 <p>All schemas sorted by layer:</p>
 <ul>
@@ -181,15 +197,14 @@
 <p>Other layers that directly reference this layer:</p>
 <ul>
 <li><a href="schemas/credibility.html">Credibility</a></li>
+<li><a href="schemas/political_bias.html">Political Bias</a></li>
 <li><a href="schemas/question.html">Questions</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="token"><a class="header" href="#token">Token</a></h1>
 <p>The token layer points character indices in the <a href="schemas/raw_text.html">raw text layer</a>. It marks spans of characters as belonging to the same token using unique identifiers.</p>
 <p>Other layers that directly reference this layer:</p>
 <ul>
-<li><a href="schemas/political_bias.html">Political Bias</a></li>
 <li><a href="schemas/entity.html">Named Entities</a></li>
-<li><a href="schemas/relation.html">Relations</a></li>
 <li><a href="schemas/answer.html">Answers</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="credibility"><a class="header" href="#credibility">Credibility</a></h1>
@@ -207,15 +222,27 @@
 </ul>
 <p>The classes can be collapsed into a binary setup for detection of hyperpartisanship: <code>far-left</code> and <code>far-right</code> are hyperpartisan, the others are non-hyperpartisan.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="named-entities"><a class="header" href="#named-entities">Named Entities</a></h1>
-<p>The named entity layer points to <a href="schemas/token.html">token</a> identifiers. It marks single tokens as belonging to one of the 4 classes described in <a href="https://www.opener-project.eu/getting-started/#named-entity-resolution">OpeNER</a>:</p>
+<p>The named entity layer points to <a href="schemas/token.html">token</a> identifiers. It marks spans of tokens as belonging to one of the 4 classes described in <a href="https://www.opener-project.eu/getting-started/#named-entity-resolution">OpeNER</a>:</p>
 <ul>
 <li>Person</li>
 <li>Location</li>
 <li>Organization</li>
 <li>Miscellaneous</li>
 </ul>
+<p>Other layers that directly reference this layer:</p>
+<ul>
+<li><a href="schemas/relation.html">Relations</a></li>
+</ul>
+<h2 id="unnamed-entities"><a class="header" href="#unnamed-entities">Unnamed Entities</a></h2>
+<p>Entities without a name are <strong>not</strong> annotated in this layer.</p>
+<h3 id="example"><a class="header" href="#example">Example</a></h3>
+<p>&quot;generell kann man nie sagen <strong>wer</strong> schon vielleicht Antikörper hat&quot;</p>
+<h2 id="coreference-resolution"><a class="header" href="#coreference-resolution">Coreference Resolution</a></h2>
+<p>Coreferences through pronouns or other pointers (&quot;&quot;) are <strong>not</strong> resolved in this layer. Therefore, they do <strong>not</strong> get annotated as entities, due to our policy on Unnamed Entities.</p>
+<h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
+<p>50% meiner Bekannten <strong>die</strong> sich Impfen lassen haben und vorher kein Leiden hatten sind jetzt zum Teil Arbeitsunfähig und Krank</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="relations"><a class="header" href="#relations">Relations</a></h1>
-<p>The relation layer points to <a href="schemas/token.html">token</a> identifiers. It marks two <a href="schemas/entity.html">Named Entities</a> as connected by a <a href="https://www.wikidata.org/wiki/Wikidata:List_of_properties">WikiData property</a>.</p>
+<p>The relation layer points to <a href="schemas/entity.html">entity</a> identifiers. It marks two <a href="schemas/entity.html">Named Entities</a> as connected by a <a href="https://www.wikidata.org/wiki/Wikidata:List_of_properties">WikiData property</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="questions"><a class="header" href="#questions">Questions</a></h1>
 <p>The question layer points to <a href="schemas/./segment.html">segment</a> identifiers. It marks a segment as containing a question.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="answers"><a class="header" href="#answers">Answers</a></h1>

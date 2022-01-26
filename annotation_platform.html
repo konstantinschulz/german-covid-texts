@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title></title>
-        <base href="/">
+        <title>Annotation Platform - German Covid Texts</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -76,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">2.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">3.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html"><strong aria-hidden="true">4.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">5.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">5.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">5.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">5.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">5.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">5.5.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">5.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">5.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question.html"><strong aria-hidden="true">5.8.</strong> Questions</a></li><li class="chapter-item expanded "><a href="schemas/answer.html"><strong aria-hidden="true">5.9.</strong> Answers</a></li><li class="chapter-item expanded "><a href="schemas/context.html"><strong aria-hidden="true">5.10.</strong> Contexts</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">2.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">3.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html" class="active"><strong aria-hidden="true">4.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">5.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">5.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">5.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">5.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">5.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">5.5.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">5.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">5.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question.html"><strong aria-hidden="true">5.8.</strong> Questions</a></li><li class="chapter-item expanded "><a href="schemas/answer.html"><strong aria-hidden="true">5.9.</strong> Answers</a></li><li class="chapter-item expanded "><a href="schemas/context.html"><strong aria-hidden="true">5.10.</strong> Contexts</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -135,19 +134,45 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="document-not-found-404"><a class="header" href="#document-not-found-404">Document not found (404)</a></h1>
-<p>This URL is invalid, sorry. Please use the navigation bar or search to continue.</p>
+                        <h1 id="annotation-platform"><a class="header" href="#annotation-platform">Annotation Platform</a></h1>
+<p>We use version 22.1 of the annotation tool <a href="https://inception-project.github.io/">INCEpTION</a> (Klie et al., 2018), hosted on internal servers at <a href="https://www.dfki.de/">DFKI</a>. The annotation platform is password-protected, but all annotations will be made publicly available in this repository.</p>
+<h2 id="data-import"><a class="header" href="#data-import">Data Import</a></h2>
+<p>Inception is able to import plain text data from .txt files where each segment is on a new line and tokens are separated by a single whitespace.</p>
+<h2 id="data-export"><a class="header" href="#data-export">Data Export</a></h2>
+<h3 id="data-format"><a class="header" href="#data-format">Data Format</a></h3>
+<p>Annotations are exported to XML files based on the <a href="https://uima.apache.org/d/uimaj-current/references.html#ugr.ref.xmi">UIMA CAS XMI</a> specification.</p>
+<h3 id="standoff-annotations"><a class="header" href="#standoff-annotations">Standoff Annotations</a></h3>
+<p>Additional layers and their annotations are serialized in a standoff manner, i.e., with references to their respective base layer (such as IDs of tokens or segments).</p>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<p>Klie, J.-C., Bugert, M., Boullosa, B., de Castilho, R. E., &amp; Gurevych, I. (2018,
+Juni). The INCEpTION Platform: Machine-Assisted and Knowledge-
+Oriented Interactive Annotation. In Proceedings of the 27th International
+Conference on Computational Linguistics: System Demonstrations (pp.
+5–9). Santa Fe, New Mexico: Association for Computational Linguistics.
+Retrieved from https://aclanthology.org/C18-2002</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="data_processing.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="annotation_schema.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="data_processing.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="annotation_schema.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
