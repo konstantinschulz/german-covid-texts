@@ -1,5 +1,8 @@
 ![docs badge](https://github.com/konstantinschulz/german-covid-texts/actions/workflows/docs.yml/badge.svg)
 
+# German Covid Texts
+In this repository, you will find progress and updates for a new dataset of German texts about COVID-19.
+
 # Documentation
 The generated documentation is accessible at https://konstantinschulz.github.io/german-covid-texts/. It was built using [mdBook](https://github.com/rust-lang/mdBook) and a [workflow file](.github/workflows/docs.yml) for [GitHub Actions](https://github.com/features/actions). This project uses continuous documentation, supported by automatic validation of internal links. 
 
