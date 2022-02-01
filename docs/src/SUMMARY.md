@@ -1,7 +1,9 @@
 # Summary
 
 - [Repository Structure](repository_structure.md)
+- [Curation Principles](curation_principles.md)
 - [Data Formats](data_formats.md)
+- [Sampling Criteria](sampling_criteria.md)
 - [Data Processing](data_processing.md)
 - [Annotation Platform](annotation_platform.md)
 - [Annotation Schemas](annotation_schema.md)
