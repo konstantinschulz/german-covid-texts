@@ -3,7 +3,9 @@
 import os
 import re
 
+import duden
 import nltk as nltk
+import treetaggerwrapper
 from tika import parser
 from tqdm import tqdm
 import json
@@ -11,16 +13,50 @@ import json
 from config import Config
 
 
-def get_text_from_json(file) -> str:
+def get_text_from_json(file_path: str) -> str:
     """ Extracts plain text from a JSON file. """
-    json_file = os.path.join(Config.sample_raw_dir, file)
+    json_file_path: str = os.path.join(Config.sample_raw_dir, file_path)
     content: str = ""
-    with open(json_file, 'r', encoding="utf8") as f:
+    with open(json_file_path, 'r', encoding="utf8") as f:
         data: dict = json.load(f)
         for section in data["sections"]:
             content += " " + section["sectionTitle"]
             content += section["text"]
     return content
+
+
+def remove_hyphenation(text: str) -> str:
+    """ Removes hyphenation from the text which was introduced by line breaks in print publications. """
+    tagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
+    lines = text.split(" ")
+    index = 0
+    text_tokenized = []
+    skip_next = False
+    for word in lines:
+        if word.endswith("-"):
+            next_word = lines[index + 1]
+            word_rm = word[:-1]
+            tags = tagger.tag_text(word_rm + next_word)
+            lemmatize = treetaggerwrapper.make_tags(tags)
+            lemma = lemmatize[0][2]
+            if next_word[0].islower() and duden.search(lemma) != []:
+                word = word_rm + next_word
+                text_tokenized.append(word)
+                skip_next = True
+            else:
+                if skip_next:
+                    skip_next = False
+                    index += 1
+                    continue
+                text_tokenized.append(word)
+        else:
+            if skip_next:
+                skip_next = False
+                index += 1
+                continue
+            text_tokenized.append(word)
+        index += 1
+    return " ".join(text_tokenized)
 
 
 def tokenize() -> None:
@@ -38,6 +74,8 @@ def tokenize() -> None:
         content = re.sub(r"\t", " ", content)
         # collapse duplicate whitespace into single whitespace
         content = re.sub(r" +", " ", content)
+        # remove erroneous hyphenation
+        content = remove_hyphenation(content)
         # change file extension to .txt
         target_file_name: str = os.path.splitext(file)[0] + ".txt"
         target_path: str = os.path.join(Config.sample_txt_dir, target_file_name)
