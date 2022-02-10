@@ -75,8 +75,8 @@ def remove_hyphenation(text: str) -> str:
                 continue
             text_tokenized.append(word)
             index += 1
-            
     return " ".join(text_tokenized)
+
 
 def check_last_char(first_word, second_word):
     if second_word[-1] == "-":
