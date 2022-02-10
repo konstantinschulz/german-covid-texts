@@ -33,22 +33,36 @@ def remove_hyphenation(text: str) -> str:
     text_tokenized = []
     skip_next = False
     for word in lines:
-        if word.endswith("-"):
-            next_word = lines[index + 1]
-            word_rm = word[:-1]
-            if next_word[0] != "und" and next_word[0] != "oder":
-                tags = tagger.tag_text(word_rm + next_word)
-                lemmatize = treetaggerwrapper.make_tags(tags)
-                lemma = lemmatize[0][2]
-                if next_word[0].islower() and duden.search(lemma) != []:
-                    word = word_rm + next_word
-                    text_tokenized.append(word)
-                    skip_next = True
-                elif next_word[0].islower() and duden.search(lemma) == []:
-                    if check_last_char(word_rm, next_word):
+        try:
+            # exclude URLs
+            if "http" in word or "www" in word or ".com" in word or ".de" in word or ".html" in word or "/" in word:
+                text_tokenized.append(word)
+                index += 1
+                if skip_next:
+                    skip_next = False
+                continue
+            elif word.endswith("-"):
+                next_word = lines[index + 1]
+                word_rm = word[:-1]
+                if next_word[0] != "und" and next_word[0] != "oder":
+                    tags = tagger.tag_text(word_rm + next_word)
+                    lemmatize = treetaggerwrapper.make_tags(tags)
+                    lemma = lemmatize[0][2]
+                    if next_word[0].islower() and duden.search(lemma) != []:
                         word = word_rm + next_word
                         text_tokenized.append(word)
                         skip_next = True
+                    elif next_word[0].islower() and duden.search(lemma) == []:
+                        if check_last_char(word_rm, next_word):
+                            word = word_rm + next_word
+                            text_tokenized.append(word)
+                            skip_next = True
+                        else:
+                            if skip_next:
+                                skip_next = False
+                                index += 1
+                                continue
+                            text_tokenized.append(word)
                     else:
                         if skip_next:
                             skip_next = False
@@ -61,14 +75,15 @@ def remove_hyphenation(text: str) -> str:
                         index += 1
                         continue
                     text_tokenized.append(word)
+                index += 1
             else:
                 if skip_next:
                     skip_next = False
                     index += 1
                     continue
                 text_tokenized.append(word)
-            index += 1
-        else:
+                index += 1
+        except:
             if skip_next:
                 skip_next = False
                 index += 1
@@ -82,7 +97,6 @@ def check_last_char(first_word, second_word):
     if second_word[-1] == "-":
         second_word = second_word[:-1]
     word = first_word + second_word
-    print(word)
     fugenelement = False
     if duden.search(word[:-1]) != [] and word[-1] == "s":
         fugenelement = True
