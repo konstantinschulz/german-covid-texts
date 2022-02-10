@@ -33,38 +33,38 @@ def remove_hyphenation(text: str) -> str:
     text_tokenized: list[str] = []
     skip_next: bool = False
     url_markers: set[str] = {"http", "www", ".com", ".de", ".html", "/"}
+    connectors: set[str] = {"und", "oder"}
     for word in lines:
         try:
             # exclude URLs
-            # if "http" in word or "www" in word or ".com" in word or ".de" in word or ".html" in word or "/" in word:
             if any(x for x in url_markers if x in word):
                 text_tokenized.append(word)
                 index += 1
-                if skip_next:
-                    skip_next = False
+                skip_next = False
                 continue
             elif word.endswith("-"):
-                next_word = lines[index + 1]
-                word_rm = word[:-1]
-                if next_word[0] != "und" and next_word[0] != "oder":
-                    tags = tagger.tag_text(word_rm + next_word)
-                    lemmatize = treetaggerwrapper.make_tags(tags)
-                    lemma = lemmatize[0][2]
-                    if next_word[0].islower() and duden.search(lemma) != []:
-                        word = word_rm + next_word
-                        text_tokenized.append(word)
-                        skip_next = True
-                    elif next_word[0].islower() and duden.search(lemma) == []:
-                        if check_last_char(word_rm, next_word):
+                next_word: str = lines[index + 1]
+                word_rm: str = word[:-1]
+                if next_word not in connectors:
+                    tags: list[str] = tagger.tag_text(word_rm + next_word)
+                    lemmatize: list[treetaggerwrapper.Tag] = treetaggerwrapper.make_tags(tags)
+                    lemma: str = lemmatize[0][2]
+                    if next_word[0].islower():
+                        if duden.search(lemma):
                             word = word_rm + next_word
                             text_tokenized.append(word)
                             skip_next = True
                         else:
-                            if skip_next:
-                                skip_next = False
-                                index += 1
-                                continue
-                            text_tokenized.append(word)
+                            if check_last_char(word_rm, next_word):
+                                word = word_rm + next_word
+                                text_tokenized.append(word)
+                                skip_next = True
+                            else:
+                                if skip_next:
+                                    skip_next = False
+                                    index += 1
+                                    continue
+                                text_tokenized.append(word)
                     else:
                         if skip_next:
                             skip_next = False
