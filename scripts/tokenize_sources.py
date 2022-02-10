@@ -13,6 +13,30 @@ import json
 from config import Config
 
 
+def add_word_to_token_list(word: str, text_tokenized: list[str], index: int) -> tuple[list[str], int]:
+    """ Adds a new token to the list and moves the index to the next word. """
+    text_tokenized.append(word)
+    return text_tokenized, index + 1
+
+
+def check_last_char(first_word, second_word):
+    """ Checks for linking elements at the end of a word. """
+    if second_word[-1] == "-":
+        second_word = second_word[:-1]
+    word = first_word + second_word
+    fugenelement = False
+    if duden.search(word[:-1]) != [] and word[-1] == "s":
+        fugenelement = True
+    return fugenelement
+
+
+def combine_words(word_rm: str, next_word: str, text_tokenized: list[str]) -> tuple[str, list[str], bool]:
+    """ Combines two words that were separated by a hyphen to form a new one. """
+    word: str = word_rm + next_word
+    text_tokenized.append(word)
+    return word, text_tokenized, True
+
+
 def get_text_from_json(file_path: str) -> str:
     """ Extracts plain text from a JSON file. """
     json_file_path: str = os.path.join(Config.sample_raw_dir, file_path)
@@ -23,6 +47,11 @@ def get_text_from_json(file_path: str) -> str:
             content += " " + section["sectionTitle"]
             content += section["text"]
     return content
+
+
+def increase_index(index: int) -> tuple[int, bool]:
+    """ Moves the index to the next word and resets the skip flag. """
+    return index + 1, False
 
 
 def remove_hyphenation(text: str) -> str:
@@ -39,8 +68,7 @@ def remove_hyphenation(text: str) -> str:
             # exclude URLs
             if any(x for x in url_markers if x in word):
                 text_tokenized.append(word)
-                index += 1
-                skip_next = False
+                index, skip_next = increase_index(index)
                 continue
             elif word.endswith("-"):
                 next_word: str = lines[index + 1]
@@ -51,58 +79,37 @@ def remove_hyphenation(text: str) -> str:
                     lemma: str = lemmatize[0][2]
                     if next_word[0].islower():
                         if duden.search(lemma):
-                            word = word_rm + next_word
-                            text_tokenized.append(word)
-                            skip_next = True
+                            word, text_tokenized, skip_next = combine_words(word_rm, next_word, text_tokenized)
                         else:
                             if check_last_char(word_rm, next_word):
-                                word = word_rm + next_word
-                                text_tokenized.append(word)
-                                skip_next = True
+                                word, text_tokenized, skip_next = combine_words(word_rm, next_word, text_tokenized)
                             else:
                                 if skip_next:
-                                    skip_next = False
-                                    index += 1
+                                    index, skip_next = increase_index(index)
                                     continue
                                 text_tokenized.append(word)
                     else:
                         if skip_next:
-                            skip_next = False
-                            index += 1
+                            index, skip_next = increase_index(index)
                             continue
                         text_tokenized.append(word)
                 else:
                     if skip_next:
-                        skip_next = False
-                        index += 1
+                        index, skip_next = increase_index(index)
                         continue
                     text_tokenized.append(word)
                 index += 1
             else:
                 if skip_next:
-                    skip_next = False
-                    index += 1
+                    index, skip_next = increase_index(index)
                     continue
-                text_tokenized.append(word)
-                index += 1
+                text_tokenized, index = add_word_to_token_list(word, text_tokenized, index)
         except:
             if skip_next:
-                skip_next = False
-                index += 1
+                index, skip_next = increase_index(index)
                 continue
-            text_tokenized.append(word)
-            index += 1
+            text_tokenized, index = add_word_to_token_list(word, text_tokenized, index)
     return " ".join(text_tokenized)
-
-
-def check_last_char(first_word, second_word):
-    if second_word[-1] == "-":
-        second_word = second_word[:-1]
-    word = first_word + second_word
-    fugenelement = False
-    if duden.search(word[:-1]) != [] and word[-1] == "s":
-        fugenelement = True
-    return fugenelement
 
 
 def tokenize() -> None:
