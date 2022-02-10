@@ -125,7 +125,7 @@ In der vorliegenden Auswertung wurden zu annähernd allen Fällen mit Angaben zu
 Ausblick Aus den zusätzlichen Informationen in den Melde- daten konnten bereits in dieser frühen Phase der Pandemie wichtige Erkenntnisse zur Krankheits- schwere gewonnen werden .
 Auch wenn einige Informationen , insbesondere zu schwer verlaufenden Fällen erst zu einem späteren Zeitpunkt zur Verfügung stehen können als bspw .
 der labordiagnosti- sche Nachweis , bilden sie doch eine wichtige Grundlage für die Bewertung des Risikos der Gesundheit der Bevölkerung und der aktuellen Lage .
-Dies nicht allein im Hinblick auf die zu schützenden Leben , sondern auch mit Blick auf die Kapazitäten im Ge- sundheits- und Versorgungssystem .
+Dies nicht allein im Hinblick auf die zu schützenden Leben , sondern auch mit Blick auf die Kapazitäten im Gesundheits- und Versorgungssystem .
 Mit Blick auf die schweren Verläufe sind vor allem Personen mit vorhandenen Grunderkrankungen und höheren Alters als eine Risikogruppe zu betrachten .
 Die bisherigen und zukünftigen Maßnahmen sollten daher weiterhin insbesondere den Schutz dieser Gruppe zum Ziel haben .
 Dazu zählt auch , die Bevölkerung dafür zu sensibilisieren , dass mit dem eigenen Verhalten ein substanzieller Beitrag zum Schutz dieser Gruppen geleistet wird .
@@ -141,7 +141,7 @@ MMWR Morb Mortal Wkly Rep .
 CCDC Weekly , Vol .
 2 , doi : 10.3760/cma.j.issn.0254-6450.2020.02.003 6 COVID-19-Dashboard .
 https : //experience.arcgis .
-com/experience/478220a4c454480e823b17327b2bf1d4 7 CDC : Preliminary Estimates of the Prevalence of Selected Underlying Health Conditions Among Pati- ents with Coronavirus Disease 2019 – United States , February 12 .
+com/experience/478220a4c454480e823b17327b2bf1d4 7 CDC : Preliminary Estimates of the Prevalence of Selected Underlying Health Conditions Among Patients with Coronavirus Disease 2019 – United States , February 12 .
 March 28 , 2020 .
 MMWR Morb Mortal Wkly Rep .
 2020Apr3 ; 69 ( 13 ) :382 – 386. doi : 10.15585/ mmwr.mm6913e2 .

@@ -27,15 +27,17 @@ def get_text_from_json(file_path: str) -> str:
 
 def remove_hyphenation(text: str) -> str:
     """ Removes hyphenation from the text which was introduced by line breaks in print publications. """
-    tagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
-    lines = text.split(" ")
-    index = 0
-    text_tokenized = []
-    skip_next = False
+    tagger: treetaggerwrapper.TreeTagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
+    lines: list[str] = text.split(" ")
+    index: int = 0
+    text_tokenized: list[str] = []
+    skip_next: bool = False
+    url_markers: set[str] = {"http", "www", ".com", ".de", ".html", "/"}
     for word in lines:
         try:
             # exclude URLs
-            if "http" in word or "www" in word or ".com" in word or ".de" in word or ".html" in word or "/" in word:
+            # if "http" in word or "www" in word or ".com" in word or ".de" in word or ".html" in word or "/" in word:
+            if any(x for x in url_markers if x in word):
                 text_tokenized.append(word)
                 index += 1
                 if skip_next:
