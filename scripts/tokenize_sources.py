@@ -25,7 +25,7 @@ def check_last_char(first_word, second_word):
         second_word = second_word[:-1]
     word = first_word + second_word
     fugenelement = False
-    if duden.search(word[:-1]) != [] and word[-1] == "s":
+    if has_dict_entry(word[:-1]) and word[-1] == "s":
         fugenelement = True
     return fugenelement
 
@@ -53,6 +53,13 @@ def increase_index(index: int) -> tuple[int, bool]:
     """ Moves the index to the next word and resets the skip flag. """
     return index + 1, False
 
+def has_dict_entry(word: str) -> bool:
+    word_lower = word[0].lower() + word[1:]
+    word_upper = word[0].upper() + word[1:]
+    if duden.search(word_lower) == [] and duden.search(word_upper) == []:
+        return False
+    else:
+        return True
 
 def remove_hyphenation(text: str) -> str:
     """ Removes hyphenation from the text which was introduced by line breaks in print publications. """
@@ -78,7 +85,7 @@ def remove_hyphenation(text: str) -> str:
                     lemmatize: list[treetaggerwrapper.Tag] = treetaggerwrapper.make_tags(tags)
                     lemma: str = lemmatize[0][2]
                     if next_word[0].islower():
-                        if duden.search(lemma):
+                        if has_dict_entry(lemma):
                             word, text_tokenized, skip_next = combine_words(word_rm, next_word, text_tokenized)
                         else:
                             if check_last_char(word_rm, next_word):
