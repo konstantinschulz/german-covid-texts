@@ -49,17 +49,19 @@ def get_text_from_json(file_path: str) -> str:
     return content
 
 
+def has_dict_entry(word: str) -> bool:
+    """ Checks whether a word is contained in a dictionary. """
+    word_lower = word[0].lower() + word[1:]
+    word_upper = word[0].upper() + word[1:]
+    if duden.search(word_lower) != [] or duden.search(word_upper) != []:
+        return True
+    return False
+
+
 def increase_index(index: int) -> tuple[int, bool]:
     """ Moves the index to the next word and resets the skip flag. """
     return index + 1, False
 
-def has_dict_entry(word: str) -> bool:
-    word_lower = word[0].lower() + word[1:]
-    word_upper = word[0].upper() + word[1:]
-    if duden.search(word_lower) == [] and duden.search(word_upper) == []:
-        return False
-    else:
-        return True
 
 def remove_hyphenation(text: str) -> str:
     """ Removes hyphenation from the text which was introduced by line breaks in print publications. """
