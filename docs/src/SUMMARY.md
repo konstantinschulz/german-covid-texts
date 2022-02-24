@@ -6,6 +6,7 @@
 - [Sampling Criteria](sampling_criteria.md)
 - [Data Processing](data_processing.md)
 - [Annotation Platform](annotation_platform.md)
+- [Inter-Annotator Agreement](inter_annotator_agreement.md)
 - [Annotation Schemas](annotation_schema.md)
     - [Raw Text](./schemas/raw_text.md)
     - [Segment](./schemas/segment.md)
