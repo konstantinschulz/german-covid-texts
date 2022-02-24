@@ -137,7 +137,7 @@
                         <h1 id="political-bias"><a class="header" href="#political-bias">Political Bias</a></h1>
 <p>The political bias layer points to <a href="segment.html">segment</a> identifiers. It marks single segments as belonging to one of the 5 classes described in this paper: </p>
 <p>Aksenov, D., Bourgonje, P., Zaczynska, K., Ostendorff, M., Moreno-Schneider, J., &amp; Rehm, G. (2021). Fine-grained Classification of Political Bias in German News: A Data Set and Initial Experiments. Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021), 121–131. https://doi.org/10.18653/v1/2021.woah-1.13</p>
-<p>The classes are:</p>
+<h2 id="classes"><a class="header" href="#classes">Classes</a></h2>
 <ul>
 <li>far-left</li>
 <li>center-left</li>
@@ -145,7 +145,21 @@
 <li>center-right</li>
 <li>far-right</li>
 </ul>
+<h2 id="binary-model"><a class="header" href="#binary-model">Binary Model</a></h2>
 <p>The classes can be collapsed into a binary setup for detection of hyperpartisanship: <code>far-left</code> and <code>far-right</code> are hyperpartisan, the others are non-hyperpartisan.</p>
+<h2 id="definitions"><a class="header" href="#definitions">Definitions</a></h2>
+<h3 id="far-left"><a class="header" href="#far-left">Far-Left</a></h3>
+<p>Left-wing politics is generally understood as striving for social equality. The freedom of the community is above that of the individual. Opinion researcher Elisabeth Noelle-Neumann discovered that people not only associate left-wing values with equality, but also with justice, formlessness, warmth, closeness, spontaneity, the international and cosmopolitan and the informal address.</p>
+<h4 id="examples"><a class="header" href="#examples">Examples</a></h4>
+<p><code>Nochmal für alle Impfschwurbler : Niemand hat behauptet , dass die Impfung immun gegen Corona macht .</code></p>
+<h3 id="center"><a class="header" href="#center">Center</a></h3>
+<p>The center label is used for politically neutral or balanced cases. It is also the default label for completely unpolitical statements.</p>
+<h3 id="far-right"><a class="header" href="#far-right">Far-Right</a></h3>
+<p>The political right assumes human inequality and advocates a hierarchy with traditional values and norms. Individual freedom is more important than social equality. With right-wing values, according to Elisabeth Noelle-Neumann, people associate distance, authority, discipline, regulated manners, the national and the formal address in addition to emphasizing differences.</p>
+<h4 id="examples-1"><a class="header" href="#examples-1">Examples</a></h4>
+<p><code>Aber in meiner Umgebung häufen sich derzeit Fälle ausschließlich bei Geimpften !</code></p>
+<p><code>Ich verleugne Corona nicht und bin generell kein Impfgegner , jedoch eine Impfpflicht lehne ich ab .</code></p>
+<p><code>50 % meiner Bekannten die sich Impfen lassen haben und vorher kein Leiden hatten sind jetzt zum Teil Arbeitsunfähig und Krank .</code></p>
 
                     </main>
 
