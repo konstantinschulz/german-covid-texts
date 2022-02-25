@@ -148,7 +148,7 @@ def tokenize() -> None:
         sent_tok: list[list[str]] = []
         for sent in nltk.sent_tokenize(content, language=language):
             sent_tok.append(nltk.word_tokenize(sent, language=language))
-        target_path = os.path.join(Config.sample_tok_dir, target_file_name)
+        target_path = os.path.join(Config.sample_tok_uncleaned_dir, target_file_name)
         with open(target_path, "w+", encoding=Config.encoding) as f:
             # write tokenized text to file
             f.write("\n".join([" ".join(x) for x in sent_tok]))

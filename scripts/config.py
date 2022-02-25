@@ -14,4 +14,5 @@ class Config:
     encoding: str = "utf8"
     sample_raw_dir: str = os.path.join(data_raw_dir, "sample")
     sample_tok_dir: str = os.path.join(tok_dir, "sample")
+    sample_tok_uncleaned_dir: str = os.path.join(sample_tok_dir, "uncleaned")
     sample_txt_dir: str = os.path.join(plain_text_dir, "sample")
