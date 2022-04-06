@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">8.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">8.5.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">8.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">8.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question_answering.html"><strong aria-hidden="true">8.8.</strong> Question Answering</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/topic.html"><strong aria-hidden="true">8.4.</strong> Topic</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">8.5.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">8.6.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">8.7.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">8.8.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question_answering.html"><strong aria-hidden="true">8.9.</strong> Question Answering</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -206,6 +206,7 @@ Retrieved from https://aclanthology.org/C18-2002</p>
 <li><a href="./schemas/raw_text.html">Raw Text</a></li>
 <li><a href="./schemas/segment.html">Segment</a></li>
 <li><a href="./schemas/token.html">Token</a></li>
+<li><a href="./schemas/topic.html">Topic</a></li>
 <li><a href="./schemas/credibility.html">Credibility</a></li>
 <li><a href="./schemas/political_bias.html">Political Bias</a></li>
 <li><a href="./schemas/entity.html">Named Entities</a></li>
@@ -234,8 +235,45 @@ Retrieved from https://aclanthology.org/C18-2002</p>
 <li><a href="schemas/entity.html">Named Entities</a></li>
 <li><a href="schemas/question_answering.html">Question Answering</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="topic"><a class="header" href="#topic">Topic</a></h1>
+<p>We ask the annotator: <em>Do you consider that the tweet’s content contained information about one of the following covid-19-related aspects:</em></p>
+<ul>
+<li>The origin of the virus; its sources; </li>
+<li>Ways of mitigating the risk of infection</li>
+<li>Measures and decisions by the federal government and its impact on people, countries, and the economy; </li>
+<li>Consequences of a Covid infection (long-covid, psychological aspects, etc.)</li>
+<li>Vaccination: general information about the vaccine, availability, side-effects,</li>
+<li>Treatments of an infection</li>
+<li>Case reports/statistics</li>
+</ul>
+<p>Answers:
+R1. The tweet contains information about one of the aspects of the event.
+R2. The tweet is related to the event, but contains no information.
+R3. The tweet is not related to the event.
+R4. None of the above (skip tweet)</p>
+<p>If the annotator decides for R1, they are asked: 
+Please choose, which of the covid-19-related aspects are covered by the tweet.
+R1 The origin of the virus; its sources;
+R2 Ways of mitigating the risk of infection
+R3 Measures and decisions by the federal government and its impact on people, countries, and the economy; 
+R4 Consequences of a Covid infection (long-covid, psychological aspects, etc.)
+R5 Vaccination: general information about the vaccine, availability, side-effects,
+R6 Treatments of an infection
+R7 Case reports/statistics
+R8 None
+R9 Other</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="credibility"><a class="header" href="#credibility">Credibility</a></h1>
 <p>The credibility layer points to <a href="schemas/segment.html">segment</a> identifiers. It marks single segments as having either <code>high</code> or <code>low</code> credibility. Credibility is only annotated for Tweets.</p>
+<p>Following the definitions of Navok et al. and Gupta et al. we define credibility as the property of being trusted, i.e. a text is declared credible if a user, e.g. based on common sense, believes that the information it contains is to some extent credible [3,4]. 
+Based on the hypothesis in Castillo et al., that there are signals available in the social media environment itself that enable users to assess information credibility, we explore the credibility only based on the information the content of a post is giving. In contrast to Castillo et al., we anonymize the users’ names to avoid gender and other biases that distract the annotators from the content.
+For the annotations, we follow a two-step approach, including a <a href="schemas/topic.html">topic-related annotation</a> and, as a second step, if the tweet’s content seems to be credible to the annotator. We present the annotator one tweet.</p>
+<p>Based on the <a href="schemas/topic.html">topic</a> of the tweet, do you believe that the information it contains is to some extent credible?
+R1 High credibility 
+R2 Low credibility
+R3 None of the above (skip tweet)</p>
+<p>Castillo, Carlos &amp; Mendoza, Marcelo &amp; Poblete, Barbara. (2011). Information credibility on Twitter. Proceedings of the 20th International Conference on World Wide Web. 675-684. 10.1145/1963405.1963500.</p>
+<p>Nakov P, Mihaylova T, M`arquez L, Shiroya Y, Koychev I. Do Not Trust the Trolls: Predicting Credibility in Community Question Answering Forums. In: Proceedings of the International Conference Recent Advances in Natural Language Processing, RANLP 2017. Varna, Bulgaria: INCOMA Ltd.; 2017. p. 551-60. Available from: https://doi.org/10.26615/978-954-452-049-6 072.</p>
+<p>Gupta A, Kumaraguru P, Castillo C, Meier P. In: Aiello LM, McFarland D, editors. TweetCred: Real-Time Credibility Assessment of Content on Twitter. Cham: Springer International Publishing; 2014. p. 228-43. Available from: https://doi.org/10.1007/978-3-319-13734-616</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="political-bias"><a class="header" href="#political-bias">Political Bias</a></h1>
 <p>The political bias layer points to <a href="schemas/segment.html">segment</a> identifiers. It marks single segments as belonging to one of the 5 classes described in this paper: </p>
 <p>Aksenov, D., Bourgonje, P., Zaczynska, K., Ostendorff, M., Moreno-Schneider, J., &amp; Rehm, G. (2021). Fine-grained Classification of Political Bias in German News: A Data Set and Initial Experiments. Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021), 121–131. https://doi.org/10.18653/v1/2021.woah-1.13</p>
