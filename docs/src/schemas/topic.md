@@ -1,28 +1,34 @@
-# Topic
+# Credibility Layer and Pipeline
+The credibility layer points to [segment](segment.md) identifiers, whereby full tweets are annotated (*document-based annotation*).
+Topic annotations are the second step in the topic-focused credibility annotation pipeline and prior to the actual credibility annotations: 
 
-We ask the annotator: *Do you consider that the tweet’s content contained information about one of the following covid-19-related aspects:*
-- The origin of the virus; its sources; 
-- Ways of mitigating the risk of infection
-- Measures and decisions by the federal government and its impact on people, countries, and the economy; 
-- Consequences of a Covid infection (long-covid, psychological aspects, etc.)
-- Vaccination: general information about the vaccine, availability, side-effects,
-- Treatments of an infection
-- Case reports/statistics
+(1)  [Informativeness](info.md) - (2) [Topics](topic.md) [x] - (3) [Credibility](credibility.md).  
 
-Answers:
-R1. The tweet contains information about one of the aspects of the event.
-R2. The tweet is related to the event, but contains no information.
-R3. The tweet is not related to the event.
-R4. None of the above (skip tweet)
+It marks single segments as containing one of the covid-related topics listed below. If `None` was selected for [Informativeness](info.md), the tweet is excluded for subsequent annotation steps (select `Excluded`).
+Topics are only annotated for Tweets.
 
-If the annotator decides for R1, they are asked: 
-Please choose, which of the covid-19-related aspects are covered by the tweet.
-R1 The origin of the virus; its sources;
-R2 Ways of mitigating the risk of infection
-R3 Measures and decisions by the federal government and its impact on people, countries, and the economy; 
-R4 Consequences of a Covid infection (long-covid, psychological aspects, etc.)
-R5 Vaccination: general information about the vaccine, availability, side-effects,
-R6 Treatments of an infection
-R7 Case reports/statistics
-R8 None
-R9 Other
+---
+
+## Topic Annotations
+
+*Please choose, which of the covid-19-related aspects are covered by the tweet.*
+
+**(1) The origin of the virus; its sources;**
+
+**(2) Ways of mitigating the risk of infection;**
+
+**(3) Measures and decisions by the federal government and its impact on people, countries, and the economy;**
+
+**(4) Consequences of a Covid infection (long-covid, psychological aspects, etc.);**
+
+**(5) Vaccination: general information about the vaccine, availability, side-effects;**
+
+**(6) Treatments of an infection;**
+
+**(7) Case reports/statistics;**
+
+**(8) None;**  
+The tweet is not about any of the above topics, or it is unclear what topic is, e.g. because the context is missing or because the content only indicates what it is about. The tweet is excluded for the next annotation step.
+
+**(9) Excluded (skip tweet)**  
+Choose `Excluded`, if the tweet was annotated as `None` for [informativeness](info.md) and therefore excluded for further annotation steps.
