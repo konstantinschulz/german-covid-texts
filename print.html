@@ -235,13 +235,13 @@ Retrieved from https://aclanthology.org/C18-2002</p>
 <li><a href="schemas/political_bias.html">Political Bias</a></li>
 <li><a href="schemas/question_answering.html">Question Answering</a></li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="credibility-layer-and-pipeline"><a class="header" href="#credibility-layer-and-pipeline">Credibility Layer and Pipeline</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="topics"><a class="header" href="#topics">Topics</a></h1>
+<h2 id="credibility-layer-and-pipeline-topics"><a class="header" href="#credibility-layer-and-pipeline-topics">Credibility Layer and Pipeline: Topics</a></h2>
 <p>The credibility layer points to <a href="schemas/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>).
 Topic annotations are the second step in the topic-focused credibility annotation pipeline and prior to the actual credibility annotations: </p>
-<p>(1)  <a href="schemas/info.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> [x] - (3) <a href="schemas/credibility.html">Credibility</a>.</p>
+<p>(1)  <a href="schemas/info.html">Informativeness</a> - <strong>(2) <a href="schemas/topic.html">Topics</a></strong> - (3) <a href="schemas/credibility.html">Credibility</a>.</p>
 <p>It marks single segments as containing one of the covid-related topics listed below. If <code>None</code> was selected for <a href="schemas/info.html">Informativeness</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>).
 Topics are only annotated for Tweets.</p>
-<hr />
 <h2 id="topic-annotations"><a class="header" href="#topic-annotations">Topic Annotations</a></h2>
 <p><em>Please choose, which of the covid-19-related aspects are covered by the tweet.</em></p>
 <p><strong>(1) The origin of the virus; its sources;</strong></p>
@@ -255,24 +255,28 @@ Topics are only annotated for Tweets.</p>
 The tweet is not about any of the above topics, or it is unclear what topic is, e.g. because the context is missing or because the content only indicates what it is about. The tweet is excluded for the next annotation step.</p>
 <p><strong>(9) Excluded (skip tweet)</strong><br />
 Choose <code>Excluded</code>, if the tweet was annotated as <code>None</code> for <a href="schemas/info.html">informativeness</a> and therefore excluded for further annotation steps.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="credibility-layer-and-pipeline-1"><a class="header" href="#credibility-layer-and-pipeline-1">Credibility Layer and Pipeline</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="credibilty"><a class="header" href="#credibilty">Credibilty</a></h1>
+<h2 id="credibility-layer-and-pipeline-credibility"><a class="header" href="#credibility-layer-and-pipeline-credibility">Credibility Layer and Pipeline: Credibility</a></h2>
 <p>The credibility layer points to <a href="schemas/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>).
 Credibility annotations are the last step in the topic-focused credibility annotation pipeline: </p>
-<p>(1)  <a href="schemas/info.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - (3) <a href="schemas/credibility.html">Credibility</a> [x].</p>
+<p>(1)  <a href="schemas/info.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/credibility.html">Credibility</a></strong>.</p>
 <p>It marks single segments as having either <code>high</code> or <code>low</code> credibility. If <code>None</code> was selected for either <a href="schemas/info.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>). Credibility is only annotated for Tweets.</p>
 <h2 id="credibility-definition"><a class="header" href="#credibility-definition">Credibility Definition</a></h2>
 <p>Following the definitions of Navok et al. and Gupta et al. we define credibility as the property of being trusted, i.e. a text is declared credible if a user, e.g. based on common sense, believes that the information it contains is to some extent credible [3,4]. 
 Based on the hypothesis in Castillo et al., that there are signals available in the social media environment itself that enable users to assess information credibility, we explore the credibility only based on the information the content of a post is giving. In contrast to Castillo et al., we anonymize the users’ names to avoid gender and other biases that distract the annotators from the content.</p>
 <p>For the annotations, we follow a three-step approach, including a <a href="schemas/info.html">Informativeness</a> and <a href="schemas/topic.html">Topic-related annotation</a> step. Only if the prior two steps were NOT annotated as <code>None</code> or <code>Excluded</code> the annotator needs to decide if the tweet’s content seems to be credible. Othewise, the tweets is excluded choosing the tag <em>Excluded</em>. We present the annotator one tweet per annotation.</p>
-<hr />
 <h2 id="credibility-annotations"><a class="header" href="#credibility-annotations">Credibility Annotations</a></h2>
 <p><em>Based on the <a href="schemas/topic.html">topic</a> of the tweet, do you believe that the information it contains is to some extent credible?</em></p>
-<p><strong>(1) High credibility</strong></p>
-<p><strong>(2) Low credibility</strong> </p>
-<p><strong>(3) Excluded (skip tweet)</strong><br />
+<p><strong>(1) High credibility</strong><br />
+The tweet and its content seems to be to some extent credible.</p>
+<p><strong>(2) Low credibility</strong> 
+The tweet and its content seems to be non-credible and it is highly questionable whether it can be trusted.</p>
+<p><strong>(3) None</strong>
+Based on the tweet, it is not possible to decide if the content is credible or not.</p>
+<p><strong>(4) Excluded (skip tweet)</strong><br />
 Based on prior decisions on the <a href="schemas/info.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a> (annotated as <code>None</code>), the tweet got excluded for further annoattions in the Credibility layer. </p>
 <hr />
-<h3 id="literature"><a class="header" href="#literature">Literature</a></h3>
+<h4 id="literature"><a class="header" href="#literature">Literature</a></h4>
 <p>Castillo, Carlos &amp; Mendoza, Marcelo &amp; Poblete, Barbara. (2011). Information credibility on Twitter. Proceedings of the 20th International Conference on World Wide Web. 675-684. 10.1145/1963405.1963500.</p>
 <p>Nakov P, Mihaylova T, M`arquez L, Shiroya Y, Koychev I. Do Not Trust the Trolls: Predicting Credibility in Community Question Answering Forums. In: Proceedings of the International Conference Recent Advances in Natural Language Processing, RANLP 2017. Varna, Bulgaria: INCOMA Ltd.; 2017. p. 551-60. Available from: https://doi.org/10.26615/978-954-452-049-6 072.</p>
 <p>Gupta A, Kumaraguru P, Castillo C, Meier P. In: Aiello LM, McFarland D, editors. TweetCred: Real-Time Credibility Assessment of Content on Twitter. Cham: Springer International Publishing; 2014. p. 228-43. Available from: https://doi.org/10.1007/978-3-319-13734-616</p>
