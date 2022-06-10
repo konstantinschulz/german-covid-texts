@@ -141,6 +141,9 @@
 <p>Tabs and duplicate whitespaces are removed from the plain text using regular expressions.</p>
 <h2 id="segmentation--tokenization"><a class="header" href="#segmentation--tokenization">Segmentation &amp; Tokenization</a></h2>
 <p>The plain text is segmented and tokenized using the <a href="https://www.nltk.org/">Natural Language Toolkit</a>.</p>
+<p>Hashtags receive additional tokenization through <a href="https://github.com/keredson/wordninja">Wordninja</a>, which is basically a <a href="https://en.wikipedia.org/wiki/Viterbi_algorithm">Viterbi algorithm</a> trained on the <a href="http://worldlex.lexique.org/files/De.Freq.2.rar">German part of the Twitter data in WorldLex</a>. This is particularly helpful for hashtags that are concatenations of multiple words (case-insensitive).</p>
+<h2 id="gdpr"><a class="header" href="#gdpr">GDPR</a></h2>
+<p>We address <a href="https://gdpr-info.eu/art-89-gdpr/">§89 of the GDPR</a> by restricting the usage of this dataset to scientific purposes. In particular, we aim to collect and curate as little data as possible: Personal information in the texts (such as Twitter handles, or particularly sensitive hashtags) are either removed or pseudonymized. Our goal is that no single person can be unambiguously identified through the information present in our dataset.</p>
 
                     </main>
 
