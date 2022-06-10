@@ -14,7 +14,7 @@ import treetaggerwrapper
 from tika import parser
 from tqdm import tqdm
 import json
-
+from newspaper import Article
 from config import Config
 
 
@@ -40,6 +40,23 @@ def combine_words(word_rm: str, next_word: str, text_tokenized: list[str]) -> tu
     word: str = word_rm + next_word
     text_tokenized.append(word)
     return word, text_tokenized, True
+
+
+def extract_text_from_file(file_path: str) -> str:
+    """ Extracts plain text from any given file format. """
+    # extract plain text from JSON files
+    if ".json" in file_path:
+        return get_text_from_json(file_path)
+    elif ".html" in file_path:
+        article: Article = Article(file_path)
+        with open(file_path) as f:
+            article.download(input_html=f.read())
+        article.parse()
+        return article.text
+    # extract plain text from all other kinds of files
+    else:
+        raw: dict = parser.from_file(file_path, service="text", xmlContent=True)
+        return raw['content']
 
 
 def get_text_from_json(file_path: str) -> str:
@@ -183,15 +200,8 @@ def tokenize() -> None:
     wordninja._SPLIT_RE = re.compile("[^a-zA-Z0-9\u0080-\u00FF]+")
     print("Tokenizing input files...")
     for file in tqdm(os.listdir(Config.sample_raw_dir)):
-        content: str
         file_path: str = os.path.join(Config.sample_raw_dir, file)
-        # extract plain text from JSON files
-        if ".json" in file:
-            content = get_text_from_json(file_path)
-        # extract plain text from non-JSON files
-        else:
-            raw: dict = parser.from_file(file_path, service="text", xmlContent=True)
-            content = raw['content']
+        content: str = extract_text_from_file(file_path)
         content = normalize_text(content)
         # change file extension to .txt
         target_file_name: str = os.path.splitext(file)[0] + ".txt"
