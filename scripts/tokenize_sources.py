@@ -89,17 +89,17 @@ def make_probability_distribution():
             # remove the temporary file with the RAR data
             os.remove(path)
     counter: Counter = Counter()
-    if not os.path.exists(Config.twitter_frequency_file_path):
+    if not os.path.exists(Config.twitter_word_probabilities_path):
         print("Downloading word frequency data for Twitter...")
         download_file("http://worldlex.lexique.org/files/De.Freq.2.rar", Config.twitter_supplement_dir)
-    print("Building tokenizer...")
-    with open(Config.twitter_frequency_file_path) as f:
-        # shape: ['Word', 'BlogFreq', 'BlogFreqPm', 'BlogCD', 'BlogCDPc', 'TwitterFreq', 'TwitterFreqPm', 'TwitterCD', 'TwitterCDPc', 'NewsFreq', 'NewsFreqPm', 'NewsCD', 'NewsCDPc.']
-        for idx, line in tqdm(enumerate(f.readlines()), total=1711608):
-            if idx == 0:
-                continue
-            values: list[str] = line.split("\t")
-            counter.update({values[0]: float(values[5])})
+        print("Building tokenizer...")
+        with open(Config.twitter_frequency_file_path) as f:
+            # shape: ['Word', 'BlogFreq', 'BlogFreqPm', 'BlogCD', 'BlogCDPc', 'TwitterFreq', 'TwitterFreqPm', 'TwitterCD', 'TwitterCDPc', 'NewsFreq', 'NewsFreqPm', 'NewsCD', 'NewsCDPc.']
+            for idx, line in tqdm(enumerate(f.readlines()), total=1711608):
+                if idx == 0:
+                    continue
+                values: list[str] = line.split("\t")
+                counter.update({values[0]: float(values[5])})
     with gzip.open(Config.twitter_word_probabilities_path, mode="wt", encoding="utf-8") as f:
         f.write("\n".join([x[0] for x in counter.most_common()]))
 
@@ -177,7 +177,11 @@ def remove_hyphenation(text: str) -> str:
 
 def tokenize() -> None:
     """ Splits raw source data into sentences and tokens. """
+    print("Loading tokenizer...")
     lm: wordninja.LanguageModel = wordninja.LanguageModel(Config.twitter_word_probabilities_path)
+    # add Umlauts and ß (German sharp S) to the allowed characters in a word
+    wordninja._SPLIT_RE = re.compile("[^a-zA-Z0-9\u0080-\u00FF]+")
+    print("Tokenizing input files...")
     for file in tqdm(os.listdir(Config.sample_raw_dir)):
         content: str
         file_path: str = os.path.join(Config.sample_raw_dir, file)
