@@ -117,8 +117,8 @@ def make_probability_distribution():
                     continue
                 values: list[str] = line.split("\t")
                 counter.update({values[0]: float(values[5])})
-    with gzip.open(Config.twitter_word_probabilities_path, mode="wt", encoding="utf-8") as f:
-        f.write("\n".join([x[0] for x in counter.most_common()]))
+        with gzip.open(Config.twitter_word_probabilities_path, mode="wt", encoding="utf-8") as f:
+            f.write("\n".join([x[0] for x in counter.most_common()]))
 
 
 def normalize_text(text: str) -> str:
@@ -246,5 +246,5 @@ def tokenize_hashtags(sent_tok: list[list[str]], lm: wordninja.LanguageModel) ->
             continue
 
 
-# make_probability_distribution()
+make_probability_distribution()
 tokenize()
