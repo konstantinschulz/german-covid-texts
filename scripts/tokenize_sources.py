@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from ast import expr_context
 import tempfile
 from clint.textui import progress
 import gzip
@@ -102,6 +103,9 @@ def make_probability_distribution():
                         f.flush()
             # extract the RAR; please note: binary for rar, unrar or 7z needs to be installed BEFORE running this script
             patoolib.extract_archive(path, outdir=twitter_supplement_dir)
+        except patoolib.util.PatoolError:
+            print("Please install the necessary binaries for your operating system, such as rar, unrar or 7z")
+            raise
         finally:
             # remove the temporary file with the RAR data
             os.remove(path)
