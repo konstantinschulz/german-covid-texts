@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/info.html"><strong aria-hidden="true">8.4.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="schemas/topic.html"><strong aria-hidden="true">8.5.</strong> Topic</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">8.6.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">8.7.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">8.8.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">8.9.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question_answering.html"><strong aria-hidden="true">8.10.</strong> Question Answering</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/informativeness.html"><strong aria-hidden="true">8.4.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="schemas/topic.html"><strong aria-hidden="true">8.5.</strong> Topic</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">8.6.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">8.7.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">8.8.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">8.9.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question_answering.html"><strong aria-hidden="true">8.10.</strong> Question Answering</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -208,6 +208,7 @@ Retrieved from https://aclanthology.org/C18-2002</p>
 <li><a href="./schemas/raw_text.html">Raw Text</a></li>
 <li><a href="./schemas/segment.html">Segment</a></li>
 <li><a href="./schemas/token.html">Token</a></li>
+<li><a href="./schemas/informativeness.html">Informativeness</a></li>
 <li><a href="./schemas/topic.html">Topic</a></li>
 <li><a href="./schemas/credibility.html">Credibility</a></li>
 <li><a href="./schemas/political_bias.html">Political Bias</a></li>
@@ -238,10 +239,9 @@ Retrieved from https://aclanthology.org/C18-2002</p>
 <li><a href="schemas/question_answering.html">Question Answering</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="informativeness"><a class="header" href="#informativeness">Informativeness</a></h1>
-<h2 id="credibility-layer-and-pipeline-informativeness"><a class="header" href="#credibility-layer-and-pipeline-informativeness">Credibility Layer and Pipeline: Informativeness</a></h2>
-<p>The credibility layer points to <a href="schemas/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>). 
-Informativeness annotations are the first step in the topic-focused credibility annotation pipeline: </p>
-<p><strong>(1) <a href="schemas/info.html">Informativeness</a></strong>  - (2) <a href="schemas/topic.html">Topics</a>  - (3) <a href="schemas/credibility.html">Credibility</a>.</p>
+<h2 id="layers-and-pipeline-informativeness"><a class="header" href="#layers-and-pipeline-informativeness">Layers and Pipeline: Informativeness</a></h2>
+<p>Informativeness annotations are the first step in the topic-focused annotation pipeline: </p>
+<p><strong>(1) <a href="schemas/informativeness.html">Informativeness</a></strong>  - (2) <a href="schemas/topic.html">Topics</a>  - (3) <a href="schemas/credibility.html">Credibility</a>, <a href="schemas/entity.html">Named Entities</a>, <a href="schemas/relation.html">Relations</a>.</p>
 <p>It marks single segments as being <code>related</code> and <code>containing covid-related information</code>. Informativeness is only annotated for tweets.</p>
 <h2 id="informativeness-definition"><a class="header" href="#informativeness-definition">Informativeness Definition</a></h2>
 <p>The annotations aim to exclude tweets that do not primarily provide covid-related information, e.g. because they are humorous or sarcastic comments or contain personal opinions or attacks. Tweets with vulgar or offensive langauge should also be excluded (<code>None</code>). If in doubt if the tweet is covid-related, select <code>Informative (Borderline)</code>, as the next annotation step involves a more fine-grained topic annotation.</p>
@@ -259,8 +259,8 @@ Also select <code>None</code> if the tweet contains personal attacks or offensiv
 <h2 id="credibility-layer-and-pipeline-topics"><a class="header" href="#credibility-layer-and-pipeline-topics">Credibility Layer and Pipeline: Topics</a></h2>
 <p>The credibility layer points to <a href="schemas/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>).
 Topic annotations are the second step in the topic-focused credibility annotation pipeline and prior to the actual credibility annotations: </p>
-<p>(1)  <a href="schemas/info.html">Informativeness</a> - <strong>(2) <a href="schemas/topic.html">Topics</a></strong> - (3) <a href="schemas/credibility.html">Credibility</a>.</p>
-<p>It marks single segments as containing one of the covid-related topics listed below. If <code>None</code> was selected for <a href="schemas/info.html">Informativeness</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>).
+<p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - <strong>(2) <a href="schemas/topic.html">Topics</a></strong> - (3) <a href="schemas/credibility.html">Credibility</a>.</p>
+<p>It marks single segments as containing one of the covid-related topics listed below. If <code>None</code> was selected for <a href="schemas/informativeness.html">Informativeness</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>).
 Topics are only annotated for Tweets.</p>
 <h2 id="topic-annotations"><a class="header" href="#topic-annotations">Topic Annotations</a></h2>
 <p><em>Please choose, which of the covid-19-related aspects are covered by the tweet.</em></p>
@@ -274,17 +274,17 @@ Topics are only annotated for Tweets.</p>
 <p><strong>(8) None;</strong><br />
 The tweet is not about any of the above topics, or it is unclear what topic is, e.g. because the context is missing or because the content only indicates what it is about. The tweet is excluded for the next annotation step.</p>
 <p><strong>(9) Excluded (skip tweet)</strong><br />
-Choose <code>Excluded</code>, if the tweet was annotated as <code>None</code> for <a href="schemas/info.html">informativeness</a> and therefore excluded for further annotation steps.</p>
+Choose <code>Excluded</code>, if the tweet was annotated as <code>None</code> for <a href="schemas/informativeness.html">informativeness</a> and therefore excluded for further annotation steps.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="credibilty"><a class="header" href="#credibilty">Credibilty</a></h1>
 <h2 id="credibility-layer-and-pipeline-credibility"><a class="header" href="#credibility-layer-and-pipeline-credibility">Credibility Layer and Pipeline: Credibility</a></h2>
 <p>The credibility layer points to <a href="schemas/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>).
-Credibility annotations are the last step in the topic-focused credibility annotation pipeline: </p>
-<p>(1)  <a href="schemas/info.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/credibility.html">Credibility</a></strong>.</p>
-<p>It marks single segments as having either <code>high</code> or <code>low</code> credibility. If <code>None</code> was selected for either <a href="schemas/info.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>). Credibility is only annotated for Tweets.</p>
+Credibility annotations are the last step in the topic-focused annotation pipeline: </p>
+<p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/credibility.html">Credibility</a></strong>.</p>
+<p>It marks single segments as having either <code>high</code> or <code>low</code> credibility. If <code>None</code> was selected for either <a href="schemas/informativeness.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>). Credibility is only annotated for Tweets.</p>
 <h2 id="credibility-definition"><a class="header" href="#credibility-definition">Credibility Definition</a></h2>
 <p>Following the definitions of Navok et al. and Gupta et al. we define credibility as the property of being trusted, i.e. a text is declared credible if a user, e.g. based on common sense, believes that the information it contains is to some extent credible [3,4]. 
 Based on the hypothesis in Castillo et al., that there are signals available in the social media environment itself that enable users to assess information credibility, we explore the credibility only based on the information the content of a post is giving. In contrast to Castillo et al., we anonymize the users’ names to avoid gender and other biases that distract the annotators from the content.</p>
-<p>For the annotations, we follow a three-step approach, including a <a href="schemas/info.html">Informativeness</a> and <a href="schemas/topic.html">Topic-related annotation</a> step. Only if the prior two steps were NOT annotated as <code>None</code> or <code>Excluded</code> the annotator needs to decide if the tweet’s content seems to be credible. Othewise, the tweets is excluded choosing the tag <em>Excluded</em>. We present the annotator one tweet per annotation.</p>
+<p>For the annotations, we follow a three-step approach, including a <a href="schemas/informativeness.html">Informativeness</a> and <a href="schemas/topic.html">Topic-related annotation</a> step. Only if the prior two steps were NOT annotated as <code>None</code> or <code>Excluded</code> the annotator needs to decide if the tweet’s content seems to be credible. Othewise, the tweets is excluded choosing the tag <em>Excluded</em>. We present the annotator one tweet per annotation.</p>
 <h2 id="credibility-annotations"><a class="header" href="#credibility-annotations">Credibility Annotations</a></h2>
 <p><em>Based on the <a href="schemas/topic.html">topic</a> of the tweet, do you believe that the information it contains is to some extent credible?</em></p>
 <p><strong>(1) High credibility</strong><br />
@@ -294,7 +294,7 @@ The tweet and its content seems to be non-credible and it is highly questionable
 <p><strong>(3) None</strong>
 Based on the tweet, it is not possible to decide if the content is credible or not.</p>
 <p><strong>(4) Excluded (skip tweet)</strong><br />
-Based on prior decisions on the <a href="schemas/info.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a> (annotated as <code>None</code>), the tweet got excluded for further annoattions in the Credibility layer. </p>
+Based on prior decisions on the <a href="schemas/informativeness.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a> (annotated as <code>None</code>), the tweet got excluded for further annoattions in the Credibility layer. </p>
 <hr />
 <h4 id="literature"><a class="header" href="#literature">Literature</a></h4>
 <p>Castillo, Carlos &amp; Mendoza, Marcelo &amp; Poblete, Barbara. (2011). Information credibility on Twitter. Proceedings of the 20th International Conference on World Wide Web. 675-684. 10.1145/1963405.1963500.</p>
@@ -303,6 +303,7 @@ Based on prior decisions on the <a href="schemas/info.html">Informativeness</a> 
 <div style="break-before: page; page-break-before: always;"></div><h1 id="political-bias"><a class="header" href="#political-bias">Political Bias</a></h1>
 <p>The political bias layer points to <a href="schemas/token.html">token</a> identifiers. It marks spans of tokens as belonging to one of the 5 classes described in this paper: </p>
 <p>Aksenov, D., Bourgonje, P., Zaczynska, K., Ostendorff, M., Moreno-Schneider, J., &amp; Rehm, G. (2021). Fine-grained Classification of Political Bias in German News: A Data Set and Initial Experiments. Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021), 121–131. https://doi.org/10.18653/v1/2021.woah-1.13</p>
+<p>The token span is always equal to the length of the whole tweet.</p>
 <h2 id="classes"><a class="header" href="#classes">Classes</a></h2>
 <ul>
 <li>far-left</li>
@@ -344,12 +345,14 @@ Based on prior decisions on the <a href="schemas/info.html">Informativeness</a> 
 <li>Organization</li>
 <li>Miscellaneous</li>
 </ul>
+<p>Entity annotations are the last step in the topic-focused annotation pipeline: </p>
+<p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/entity.html">Named Entities</a></strong>.</p>
 <p>Other layers that directly reference this layer:</p>
 <ul>
 <li><a href="schemas/relation.html">Relations</a></li>
 </ul>
 <h2 id="unnamed-entities"><a class="header" href="#unnamed-entities">Unnamed Entities</a></h2>
-<p>Entities without a name are <strong>not</strong> annotated in this layer.</p>
+<p>Entities without a name are <strong>not</strong> annotated in this layer. This also applies to anonymized mentions (e.g., Twitter handles).</p>
 <h3 id="example"><a class="header" href="#example">Example</a></h3>
 <p>&quot;generell kann man nie sagen <strong>wer</strong> schon vielleicht Antikörper hat&quot;</p>
 <h2 id="coreference-resolution"><a class="header" href="#coreference-resolution">Coreference Resolution</a></h2>
@@ -358,6 +361,8 @@ Based on prior decisions on the <a href="schemas/info.html">Informativeness</a> 
 <p>50% meiner Bekannten <strong>die</strong> sich Impfen lassen haben und vorher kein Leiden hatten sind jetzt zum Teil Arbeitsunfähig und Krank</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="relations"><a class="header" href="#relations">Relations</a></h1>
 <p>The relation layer points to <a href="schemas/entity.html">entity</a> identifiers. It marks two <a href="schemas/entity.html">Named Entities</a> as connected by a <a href="https://www.wikidata.org/wiki/Wikidata:List_of_properties">WikiData property</a>.</p>
+<p>Relation annotations are the last step in the topic-focused annotation pipeline: </p>
+<p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/relation.html">Relations</a></strong>.</p>
 <p>Tags:</p>
 <ol>
 <li><a href="schemas/relation.html#p155">follows</a></li>
