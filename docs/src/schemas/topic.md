@@ -3,9 +3,9 @@
 The credibility layer points to [segment](segment.md) identifiers, whereby full tweets are annotated (*document-based annotation*).
 Topic annotations are the second step in the topic-focused credibility annotation pipeline and prior to the actual credibility annotations: 
 
-(1)  [Informativeness](info.md) - **(2) [Topics](topic.md)** - (3) [Credibility](credibility.md).  
+(1)  [Informativeness](informativeness.md) - **(2) [Topics](topic.md)** - (3) [Credibility](credibility.md).  
 
-It marks single segments as containing one of the covid-related topics listed below. If `None` was selected for [Informativeness](info.md), the tweet is excluded for subsequent annotation steps (select `Excluded`).
+It marks single segments as containing one of the covid-related topics listed below. If `None` was selected for [Informativeness](informativeness.md), the tweet is excluded for subsequent annotation steps (select `Excluded`).
 Topics are only annotated for Tweets.
 
 
@@ -31,4 +31,4 @@ Topics are only annotated for Tweets.
 The tweet is not about any of the above topics, or it is unclear what topic is, e.g. because the context is missing or because the content only indicates what it is about. The tweet is excluded for the next annotation step.
 
 **(9) Excluded (skip tweet)**  
-Choose `Excluded`, if the tweet was annotated as `None` for [informativeness](info.md) and therefore excluded for further annotation steps.
+Choose `Excluded`, if the tweet was annotated as `None` for [informativeness](informativeness.md) and therefore excluded for further annotation steps.

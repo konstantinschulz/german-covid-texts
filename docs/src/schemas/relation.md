@@ -1,6 +1,10 @@
 # Relations
 The relation layer points to [entity](entity.md) identifiers. It marks two [Named Entities](entity.md) as connected by a [WikiData property](https://www.wikidata.org/wiki/Wikidata:List_of_properties).
 
+Relation annotations are the last step in the topic-focused annotation pipeline: 
+
+(1)  [Informativeness](informativeness.md) - (2) [Topics](topic.md) - **(3) [Relations](relation.md)**.  
+
 Tags:
 1. [follows](#p155)
 2. [part of](#p361)

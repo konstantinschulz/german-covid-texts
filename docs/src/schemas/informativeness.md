@@ -1,9 +1,8 @@
 # Informativeness
-## Credibility Layer and Pipeline: Informativeness
-The credibility layer points to [segment](segment.md) identifiers, whereby full tweets are annotated (*document-based annotation*). 
-Informativeness annotations are the first step in the topic-focused credibility annotation pipeline: 
+## Layers and Pipeline: Informativeness
+Informativeness annotations are the first step in the topic-focused annotation pipeline: 
 
-**(1) [Informativeness](info.md)**  - (2) [Topics](topic.md)  - (3) [Credibility](credibility.md).  
+**(1) [Informativeness](informativeness.md)**  - (2) [Topics](topic.md)  - (3) [Credibility](credibility.md), [Named Entities](entity.md), [Relations](relation.md).  
 
 It marks single segments as being ``related`` and ``containing covid-related information``. Informativeness is only annotated for tweets.
 

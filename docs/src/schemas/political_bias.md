@@ -3,6 +3,8 @@ The political bias layer points to [token](token.md) identifiers. It marks spans
 
 Aksenov, D., Bourgonje, P., Zaczynska, K., Ostendorff, M., Moreno-Schneider, J., & Rehm, G. (2021). Fine-grained Classification of Political Bias in German News: A Data Set and Initial Experiments. Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021), 121–131. https://doi.org/10.18653/v1/2021.woah-1.13
 
+The token span is always equal to the length of the whole tweet.
+
 ## Classes
 - far-left
 - center-left
