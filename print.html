@@ -263,7 +263,7 @@ Topic annotations are the second step in the topic-focused credibility annotatio
 <p>It marks single segments as containing one of the covid-related topics listed below. If <code>None</code> was selected for <a href="schemas/informativeness.html">Informativeness</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>).
 Topics are only annotated for Tweets.</p>
 <h2 id="topic-annotations"><a class="header" href="#topic-annotations">Topic Annotations</a></h2>
-<p><em>Please choose, which of the covid-19-related aspects are covered by the tweet.</em></p>
+<p><em>Please choose, which of the covid-19-related aspects are covered by the tweet. In case two (or more) topics are equally strong represeted, twi labels sare possible (in Inception, to do so, mark the same span twice).</em></p>
 <p><strong>(1) The origin of the virus; its sources;</strong></p>
 <p><strong>(2) Ways of mitigating the risk of infection;</strong></p>
 <p><strong>(3) Measures and decisions by the federal government and its impact on people, countries, and the economy;</strong></p>
@@ -344,6 +344,14 @@ Based on prior decisions on the <a href="schemas/informativeness.html">Informati
 <li>Location</li>
 <li>Organization</li>
 <li>Miscellaneous</li>
+</ul>
+<p>Additionally, we add the following labels:</p>
+<ul>
+<li>Duration - an entity describing a time span, e.g. &quot;Die verordnete Quarantänezeit beträgt <strong>14 Tage</strong>.&quot;</li>
+<li>Time- an entity describing a point in time, e.g. &quot;<strong>Gestern</strong> wurde die neue Verordnung verabschiedet.&quot; </li>
+<li>Desease - for example &quot;Der Verlauf von <strong>Covid</strong> war bei mir zunächst mild, das Fieber kam erst am folgenden Tag.&quot;</li>
+<li>Symptom - Symptoms of an Covid-19 deasease, e.g.  &quot;Der Verlauf von Covid war bei mir zunächst mild, das <strong>Fieber</strong> kam erst am folgenden Tag.&quot;</li>
+<li>Measure - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. &quot;Die verordnete <strong>Quarantänezeit</strong> beträgt 14 Tage.&quot;</li>
 </ul>
 <p>Entity annotations are the last step in the topic-focused annotation pipeline: </p>
 <p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/entity.html">Named Entities</a></strong>.</p>
