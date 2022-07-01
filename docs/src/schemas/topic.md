@@ -11,7 +11,7 @@ Topics are only annotated for Tweets.
 
 ## Topic Annotations
 
-*Please choose, which of the covid-19-related aspects are covered by the tweet.*
+*Please choose, which of the covid-19-related aspects are covered by the tweet. In case two (or more) topics are equally strong represeted, twi labels sare possible (in Inception, to do so, mark the same span twice).*
 
 **(1) The origin of the virus; its sources;**
 

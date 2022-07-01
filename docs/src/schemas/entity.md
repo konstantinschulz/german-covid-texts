@@ -5,6 +5,14 @@ The named entity layer points to [token](token.md) identifiers. It marks spans o
 - Organization
 - Miscellaneous
 
+Additionally, we add the following labels:
+
+- Duration - an entity describing a time span, e.g. "Die verordnete Quarantänezeit beträgt **14 Tage**."  
+- Time- an entity describing a point in time, e.g. "**Gestern** wurde die neue Verordnung verabschiedet." 
+- Desease - for example "Der Verlauf von **Covid** war bei mir zunächst mild, das Fieber kam erst am folgenden Tag."
+- Symptom - Symptoms of an Covid-19 deasease, e.g.  "Der Verlauf von Covid war bei mir zunächst mild, das **Fieber** kam erst am folgenden Tag."
+- Measure - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. "Die verordnete **Quarantänezeit** beträgt 14 Tage."  
+
 Entity annotations are the last step in the topic-focused annotation pipeline: 
 
 (1)  [Informativeness](informativeness.md) - (2) [Topics](topic.md) - **(3) [Named Entities](entity.md)**.  
