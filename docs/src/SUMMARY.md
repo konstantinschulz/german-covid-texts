@@ -8,9 +8,9 @@
 - [Annotation Platform](annotation_platform.md)
 - [Inter-Annotator Agreement](inter_annotator_agreement.md)
 - [Span Types](span_types.md)
-    - [Raw Text](schemas/raw_text.md)
-    - [Segment](schemas/segment.md)
-    - [Token](schemas/token.md)
+    - [Raw Text](span_types/raw_text.md)
+    - [Segment](span_types/segment.md)
+    - [Token](span_types/token.md)
 - [Annotation Schemas](annotation_schema.md)
     - [Content-Focused Credibility](schemas/content_focused_credibility.md)    
         - [Informativeness](schemas/informativeness.md)
@@ -20,6 +20,4 @@
         - [Named Entities](schemas/entity.md)
         - [Relations](schemas/relation.md)
         - [Factuality](schemas/factuality.md)
-    - Pending Annotation Layers
-        - [Question Answering](schemas/question_answering.md)
-        - [Political Bias](schemas/political_bias.md)
+
