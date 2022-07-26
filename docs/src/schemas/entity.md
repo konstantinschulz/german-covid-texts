@@ -1,21 +1,22 @@
 # Named Entities
-The named entity layer points to [token](token.md) identifiers. It marks spans of tokens as belonging to one of the 4 classes described in [OpeNER](https://www.opener-project.eu/getting-started/#named-entity-resolution):
-- Person
-- Location
-- Organization
-- Miscellaneous
+The named entity layer points to [token](token.md) identifiers. It marks spans of tokens as belonging to one of the following classes described in [ACE annotation guidelines](https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-entities-guidelines-v6.6.pdf):
+
+- **Person** - Person entities are limited to humans. A person may be a single individual or a group.
+- **Location** - Location entities are limited to geographical entities such as geographical areas and landmasses, bodies of water, and geological formations. They also include Geo-political entities are geographical regions defined by political and/or social groups (nations, regions).
+- **Organization** - Organization entities are limited to corporations, agencies, and other groups of people defined by an established organizational structure
+
+We modified the ACE classes by joining Location and geo-political entities into one class, and only include the top-classes.
 
 Additionally, we add the following labels:
 
-- Duration - an entity describing a time span, e.g. "Die verordnete Quarantänezeit beträgt **14 Tage**."  
-- Time- an entity describing a point in time, e.g. "**Gestern** wurde die neue Verordnung verabschiedet." 
+- **Duration** - an entity describing a time span, e.g. "Die verordnete Quarantänezeit beträgt **14 Tage**."  
+- **Time** - an entity describing a point in time, e.g. "**Gestern** wurde die neue Verordnung verabschiedet." 
 - Desease - for example "Der Verlauf von **Covid** war bei mir zunächst mild, das Fieber kam erst am folgenden Tag."
-- Symptom - Symptoms of an Covid-19 deasease, e.g.  "Der Verlauf von Covid war bei mir zunächst mild, das **Fieber** kam erst am folgenden Tag."
-- Measure - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. "Die verordnete **Quarantänezeit** beträgt 14 Tage."  
+- **Symptom** - Symptoms of a deasease (Covid or other) or resulting from side effects of a medicine/vaccine, e.g.  "Der Verlauf von Covid war bei mir zunächst mild, das **Fieber** kam erst am folgenden Tag."
+- **Measure** - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. "Die verordnete **Quarantänezeit** beträgt 14 Tage."  
 
-Entity annotations are the last step in the topic-focused annotation pipeline: 
-
-(1)  [Informativeness](informativeness.md) - (2) [Topics](topic.md) - **(3) [Named Entities](entity.md)**.  
+generally, negations should be included into the annotation, e.g.  
+"In der letzten Änderung des Impfschemas gibt es ja nun die FN 5, die in diesem Fall [**keine** Auffrischungsimpfung] mehr empfiehlt (wenn  die [Infektion] [3 Monate nach] [2. Impfung] erfolgt.)."
 
 Other layers that directly reference this layer:
 - [Relations](relation.md)
