@@ -91,8 +91,8 @@ Here is a test for assigning something as a cause or a contributing factor:
 
 If the thing were removed, would that have prevented the effect?
 
-    (1) Yes: the thing is a cause
-    (2) No, but it significantly influenced the effect: the thing is a contributing factor
+*(1) Yes: the thing is a cause*  
+*(2) No, but it significantly influenced the effect: the thing is a contributing factor*
 
 (taken from: https://www.wikidata.org/wiki/Help:Modeling_causes)
 
