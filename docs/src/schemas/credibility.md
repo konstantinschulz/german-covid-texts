@@ -1,6 +1,6 @@
 # Credibilty
 
-The credibility layer points to [segment](segment.md) identifiers, whereby full tweets are annotated (*document-based annotation*).
+The credibility layer points to [segment](../span_types/segment.md) identifiers, whereby full tweets are annotated (*document-based annotation*).
 Credibility annotations are the last step in the topic-focused annotation pipeline:  
 
 It marks single segments as having either `high` or `low` credibility. If `None` was selected for either [Informativeness](informativeness.md) or [Topic-related annotation](topic.md), the tweet is excluded for subsequent annotation steps (select `Excluded`). Credibility is only annotated for 
