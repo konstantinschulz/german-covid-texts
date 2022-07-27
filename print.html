@@ -360,7 +360,7 @@ The distinction between a point in time or duration is made using entities from 
 <li>incorrect: <em>*Die [Einstufung] eines Landes als Hochrisiko- bzw. Virusvariantengebiet</em></li>
 </ul>
 <p>Based on: <em>jmd./etw. &quot;stuft&quot; jmdn./etw. als ein solches &quot;ein&quot;</em>. The arguments only serve as orientation to estimate the scope of the NE annotation.</p>
-<p>Not annotated should not be what is not essential for understanding.</p>
+<p>Not annotated should be what is not essential for the main entity meaning.</p>
 <ul>
 <li>
 <p><em>Neben Erst-, Zweit- und Boosterimpfungen besteht auch ein Impfangebot mit Novavax sowie [Schutzimpfungen für Kinder] zwischen 5 und 11 Jahren.</em></p>
@@ -375,8 +375,8 @@ The distinction between a point in time or duration is made using entities from 
 <p>incorrect: <em>*[Astra Zeneca, der Impfstoff der in Großbritannien genutzt wurde, (...)]</em></p>
 </li>
 </ul>
-<p>In case of doubt which arguments to include, verb lexicons like <a href="https://grammis.ids-mannheim.de/verbvalenz">Elektronisches Valenzlexikon</a> or <a href="https://www.verben.de/">Netzverb</a> can be helpful.</p>
-<p>Only measures related to Covid are annotated. Therefore, in cases like the following example, the annotation should be as follows:</p>
+<p>In case of doubt which arguments to include, a look into verb lexicons like <a href="https://grammis.ids-mannheim.de/verbvalenz">Elektronisches Valenzlexikon</a> or <a href="https://www.verben.de/">Netzverb</a> can help.</p>
+<p>Only measures related to Covid are annotated. Therefore, like the following example, the annotation should be as follows:</p>
 <ul>
 <li><em>Die [Impfung] gegen Covid ist nun seit längerer Zeit verfügbar</em></li>
 <li>incorrect: <em>*Die [Impfung gegen Covid] ist nun seit längerer Zeit verfügbar</em></li>
@@ -555,9 +555,13 @@ VOC 202012/01 &gt; synonym &gt; N501Y</p>
 &gt;&gt; Großraum Paris &gt; part of &gt; Frankreich</p>
 <h2 id="specifications-1"><a class="header" href="#specifications-1">Specifications</a></h2>
 <h3 id="multiple-occurences-of-similar-entities"><a class="header" href="#multiple-occurences-of-similar-entities">Multiple Occurences of Similar Entities</a></h3>
-<p>In case a relation could be drawn between similar entities, only the first mentioned entity is annotated. In the next example, a relation between the Symptoms <em>Thrombose, Embolien</em> and the Measure <em>Impfung</em> as well as the (almous synonym) <em>Impfstoff</em> can be drawn.</p>
-<p>In den Medien spricht man überhaupt nicht über Thrombosen, Embolien etc. die durch die Impfung ausgelöst wurden. Wer sich mit diesem Impfstoff impfen lässt, der ist wahnsinnig.&quot;</p>
-<p>We only draw the relation between the Symptoms and the first occuring entity <em>Impfung</em> while <em>Impfung</em> and <em>Impfstoff</em> can be connectied via part of relation.</p>
+<p>In cases when relations can be drawn between similar entities, only the first mention is annotated. In the next example, a relation between the Symptoms <em>Thrombose, Embolien</em> and the Measure <em>Impfung</em> as well as the (almous synonymous) <em>Impfstoff</em> can be drawn. We only draw the relation between the Symptoms and the first occuring entity <em>Impfung</em>, while <em>Impfung</em> and <em>Impfstoff</em> can be connectied using a <em>part of</em> Relation. </p>
+<blockquote>
+<p><em>In den Medien spricht man überhaupt nicht über [Thrombosen], [Embolien] etc. die durch die [Impfung] ausgelöst wurden. Wer sich mit diesem [Impfstoff] impfen lässt, der ist wahnsinnig.</em>
+&gt;Thrombosen &gt; symptoms and signs &gt; Impfung<br />
+&gt;Embolien &gt; symptoms and signs &gt; Impfung<br />
+&gt;Impfstoff &gt; part of &gt; Impfung</p>
+</blockquote>
 <h2 id="information-on-relation-tags"><a class="header" href="#information-on-relation-tags">Information on Relation Tags</a></h2>
 <p>The Wikidata relations above constitute:</p>
 <ul>

@@ -302,9 +302,13 @@ VOC 202012/01 &gt; synonym &gt; N501Y</p>
 &gt;&gt; Großraum Paris &gt; part of &gt; Frankreich</p>
 <h2 id="specifications"><a class="header" href="#specifications">Specifications</a></h2>
 <h3 id="multiple-occurences-of-similar-entities"><a class="header" href="#multiple-occurences-of-similar-entities">Multiple Occurences of Similar Entities</a></h3>
-<p>In case a relation could be drawn between similar entities, only the first mentioned entity is annotated. In the next example, a relation between the Symptoms <em>Thrombose, Embolien</em> and the Measure <em>Impfung</em> as well as the (almous synonym) <em>Impfstoff</em> can be drawn.</p>
-<p>In den Medien spricht man überhaupt nicht über Thrombosen, Embolien etc. die durch die Impfung ausgelöst wurden. Wer sich mit diesem Impfstoff impfen lässt, der ist wahnsinnig.&quot;</p>
-<p>We only draw the relation between the Symptoms and the first occuring entity <em>Impfung</em> while <em>Impfung</em> and <em>Impfstoff</em> can be connectied via part of relation.</p>
+<p>In cases when relations can be drawn between similar entities, only the first mention is annotated. In the next example, a relation between the Symptoms <em>Thrombose, Embolien</em> and the Measure <em>Impfung</em> as well as the (almous synonymous) <em>Impfstoff</em> can be drawn. We only draw the relation between the Symptoms and the first occuring entity <em>Impfung</em>, while <em>Impfung</em> and <em>Impfstoff</em> can be connectied using a <em>part of</em> Relation. </p>
+<blockquote>
+<p><em>In den Medien spricht man überhaupt nicht über [Thrombosen], [Embolien] etc. die durch die [Impfung] ausgelöst wurden. Wer sich mit diesem [Impfstoff] impfen lässt, der ist wahnsinnig.</em>
+&gt;Thrombosen &gt; symptoms and signs &gt; Impfung<br />
+&gt;Embolien &gt; symptoms and signs &gt; Impfung<br />
+&gt;Impfstoff &gt; part of &gt; Impfung</p>
+</blockquote>
 <h2 id="information-on-relation-tags"><a class="header" href="#information-on-relation-tags">Information on Relation Tags</a></h2>
 <p>The Wikidata relations above constitute:</p>
 <ul>
