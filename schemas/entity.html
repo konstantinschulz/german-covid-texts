@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="../curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="../data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="../sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="../data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="../annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="../inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="../annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="../schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="../schemas/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="../schemas/informativeness.html"><strong aria-hidden="true">8.4.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="../schemas/topic.html"><strong aria-hidden="true">8.5.</strong> Topic</a></li><li class="chapter-item expanded "><a href="../schemas/credibility.html"><strong aria-hidden="true">8.6.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/political_bias.html"><strong aria-hidden="true">8.7.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="../schemas/entity.html" class="active"><strong aria-hidden="true">8.8.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="../schemas/relation.html"><strong aria-hidden="true">8.9.</strong> Relations</a></li><li class="chapter-item expanded "><a href="../schemas/question_answering.html"><strong aria-hidden="true">8.10.</strong> Question Answering</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="../curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="../data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="../sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="../data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="../annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="../inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="../span_types.html"><strong aria-hidden="true">8.</strong> Span Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../span_types/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="../span_types/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="../span_types/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li></ol></li><li class="chapter-item expanded "><a href="../annotation_schema.html"><strong aria-hidden="true">9.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../schemas/content_focused_credibility.html"><strong aria-hidden="true">9.1.</strong> Content-Focused Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/informativeness.html"><strong aria-hidden="true">9.2.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="../schemas/topic.html"><strong aria-hidden="true">9.3.</strong> Topic</a></li><li class="chapter-item expanded "><a href="../schemas/credibility.html"><strong aria-hidden="true">9.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/ner_factuality.html"><strong aria-hidden="true">9.5.</strong> NER and Factuality Values</a></li><li class="chapter-item expanded "><a href="../schemas/entity.html" class="active"><strong aria-hidden="true">9.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="../schemas/relation.html"><strong aria-hidden="true">9.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="../schemas/factuality.html"><strong aria-hidden="true">9.8.</strong> Factuality</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -135,23 +135,23 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="named-entities"><a class="header" href="#named-entities">Named Entities</a></h1>
-<p>The named entity layer points to <a href="token.html">token</a> identifiers. It marks spans of tokens as belonging to one of the 4 classes described in <a href="https://www.opener-project.eu/getting-started/#named-entity-resolution">OpeNER</a>:</p>
+<p>The named entity layer points to <a href="../span_types/token.html">token</a> identifiers. It marks spans of tokens as belonging to one of the following classes described in <a href="https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-entities-guidelines-v6.6.pdf">ACE annotation guidelines</a>:</p>
 <ul>
-<li>Person</li>
-<li>Location</li>
-<li>Organization</li>
-<li>Miscellaneous</li>
+<li><strong>Person</strong> - Person entities are limited to humans. A person may be a single individual or a group.</li>
+<li><strong>Location</strong> - Location entities are limited to geographical entities such as geographical areas and landmasses, bodies of water, and geological formations. They also include Geo-political entities are geographical regions defined by political and/or social groups (nations, regions).</li>
+<li><strong>Organization</strong> - Organization entities are limited to corporations, agencies, and other groups of people defined by an established organizational structure</li>
 </ul>
+<p>We modified the ACE classes by joining Location and geo-political entities into one class, and only include the top-classes.</p>
 <p>Additionally, we add the following labels:</p>
 <ul>
-<li>Duration - an entity describing a time span, e.g. &quot;Die verordnete Quarantänezeit beträgt <strong>14 Tage</strong>.&quot;</li>
-<li>Time- an entity describing a point in time, e.g. &quot;<strong>Gestern</strong> wurde die neue Verordnung verabschiedet.&quot; </li>
+<li><strong>Duration</strong> - an entity describing a time span, e.g. &quot;Die verordnete Quarantänezeit beträgt <strong>14 Tage</strong>.&quot;</li>
+<li><strong>Time</strong> - an entity describing a point in time, e.g. &quot;<strong>Gestern</strong> wurde die neue Verordnung verabschiedet.&quot; </li>
 <li>Desease - for example &quot;Der Verlauf von <strong>Covid</strong> war bei mir zunächst mild, das Fieber kam erst am folgenden Tag.&quot;</li>
-<li>Symptom - Symptoms of an Covid-19 deasease, e.g.  &quot;Der Verlauf von Covid war bei mir zunächst mild, das <strong>Fieber</strong> kam erst am folgenden Tag.&quot;</li>
-<li>Measure - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. &quot;Die verordnete <strong>Quarantänezeit</strong> beträgt 14 Tage.&quot;</li>
+<li><strong>Symptom</strong> - Symptoms of a deasease (Covid or other) or resulting from side effects of a medicine/vaccine, e.g.  &quot;Der Verlauf von Covid war bei mir zunächst mild, das <strong>Fieber</strong> kam erst am folgenden Tag.&quot;</li>
+<li><strong>Measure</strong> - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. &quot;Die verordnete <strong>Quarantänezeit</strong> beträgt 14 Tage.&quot;</li>
 </ul>
-<p>Entity annotations are the last step in the topic-focused annotation pipeline: </p>
-<p>(1)  <a href="informativeness.html">Informativeness</a> - (2) <a href="topic.html">Topics</a> - <strong>(3) <a href="entity.html">Named Entities</a></strong>.</p>
+<p>generally, negations should be included into the annotation, e.g.<br />
+&quot;In der letzten Änderung des Impfschemas gibt es ja nun die FN 5, die in diesem Fall [<strong>keine</strong> Auffrischungsimpfung] mehr empfiehlt (wenn  die [Infektion] [3 Monate nach] [2. Impfung] erfolgt.).&quot;</p>
 <p>Other layers that directly reference this layer:</p>
 <ul>
 <li><a href="relation.html">Relations</a></li>
@@ -169,7 +169,7 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../schemas/political_bias.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../schemas/ner_factuality.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                             <a rel="next" href="../schemas/relation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
@@ -181,7 +181,7 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../schemas/political_bias.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../schemas/ner_factuality.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                     <a rel="next" href="../schemas/relation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">

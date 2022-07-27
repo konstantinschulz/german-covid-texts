@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="../curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="../data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="../sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="../data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="../annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="../inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="../annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="../schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="../schemas/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="../schemas/informativeness.html"><strong aria-hidden="true">8.4.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="../schemas/topic.html"><strong aria-hidden="true">8.5.</strong> Topic</a></li><li class="chapter-item expanded "><a href="../schemas/credibility.html"><strong aria-hidden="true">8.6.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/political_bias.html"><strong aria-hidden="true">8.7.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="../schemas/entity.html"><strong aria-hidden="true">8.8.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="../schemas/relation.html" class="active"><strong aria-hidden="true">8.9.</strong> Relations</a></li><li class="chapter-item expanded "><a href="../schemas/question_answering.html"><strong aria-hidden="true">8.10.</strong> Question Answering</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="../curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="../data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="../sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="../data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="../annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="../inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="../span_types.html"><strong aria-hidden="true">8.</strong> Span Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../span_types/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="../span_types/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="../span_types/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li></ol></li><li class="chapter-item expanded "><a href="../annotation_schema.html"><strong aria-hidden="true">9.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../schemas/content_focused_credibility.html"><strong aria-hidden="true">9.1.</strong> Content-Focused Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/informativeness.html"><strong aria-hidden="true">9.2.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="../schemas/topic.html"><strong aria-hidden="true">9.3.</strong> Topic</a></li><li class="chapter-item expanded "><a href="../schemas/credibility.html"><strong aria-hidden="true">9.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/ner_factuality.html"><strong aria-hidden="true">9.5.</strong> NER and Factuality Values</a></li><li class="chapter-item expanded "><a href="../schemas/entity.html"><strong aria-hidden="true">9.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="../schemas/relation.html" class="active"><strong aria-hidden="true">9.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="../schemas/factuality.html"><strong aria-hidden="true">9.8.</strong> Factuality</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,62 +136,68 @@
                     <main>
                         <h1 id="relations"><a class="header" href="#relations">Relations</a></h1>
 <p>The relation layer points to <a href="entity.html">entity</a> identifiers. It marks two <a href="entity.html">Named Entities</a> as connected by a <a href="https://www.wikidata.org/wiki/Wikidata:List_of_properties">WikiData property</a>.</p>
-<p>Relation annotations are the last step in the topic-focused annotation pipeline: </p>
-<p>(1)  <a href="informativeness.html">Informativeness</a> - (2) <a href="topic.html">Topics</a> - <strong>(3) <a href="relation.html">Relations</a></strong>.</p>
-<p>Tags:</p>
+<h2 id="tags-overview"><a class="header" href="#tags-overview">Tags Overview</a></h2>
+<p>A. Time</p>
 <ol>
-<li><a href="#p155">follows</a></li>
-<li><a href="#p361">part of</a></li>
-<li><a href="#p495">country of origin</a></li>
-<li><a href="#p527">has part</a></li>
-<li><a href="#p580">start time</a></li>
-<li><a href="#p582">end time</a></li>
-<li><a href="#p1001">applies to jurisdiction</a></li>
-<li><a href="#p737">influenced by</a></li>
-<li><a href="#p3433">biological variant of</a></li>
-<li><a href="#p5973">synonym</a></li>
-<li><a href="#p780">symptoms and signs</a></li>
-<li><a href="#p828">has cause</a></li>
-<li><a href="#p2047">duration</a></li>
+<li><a href="#p155">follows (P155)</a></li>
+<li><a href="#p585">point in time (P585)</a></li>
+<li><a href="#p2047">duration (P2047)</a></li>
+<li><a href="#p580">start time (P580)</a></li>
+<li><a href="#p582">end time (P582)</a></li>
 </ol>
-<h2 id="tags-wikidata"><a class="header" href="#tags-wikidata">Tags (Wikidata)</a></h2>
-<h4 id="p155"><a class="header" href="#p155">P155</a></h4>
-<h5 id="follows"><a class="header" href="#follows">&quot;follows&quot;</a></h5>
-<p>Description: Immediately prior item in a series of which the subject is a part, preferably use as qualifier of P179 [if the subject has replaced the preceding item, e.g. political offices, use &quot;replaces&quot; (P1365)]</p>
+<p>B. Causal</p>
+<ol start="6">
+<li><a href="#p828">has cause (P828)</a></li>
+<li><a href="#p1479">has contributing factor (P1479)</a></li>
+</ol>
+<p>C. Covid-Related</p>
+<ol start="8">
+<li><a href="#p3433">biological variant of (P3433)</a></li>
+<li><a href="#p780">symptoms and signs (P780)</a></li>
+</ol>
+<p>D. Location</p>
+<ol start="10">
+<li><a href="#p276">location (P276)</a></li>
+<li><a href="#p1427">start point (P1427)</a></li>
+</ol>
+<p>E. Other</p>
+<ol start="12">
+<li><a href="#p5973">synonym (P5973)</a></li>
+<li><a href="#p361">part of (P361)</a></li>
+</ol>
+<hr />
+<h2 id="a-time"><a class="header" href="#a-time">A. Time</a></h2>
+<h3 id="p155"><a class="header" href="#p155">P155</a></h3>
+<h3 id="1-follows"><a class="header" href="#1-follows"><em>1. follows</em></a></h3>
+<p>Immediately prior item in a series of which the subject is a part. Not to be confused with &quot;has cause&quot;, which is a causal relation, we use &quot;follow&quot; as a temporal expression of consecutive events. Inverse propery of &quot;followed by&quot;.</p>
 <blockquote>
 <p>&quot;Nach einem Voraufenthalt in einem Virusvariantengebiet beträgt die Quarantäne 14 Tage und kann nicht verkürzt werden .&quot;</p>
 <blockquote>
-<p>Voraufenthalt in einem Virusvariantengebiet &gt; follows &gt; Quarantäne</p>
+<p>Voraufenthalt in einem Virusvariantengebiet &gt; follows &gt; Quarantäne<br />
+&quot;In der letzten Änderung des Impfschemas gibt es ja nun die FN 5, die in diesem Fall [keine Auffrischungsimpfung] mehr empfiehlt (wenn  die [Infektion] [3 Monate nach] [2. Impfung] erfolgt.).&quot;</p>
 </blockquote>
 </blockquote>
-<h4 id="p361"><a class="header" href="#p361">P361</a></h4>
-<h5 id="part-of"><a class="header" href="#part-of">&quot;part of&quot;</a></h5>
-<p>Description: Object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A). Inverse property of &quot;has part&quot; (P527, see also &quot;has parts of the class&quot; (P2670)).
-&gt;&quot;im schwer von COVID-19 betroffen Frankreich, waren im Frühjahr 2020 vor allem der Großraum Paris sowie der Region „Grand Est&quot; und dort vor allem die Départements Bas-Rhin und Haut- Rhin betroffen&quot;
-&gt;&gt; Großraum Paris &gt; part of &gt; Frankreich</p>
-<h4 id="p495"><a class="header" href="#p495">P495</a></h4>
-<h5 id="country-of-origin"><a class="header" href="#country-of-origin">&quot;country of origin&quot;</a></h5>
-<p>Description: Country of origin of this item (creative work, food, phrase, product, etc.)</p>
+<p>keine Auffrischungsimpfung &gt; has cause &gt; Infektion</p>
+<p>[2.Impfung]MEASURE &gt; start point &gt; [3 Monate]DURATION<br />
+[Infektion] &gt; follows &gt; [3 Monate]</p>
+<h3 id="p585"><a class="header" href="#p585">P585</a></h3>
+<h3 id="2-point-in-time"><a class="header" href="#2-point-in-time"><em>2. point in time</em></a></h3>
+<p>Time and date something took place, existed or a statement was true. Related properties &quot;start time&quot; and &quot;end time&quot; should be preferred if also possible.</p>
 <blockquote>
-<p>&quot;Weitere VOC wurden aus Brasilien (1.1.28.1) und Südafrika (501.V2) gemeldet. Zum aktuellen Zeitpunkt gibt es altersspezifische Daten nur für die Variante B.1.1.7 aus England&quot;</p>
+<p>In Kooperation mit dem @X macht unsere [ImpfenHilftTour] den nächsten Halt in Halle an der Saale am [22. und am 23.  März 2022] !  Dort warten ab 11 Uhr unsere mehrsprachigen Wertebotschafter:innen auf dich und beantworten deine Fragen zur  Coronaschutzimpfung!  ImpfenHilft&quot;&quot;
+&gt;ImpfenHilftTour &gt; point in time &gt; 22. und 23. März 2022</p>
+</blockquote>
+<h3 id="p2047"><a class="header" href="#p2047">P2047</a></h3>
+<h3 id="3-duration"><a class="header" href="#3-duration"><em>3. duration</em></a></h3>
+<p>Description: Length of time of an event or process</p>
 <blockquote>
-<p>1.1.28.1 &gt; country of origin &gt; Brasilien
-501.V2 &gt; country of origin &gt; Südafrika
-B.1.1.7 &gt; country of origin &gt; England</p>
-</blockquote>
-</blockquote>
-<h4 id="p527"><a class="header" href="#p527">P527</a></h4>
-<h5 id="has-part"><a class="header" href="#has-part">&quot;has part&quot;</a></h5>
-<p>Description: Part of this subject; inverse property of &quot;part of&quot; (P361). See also &quot;has parts of the class&quot; (P2670).</p>
+<p>&quot;Nach einem Voraufenthalt in einem Virusvariantengebiet beträgt die Quarantäne 14 Tage und kann nicht verkürzt werden.&quot;</p>
 <blockquote>
-<p>&quot;im schwer von COVID-19 betroffen Frankreich, waren im Frühjahr 2020 vor allem der Großraum Paris sowie der Region „Grand Est&quot; und dort vor allem die Départements Bas-Rhin und Haut- Rhin betroffen&quot;</p>
-<blockquote>
-<p>Frankreich &gt; has part &gt; Großraum Paris, „Grand Est&quot;, Bas-Rhin, Haut- Rhin
-&quot;Grand Est&quot; &gt; has part &gt; Bas-Rhin, Haut- Rhin</p>
+<p>Quarantäne &gt; duration &gt; 14 Tage</p>
 </blockquote>
 </blockquote>
-<h4 id="p580"><a class="header" href="#p580">P580</a></h4>
-<h5 id="start-time"><a class="header" href="#start-time">&quot;start time&quot;</a></h5>
+<h3 id="p580"><a class="header" href="#p580">P580</a></h3>
+<h3 id="4-start-time"><a class="header" href="#4-start-time"><em>4. start time</em></a></h3>
 <p>Description: Time a time period starts</p>
 <blockquote>
 <p>&quot;Zum 1. August ist außerdem die neue Einreiseverordnung in Kraft getreten.&quot;</p>
@@ -199,8 +205,8 @@ B.1.1.7 &gt; country of origin &gt; England</p>
 <p>Neue Einreiseverordnung &gt; start time &gt; 1. August</p>
 </blockquote>
 </blockquote>
-<h4 id="p582"><a class="header" href="#p582">P582</a></h4>
-<h5 id="end-time"><a class="header" href="#end-time">&quot;end time&quot;</a></h5>
+<h3 id="p582"><a class="header" href="#p582">P582</a></h3>
+<h3 id="5-end-time"><a class="header" href="#5-end-time"><em>5. end time</em></a></h3>
 <p>Description: Time a time period ends</p>
 <blockquote>
 <p>&quot;Darüber hinaus wurden nur Fälle mit Angabe Meldedatum bis einschließlich 17.3.2020 (Datenstand minus 14 Tage, um den Zeitverzug für die Erfassung des Krankheitsverlaufs schwerer Fälle zu berücksichtigen) berücksichtigt&quot;</p>
@@ -208,38 +214,78 @@ B.1.1.7 &gt; country of origin &gt; England</p>
 <p>Angabe Meldedatum &gt; end time &gt; 17.3.2020</p>
 </blockquote>
 </blockquote>
-<h4 id="p1001"><a class="header" href="#p1001">P1001</a></h4>
-<h5 id="applies-to-jurisdiction"><a class="header" href="#applies-to-jurisdiction">&quot;applies to jurisdiction&quot;</a></h5>
-<p>Description: The item (institution, law, public office, public register...) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, ...)</p>
+<h2 id="b-causal"><a class="header" href="#b-causal">B. Causal</a></h2>
+<h3 id="p828"><a class="header" href="#p828">P828</a></h3>
+<h3 id="6-has-cause"><a class="header" href="#6-has-cause"><em>6. has cause</em></a></h3>
+<p>Underlying cause, thing that ultimately resulted in this effect. If possible, prefer, the narrower relation &quot;symptoms and signs&quot;.</p>
+<h3 id="p1479"><a class="header" href="#p1479">P1479</a></h3>
+<h3 id="7-has-contributing-factor"><a class="header" href="#7-has-contributing-factor"><em>7. has contributing factor</em></a></h3>
+<p>Thing that significantly influenced the effect, but did not directly cause it.</p>
+<p>What is the difference between a &quot;cause&quot; and a &quot;contributing factor&quot;? In public health, law, social and natural science, the difference is that an effect would not have happened but for a cause, whereas it would have still happened but for a contributing factor. In other words, if you take away a contributing factor, the effect still would have happened. However if you took away a cause, the effect would not have happened.</p>
+<p>Here is a test for assigning something as a cause or a contributing factor:</p>
+<p>If the thing were removed, would that have prevented the effect?</p>
+<p><em>(1) Yes: the thing is a cause</em><br />
+<em>(2) No, but it significantly influenced the effect: the thing is a contributing factor</em></p>
+<p>(taken from: <a href="https://www.wikidata.org/wiki/Help:Modeling_causes">https://www.wikidata.org/wiki/Help:Modeling_causes</a>)</p>
+<p>Example:</p>
 <blockquote>
-<p>„In Deutschland muss gemäß Meldeverordnung jeder Nachweis von SARS-CoV-2 an das Gesundheitsamt gemeldet werden .&quot;</p>
+<p>&quot;Die [Warnung vor nicht notwendigen und touristischen Reisen] <strong>aufgrund von</strong>  [COVID-19] <strong>hängt stark</strong> mit der [Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet] <strong>zusammen</strong> .&quot;</p>
 <blockquote>
-<p>Meldeverordnung &gt; applies to jurisdiction &gt; Deutschland</p>
+<p>Warnung vor nicht notwendigen und touristischen Reisen &gt; has cause &gt; COVID-19
+Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet &gt; has contributing factor &gt; Warnung</p>
 </blockquote>
 </blockquote>
-<h4 id="p737"><a class="header" href="#p737">P737</a></h4>
-<h5 id="influenced-by"><a class="header" href="#influenced-by">&quot;influenced by&quot;</a></h5>
-<p>Description: This person, idea, etc. is informed by that other person, idea, etc., e.g. &quot;Heidegger was influenced by Aristotle&quot;</p>
-<blockquote>
-<p>&quot;Die Warnung vor nicht notwendigen und touristischen Reisen aufgrund von COVID-19 hängt stark mit der Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet zusammen .&quot;</p>
-<blockquote>
-<p>Warnung &gt; influenced by &gt; Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet </p>
-</blockquote>
-</blockquote>
-<h4 id="p3433"><a class="header" href="#p3433">P3433</a></h4>
-<h5 id="biological-variant-of"><a class="header" href="#biological-variant-of">&quot;biological variant of&quot;</a></h5>
-<p>Description: A variant of a physical biological entity (e.g., gene sequence, protein sequence, epigenetic mark)</p>
+<h2 id="c-covid-related"><a class="header" href="#c-covid-related">C. Covid-Related</a></h2>
+<h3 id="p3433"><a class="header" href="#p3433">P3433</a></h3>
+<h3 id="8-biological-variant-of"><a class="header" href="#8-biological-variant-of"><em>8. biological variant of</em></a></h3>
+<p>A variant of a physical biological entity (e.g., gene sequence, protein sequence, epigenetic mark)</p>
 <blockquote>
 <p>&quot;Eine neue SARS-CoV-2 Variante wurde im Dezember 2020 im Süden des Vereinigten Königreichs. (UK) als besorgniserregende Variante eingestuft (englische Nomenklatur: VOC: Variant of concern ). Die erste PatientInnenprobe, in der sie identifiziert werden konnte, stammte vom September 2020. Die Variante wird als VOC 202012/01, B.1.1.7 oder N501Y bezeichnet.&quot;</p>
 <blockquote>
-<p>B.1.1.7 &gt; variant of &gt; SARS-CoV-2
-VOC 202012/01 &gt; variant of &gt; SARS-CoV-2
-N501Y &gt; variant of &gt; SARS-CoV-2</p>
+<p>B.1.1.7 &gt; biological variant of &gt; SARS-CoV-2
+VOC 202012/01 &gt; biological variant of &gt; SARS-CoV-2
+N501Y &gt; biological variant of &gt; SARS-CoV-2</p>
 </blockquote>
 </blockquote>
-<h4 id="p5973"><a class="header" href="#p5973">P5973</a></h4>
-<h5 id="synonym"><a class="header" href="#synonym">&quot;synonym&quot;</a></h5>
-<p>Description: Sense of another lexeme with the same meaning as this sense, in the same language</p>
+<blockquote>
+<blockquote>
+<p><em>Pattern: DESEASE &gt; biological variant of &gt; DESEASE</em></p>
+</blockquote>
+</blockquote>
+<h3 id="p780"><a class="header" href="#p780">P780</a></h3>
+<h3 id="9-symptoms-and-signs"><a class="header" href="#9-symptoms-and-signs"><em>9. symptoms and signs</em></a></h3>
+<p>Description: Possible symptoms of a medical condition</p>
+<blockquote>
+<p>&quot;Ausnahmen bilden hier die Anteile zur Datenvollständigkeit für Fälle mit Husten und Fieber sowie für Fälle mit Pneumonie.&quot;</p>
+<blockquote>
+<p>Fälle &gt; symptoms and signs &gt; Husten, Fieber, Pneumonie</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><em>Pattern: DESEASE &gt; symptoms and signs &gt; SYMPTOM</em></p>
+</blockquote>
+</blockquote>
+<h2 id="d-local"><a class="header" href="#d-local">D. Local</a></h2>
+<h3 id="p276"><a class="header" href="#p276">P276</a></h3>
+<h3 id="12-location"><a class="header" href="#12-location"><em>12. location</em></a></h3>
+<p>Location of the object, structure or event. Summarizes all locations of an administrative entity (P131) and geograohical entities (P706).</p>
+<blockquote>
+<p>&quot;Weitere VOC wurden aus Brasilien (1.1.28.1) und Südafrika (501.V2) gemeldet. Zum aktuellen Zeitpunkt gibt es altersspezifische Daten nur für die Variante B.1.1.7 aus England&quot;</p>
+<blockquote>
+<p>1.1.28.1 &gt; location &gt; Brasilien
+501.V2 &gt; location &gt; Südafrika
+B.1.1.7 &gt; location &gt; England
+Wege entstanden und hat sich vom Tier auf den Menschen übertragen.&quot;</p>
+</blockquote>
+</blockquote>
+<h3 id="p1427"><a class="header" href="#p1427">P1427</a></h3>
+<h3 id="13-start-point"><a class="header" href="#13-start-point"><em>13. start point</em></a></h3>
+<p>Specification of &quot;location&quot; (P276), and exact match to <a href="https://schema.org/fromLocation">fromLocation</a> property from schema.org. Expresses the original location of the object or the agent before an action.</p>
+<h2 id="e-other"><a class="header" href="#e-other">E. Other</a></h2>
+<h3 id="p5973"><a class="header" href="#p5973">P5973</a></h3>
+<h3 id="10-synonym"><a class="header" href="#10-synonym"><em>10. synonym</em></a></h3>
+<p>Sense of another lexeme with the same meaning as this sense, in the same language.</p>
 <blockquote>
 <p>&quot;Die Variante wird als VOC 202012/01, B.1.1.7 oder _ N501Y bezeichnet.&quot;</p>
 <blockquote>
@@ -249,33 +295,11 @@ VOC 202012/01 &gt; synonym &gt; B.1.17
 VOC 202012/01 &gt; synonym &gt; N501Y</p>
 </blockquote>
 </blockquote>
-<h4 id="p780"><a class="header" href="#p780">P780</a></h4>
-<h5 id="symptoms-and-signs"><a class="header" href="#symptoms-and-signs">&quot;symptoms and signs&quot;</a></h5>
-<p>Description: Possible symptoms of a medical condition</p>
-<blockquote>
-<p>&quot;Ausnahmen bilden hier die Anteile zur Datenvollständigkeit für Fälle mit Husten und Fieber sowie für Fälle mit Pneumonie.&quot;</p>
-<blockquote>
-<p>Fälle &gt; symptoms &gt; Husten, Fieber, Pneumonie</p>
-</blockquote>
-</blockquote>
-<h4 id="p828"><a class="header" href="#p828">P828</a></h4>
-<h5 id="has-cause"><a class="header" href="#has-cause">&quot;has cause&quot;</a></h5>
-<p>Description: Underlying cause, thing that ultimately resulted in this effect</p>
-<blockquote>
-<p>&quot;Die Warnung vor nicht notwendigen und touristischen Reisen aufgrund von COVID-19 hängt stark mit der Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet zusammen .&quot;</p>
-<blockquote>
-<p>COVID-19 &gt; has cause &gt; Warnung vor nicht notwendigen und touristischen Reisen&quot;</p>
-</blockquote>
-</blockquote>
-<h4 id="p2047"><a class="header" href="#p2047">P2047</a></h4>
-<h5 id="duration"><a class="header" href="#duration">&quot;duration&quot;</a></h5>
-<p>Description: Length of time of an event or process</p>
-<blockquote>
-<p>&quot;Nach einem Voraufenthalt in einem Virusvariantengebiet beträgt die Quarantäne 14 Tage und kann nicht verkürzt werden.&quot;</p>
-<blockquote>
-<p>Quarantäne &gt; duration &gt; 14 Tage</p>
-</blockquote>
-</blockquote>
+<h3 id="p361"><a class="header" href="#p361">P361</a></h3>
+<h3 id="11-part-of"><a class="header" href="#11-part-of"><em>11. part of</em></a></h3>
+<p>Object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A). Inverse property of &quot;has part&quot; (P527, see also &quot;has parts of the class&quot; (P2670)).
+&gt;&quot;im schwer von COVID-19 betroffen Frankreich, waren im Frühjahr 2020 vor allem der Großraum Paris sowie der Region „Grand Est&quot; und dort vor allem die Départements Bas-Rhin und Haut- Rhin betroffen&quot;
+&gt;&gt; Großraum Paris &gt; part of &gt; Frankreich</p>
 <h2 id="information-on-relation-tags"><a class="header" href="#information-on-relation-tags">Information on Relation Tags</a></h2>
 <p>The Wikidata relations above constitute:</p>
 <ul>
@@ -283,7 +307,7 @@ VOC 202012/01 &gt; synonym &gt; N501Y</p>
 <p>a subset of <a href="https://drive.google.com/drive/folders/1c5-0YwnoJx8NS6CV2f-NoTHR__BdkNqw">DocRED relations</a></p>
 </li>
 <li>
-<p>additional Wikidata relations: </p>
+<p>additional Wikidata relations:</p>
 </li>
 </ul>
 <p>&quot;P3433&quot;: &quot;biological variant of&quot;, &quot;P5973&quot;: &quot;synonym&quot;, &quot;P780&quot;: &quot;symptoms&quot;, &quot;P878&quot;: &quot;has cause&quot;, &quot;P2047&quot;: &quot;duration&quot;</p>
@@ -295,7 +319,7 @@ VOC 202012/01 &gt; synonym &gt; N501Y</p>
                             <a rel="prev" href="../schemas/entity.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../schemas/question_answering.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../schemas/factuality.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -307,7 +331,7 @@ VOC 202012/01 &gt; synonym &gt; N501Y</p>
                     <a rel="prev" href="../schemas/entity.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../schemas/question_answering.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../schemas/factuality.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

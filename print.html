@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="schemas/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="schemas/informativeness.html"><strong aria-hidden="true">8.4.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="schemas/topic.html"><strong aria-hidden="true">8.5.</strong> Topic</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">8.6.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/political_bias.html"><strong aria-hidden="true">8.7.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">8.8.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">8.9.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/question_answering.html"><strong aria-hidden="true">8.10.</strong> Question Answering</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="span_types.html"><strong aria-hidden="true">8.</strong> Span Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="span_types/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="span_types/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="span_types/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li></ol></li><li class="chapter-item expanded "><a href="annotation_schema.html"><strong aria-hidden="true">9.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="schemas/content_focused_credibility.html"><strong aria-hidden="true">9.1.</strong> Content-Focused Credibility</a></li><li class="chapter-item expanded "><a href="schemas/informativeness.html"><strong aria-hidden="true">9.2.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="schemas/topic.html"><strong aria-hidden="true">9.3.</strong> Topic</a></li><li class="chapter-item expanded "><a href="schemas/credibility.html"><strong aria-hidden="true">9.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="schemas/ner_factuality.html"><strong aria-hidden="true">9.5.</strong> NER and Factuality Values</a></li><li class="chapter-item expanded "><a href="schemas/entity.html"><strong aria-hidden="true">9.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="schemas/relation.html"><strong aria-hidden="true">9.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="schemas/factuality.html"><strong aria-hidden="true">9.8.</strong> Factuality</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -197,47 +197,59 @@ Conference on Computational Linguistics: System Demonstrations (pp.
 Retrieved from https://aclanthology.org/C18-2002</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inter-annotator-agreement"><a class="header" href="#inter-annotator-agreement">Inter-Annotator Agreement</a></h1>
 <p>For all annotation layers, the agreement between multiple annotators will be measured on a small sample of the dataset.</p>
-<h2 id="exceptions"><a class="header" href="#exceptions">Exceptions</a></h2>
-<p>Some layers will not be part of the agreement evaluation:</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="span-types"><a class="header" href="#span-types">Span Types</a></h1>
+<p>The following possible span annotations:</p>
 <ul>
-<li>The position of the answers in the <a href="schemas/question_answering.html">Question Answering</a> layer is chosen randomly and, therefore, cannot be compared reasonably.</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="annotation-schemas"><a class="header" href="#annotation-schemas">Annotation Schemas</a></h1>
-<p>All schemas sorted by layer:</p>
-<ul>
-<li><a href="./schemas/raw_text.html">Raw Text</a></li>
-<li><a href="./schemas/segment.html">Segment</a></li>
-<li><a href="./schemas/token.html">Token</a></li>
-<li><a href="./schemas/informativeness.html">Informativeness</a></li>
-<li><a href="./schemas/topic.html">Topic</a></li>
-<li><a href="./schemas/credibility.html">Credibility</a></li>
-<li><a href="./schemas/political_bias.html">Political Bias</a></li>
-<li><a href="./schemas/entity.html">Named Entities</a></li>
-<li><a href="./schemas/relation.html">Relations</a></li>
-<li><a href="./schemas/question_answering.html">Question Answering</a></li>
+<li><a href="./span_types/raw_text.html">Raw Text</a></li>
+<li><a href="./span_types/segment.html">Segment</a></li>
+<li><a href="./span_types/token.html">Token</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="raw-text"><a class="header" href="#raw-text">Raw Text</a></h1>
 <p>The raw text forms the basic layer for the whole dataset. It should be in a plain text format: a single string, without any visual formatting.</p>
 <p>Other layers that directly reference this layer:</p>
 <ul>
-<li><a href="schemas/segment.html">Segment</a></li>
-<li><a href="schemas/token.html">Token</a></li>
+<li><a href="span_types/segment.html">Segment</a></li>
+<li><a href="span_types/token.html">Token</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="segment"><a class="header" href="#segment">Segment</a></h1>
-<p>The segment layer points to character indices in the <a href="schemas/raw_text.html">raw text layer</a>. It marks spans of characters as belonging to the same segment using unique identifiers.</p>
-<p>Other layers that directly reference this layer:</p>
-<ul>
-<li><a href="schemas/question_answering.html">Question Answering</a></li>
-</ul>
+<p>The segment layer points to character indices in the <a href="span_types/raw_text.html">raw text layer</a>. It marks spans of characters as belonging to the same segment using unique identifiers.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="token"><a class="header" href="#token">Token</a></h1>
-<p>The token layer points character indices in the <a href="schemas/raw_text.html">raw text layer</a>. It marks spans of characters as belonging to the same token using unique identifiers.</p>
+<p>The token layer points character indices in the <a href="span_types/raw_text.html">raw text layer</a>. It marks spans of characters as belonging to the same token using unique identifiers.</p>
 <p>Other layers that directly reference this layer:</p>
 <ul>
-<li><a href="schemas/entity.html">Named Entities</a></li>
-<li><a href="schemas/credibility.html">Credibility</a></li>
-<li><a href="schemas/political_bias.html">Political Bias</a></li>
-<li><a href="schemas/question_answering.html">Question Answering</a></li>
+<li>Named Entities</li>
+<li>Credibility</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="annotation-schemas"><a class="header" href="#annotation-schemas">Annotation Schemas</a></h1>
+<p>All schemas sorted by the following layers:</p>
+<ul>
+<li>Topic-focused Credibility Annotation
+<ul>
+<li><a href="./schemas/informativeness.html">Informativeness</a></li>
+<li><a href="./schemas/topic.html">Topic</a></li>
+<li><a href="./schemas/credibility.html">Credibility</a></li>
+</ul>
+</li>
+<li>Factuality and NER
+<ul>
+<li><a href="./schemas/entity.html">Named Entities</a></li>
+<li><a href="./schemas/relation.html">Relations</a></li>
+<li><a href="./schemas/factuality.html">Factuality</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="content-focused-credibility-pipeline"><a class="header" href="#content-focused-credibility-pipeline">Content-focused Credibility Pipeline</a></h1>
+<p>We create a topic or content-focused annotation pipeline with three annotation layers, to firm up the credibility annotations for our domain keeping the user-perspective on credibility as defined by others (see section Credibility Definition). </p>
+<p>The content-focused credibility pipeline includes three annotation layers in the following order:</p>
+<p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - (3) <a href="schemas/credibility.html">Credibility</a>.</p>
+<h2 id="credibility-definition"><a class="header" href="#credibility-definition">Credibility Definition</a></h2>
+<p>Following the definitions of Navok et al. and Gupta et al. we define credibility as the property of being trusted, i.e. a text is declared credible if a user, e.g. based on common sense, believes that the information it contains is to some extent credible [3,4]. 
+Based on the hypothesis in Castillo et al., that there are signals available in the social media environment itself that enable users to assess information credibility, we explore the credibility only based on the information the content of a post is giving. In contrast to Castillo et al., we anonymize the users’ names to avoid gender and other biases that distract the annotators from the content.</p>
+<hr />
+<h2 id="literature"><a class="header" href="#literature">Literature</a></h2>
+<p>Castillo, Carlos &amp; Mendoza, Marcelo &amp; Poblete, Barbara. (2011). Information credibility on Twitter. Proceedings of the 20th International Conference on World Wide Web. 675-684. 10.1145/1963405.1963500.</p>
+<p>Nakov P, Mihaylova T, M`arquez L, Shiroya Y, Koychev I. Do Not Trust the Trolls: Predicting Credibility in Community Question Answering Forums. In: Proceedings of the International Conference Recent Advances in Natural Language Processing, RANLP 2017. Varna, Bulgaria: INCOMA Ltd.; 2017. p. 551-60. Available from: https://doi.org/10.26615/978-954-452-049-6 072.</p>
+<p>Gupta A, Kumaraguru P, Castillo C, Meier P. In: Aiello LM, McFarland D, editors. TweetCred: Real-Time Credibility Assessment of Content on Twitter. Cham: Springer International Publishing; 2014. p. 228-43. Available from: https://doi.org/10.1007/978-3-319-13734-616</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="informativeness"><a class="header" href="#informativeness">Informativeness</a></h1>
 <h2 id="layers-and-pipeline-informativeness"><a class="header" href="#layers-and-pipeline-informativeness">Layers and Pipeline: Informativeness</a></h2>
 <p>Informativeness annotations are the first step in the topic-focused annotation pipeline: </p>
@@ -257,7 +269,7 @@ Or the tweet is related to covid-19 but does not contain any information, e.g. i
 Also select <code>None</code> if the tweet contains personal attacks or offensive language.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="topics"><a class="header" href="#topics">Topics</a></h1>
 <h2 id="credibility-layer-and-pipeline-topics"><a class="header" href="#credibility-layer-and-pipeline-topics">Credibility Layer and Pipeline: Topics</a></h2>
-<p>The credibility layer points to <a href="schemas/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>).
+<p>The credibility layer points to <a href="schemas/../span_types/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>).
 Topic annotations are the second step in the topic-focused credibility annotation pipeline and prior to the actual credibility annotations: </p>
 <p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - <strong>(2) <a href="schemas/topic.html">Topics</a></strong> - (3) <a href="schemas/credibility.html">Credibility</a>.</p>
 <p>It marks single segments as containing one of the covid-related topics listed below. If <code>None</code> was selected for <a href="schemas/informativeness.html">Informativeness</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>).
@@ -276,15 +288,9 @@ The tweet is not about any of the above topics, or it is unclear what topic is, 
 <p><strong>(9) Excluded (skip tweet)</strong><br />
 Choose <code>Excluded</code>, if the tweet was annotated as <code>None</code> for <a href="schemas/informativeness.html">informativeness</a> and therefore excluded for further annotation steps.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="credibilty"><a class="header" href="#credibilty">Credibilty</a></h1>
-<h2 id="credibility-layer-and-pipeline-credibility"><a class="header" href="#credibility-layer-and-pipeline-credibility">Credibility Layer and Pipeline: Credibility</a></h2>
-<p>The credibility layer points to <a href="schemas/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>).
-Credibility annotations are the last step in the topic-focused annotation pipeline: </p>
-<p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/credibility.html">Credibility</a></strong>.</p>
-<p>It marks single segments as having either <code>high</code> or <code>low</code> credibility. If <code>None</code> was selected for either <a href="schemas/informativeness.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>). Credibility is only annotated for Tweets.</p>
-<h2 id="credibility-definition"><a class="header" href="#credibility-definition">Credibility Definition</a></h2>
-<p>Following the definitions of Navok et al. and Gupta et al. we define credibility as the property of being trusted, i.e. a text is declared credible if a user, e.g. based on common sense, believes that the information it contains is to some extent credible [3,4]. 
-Based on the hypothesis in Castillo et al., that there are signals available in the social media environment itself that enable users to assess information credibility, we explore the credibility only based on the information the content of a post is giving. In contrast to Castillo et al., we anonymize the users’ names to avoid gender and other biases that distract the annotators from the content.</p>
-<p>For the annotations, we follow a three-step approach, including a <a href="schemas/informativeness.html">Informativeness</a> and <a href="schemas/topic.html">Topic-related annotation</a> step. Only if the prior two steps were NOT annotated as <code>None</code> or <code>Excluded</code> the annotator needs to decide if the tweet’s content seems to be credible. Othewise, the tweets is excluded choosing the tag <em>Excluded</em>. We present the annotator one tweet per annotation.</p>
+<p>The credibility layer points to <a href="schemas/../span_types/segment.html">segment</a> identifiers, whereby full tweets are annotated (<em>document-based annotation</em>).
+Credibility annotations are the last step in the topic-focused annotation pipeline:</p>
+<p>It marks single segments as having either <code>high</code> or <code>low</code> credibility. If <code>None</code> was selected for either <a href="schemas/informativeness.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a>, the tweet is excluded for subsequent annotation steps (select <code>Excluded</code>). Credibility is only annotated for </p>
 <h2 id="credibility-annotations"><a class="header" href="#credibility-annotations">Credibility Annotations</a></h2>
 <p><em>Based on the <a href="schemas/topic.html">topic</a> of the tweet, do you believe that the information it contains is to some extent credible?</em></p>
 <p><strong>(1) High credibility</strong><br />
@@ -295,66 +301,33 @@ The tweet and its content seems to be non-credible and it is highly questionable
 Based on the tweet, it is not possible to decide if the content is credible or not.</p>
 <p><strong>(4) Excluded (skip tweet)</strong><br />
 Based on prior decisions on the <a href="schemas/informativeness.html">Informativeness</a> or <a href="schemas/topic.html">Topic-related annotation</a> (annotated as <code>None</code>), the tweet got excluded for further annoattions in the Credibility layer. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="events-and-factuality-values-pipeline"><a class="header" href="#events-and-factuality-values-pipeline">Events and Factuality Values Pipeline</a></h1>
+<p>An entity is a span of text that indicates a certain type of information. A text span can consist of one or more words. In Named Entity Recognition (NER), entities represent the information that the user wants to extract from the text.
+We tag entities within our data (tweets) with the needed entities to express a meaningfull relation. The entity-relation-entity-tripple is called an event. With NER, the goal is to categorize and represent structured information taken from unstructured text.</p>
+<p>Going one step further, we want to explor if events related to covid in twitter tweets express different qualities of being factual. In other words, are claims in tweets expressed as hypotheses, speculations, or opinions, rather than explicit facts (propositions)?</p>
+<p>The factuality-based events annotation pipeline  includes three annotation layers in the following order:</p>
+<p>(1) <a href="schemas/entity.html">Named Entities</a>, (2) <a href="schemas/relation.html">Relations</a>, (3) <a href="schemas/factuality.html">Factuality</a></p>
 <hr />
-<h4 id="literature"><a class="header" href="#literature">Literature</a></h4>
-<p>Castillo, Carlos &amp; Mendoza, Marcelo &amp; Poblete, Barbara. (2011). Information credibility on Twitter. Proceedings of the 20th International Conference on World Wide Web. 675-684. 10.1145/1963405.1963500.</p>
-<p>Nakov P, Mihaylova T, M`arquez L, Shiroya Y, Koychev I. Do Not Trust the Trolls: Predicting Credibility in Community Question Answering Forums. In: Proceedings of the International Conference Recent Advances in Natural Language Processing, RANLP 2017. Varna, Bulgaria: INCOMA Ltd.; 2017. p. 551-60. Available from: https://doi.org/10.26615/978-954-452-049-6 072.</p>
-<p>Gupta A, Kumaraguru P, Castillo C, Meier P. In: Aiello LM, McFarland D, editors. TweetCred: Real-Time Credibility Assessment of Content on Twitter. Cham: Springer International Publishing; 2014. p. 228-43. Available from: https://doi.org/10.1007/978-3-319-13734-616</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="political-bias"><a class="header" href="#political-bias">Political Bias</a></h1>
-<p>The political bias layer points to <a href="schemas/token.html">token</a> identifiers. It marks spans of tokens as belonging to one of the 5 classes described in this paper: </p>
-<p>Aksenov, D., Bourgonje, P., Zaczynska, K., Ostendorff, M., Moreno-Schneider, J., &amp; Rehm, G. (2021). Fine-grained Classification of Political Bias in German News: A Data Set and Initial Experiments. Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021), 121–131. https://doi.org/10.18653/v1/2021.woah-1.13</p>
-<p>The token span is always equal to the length of the whole tweet.</p>
-<h2 id="classes"><a class="header" href="#classes">Classes</a></h2>
-<ul>
-<li>far-left</li>
-<li>center-left</li>
-<li>center</li>
-<li>center-right</li>
-<li>far-right</li>
-</ul>
-<h2 id="binary-model"><a class="header" href="#binary-model">Binary Model</a></h2>
-<p>The classes can be collapsed into a binary setup for detection of hyperpartisanship: <code>far-left</code> and <code>far-right</code> are hyperpartisan, the others are non-hyperpartisan.</p>
-<h2 id="definitions"><a class="header" href="#definitions">Definitions</a></h2>
-<h3 id="hyperpartisan-far-left-or-far-right"><a class="header" href="#hyperpartisan-far-left-or-far-right">Hyperpartisan (Far-Left or Far-Right)</a></h3>
-<ul>
-<li>the utterance includes violence/ threatening</li>
-<li>it includes conspiracy theories and fake news (Aksenov et al., 2021)</li>
-<li>Using slurs: “Slurs are lexical items that convey negative attitudes or heavy emotional connotations towards a social group (Hess, 2019), typically centered around race, nationality, religion, gender, or sexual orientation (Bianchi, 2014). As one of their functions, slurs derograte targeted groups or individuals, and they specifically call up one or more descriptive attributes of the targeted group” (Ruppenhofer, Siegel &amp; Struß 2020)</li>
-<li>it includes hate speech. According to de Gibert et al. (2018), hate speech is commonly defined as “a) a deliberate attack, b) directed towards a specific group of people, and c) motivated by actual or perceived aspects that form the group’s identity.”</li>
-</ul>
-<h3 id="far-left"><a class="header" href="#far-left">Far-Left</a></h3>
-<p>Left-wing politics is generally understood as striving for social equality. The freedom of the community is above that of the individual. Opinion researcher Elisabeth Noelle-Neumann discovered that people not only associate left-wing values with equality, but also with justice, formlessness, warmth, closeness, spontaneity, the international and cosmopolitan and the informal address.</p>
-<h4 id="examples"><a class="header" href="#examples">Examples</a></h4>
-<p><code>Nochmal für alle Impfschwurbler : Niemand hat behauptet , dass die Impfung immun gegen Corona macht .</code></p>
-<h3 id="center"><a class="header" href="#center">Center</a></h3>
-<p>The center label is used for politically neutral or balanced cases. It is also the default label for unpolitical statements.</p>
-<h3 id="center-right"><a class="header" href="#center-right">Center-Right</a></h3>
-<h4 id="examples-1"><a class="header" href="#examples-1">Examples</a></h4>
-<p><code>geht es beim impfen nur ums impfen oder darum Antikörper zu produzieren ? ohne Antikörper Test wissen wir das doch nicht !</code></p>
-<h3 id="far-right"><a class="header" href="#far-right">Far-Right</a></h3>
-<p>The political right assumes human inequality and advocates a hierarchy with traditional values and norms. Individual freedom is more important than social equality. With right-wing values, according to Elisabeth Noelle-Neumann, people associate distance, authority, discipline, regulated manners, the national and the formal address in addition to emphasizing differences.</p>
-<h4 id="examples-2"><a class="header" href="#examples-2">Examples</a></h4>
-<p><code>Aber in meiner Umgebung häufen sich derzeit Fälle ausschließlich bei Geimpften !</code></p>
-<p><code>Ich verleugne Corona nicht und bin generell kein Impfgegner , jedoch eine Impfpflicht lehne ich ab .</code></p>
-<p><code>50 % meiner Bekannten die sich Impfen lassen haben und vorher kein Leiden hatten sind jetzt zum Teil Arbeitsunfähig und Krank .</code></p>
+<h2 id="literature-1"><a class="header" href="#literature-1">Literature</a></h2>
+<p>Kilicoglu H, Rosemblat G, Rindflesch TC. Assigning factuality values to semantic relations extracted from biomedical research literature. PLoS One. 2017 Jul 5;12(7):e0179926. doi: 10.1371/journal.pone.0179926. PMID: 28678823; PMCID: PMC5497973.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="named-entities"><a class="header" href="#named-entities">Named Entities</a></h1>
-<p>The named entity layer points to <a href="schemas/token.html">token</a> identifiers. It marks spans of tokens as belonging to one of the 4 classes described in <a href="https://www.opener-project.eu/getting-started/#named-entity-resolution">OpeNER</a>:</p>
+<p>The named entity layer points to <a href="schemas/../span_types/token.html">token</a> identifiers. It marks spans of tokens as belonging to one of the following classes described in <a href="https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-entities-guidelines-v6.6.pdf">ACE annotation guidelines</a>:</p>
 <ul>
-<li>Person</li>
-<li>Location</li>
-<li>Organization</li>
-<li>Miscellaneous</li>
+<li><strong>Person</strong> - Person entities are limited to humans. A person may be a single individual or a group.</li>
+<li><strong>Location</strong> - Location entities are limited to geographical entities such as geographical areas and landmasses, bodies of water, and geological formations. They also include Geo-political entities are geographical regions defined by political and/or social groups (nations, regions).</li>
+<li><strong>Organization</strong> - Organization entities are limited to corporations, agencies, and other groups of people defined by an established organizational structure</li>
 </ul>
+<p>We modified the ACE classes by joining Location and geo-political entities into one class, and only include the top-classes.</p>
 <p>Additionally, we add the following labels:</p>
 <ul>
-<li>Duration - an entity describing a time span, e.g. &quot;Die verordnete Quarantänezeit beträgt <strong>14 Tage</strong>.&quot;</li>
-<li>Time- an entity describing a point in time, e.g. &quot;<strong>Gestern</strong> wurde die neue Verordnung verabschiedet.&quot; </li>
+<li><strong>Duration</strong> - an entity describing a time span, e.g. &quot;Die verordnete Quarantänezeit beträgt <strong>14 Tage</strong>.&quot;</li>
+<li><strong>Time</strong> - an entity describing a point in time, e.g. &quot;<strong>Gestern</strong> wurde die neue Verordnung verabschiedet.&quot; </li>
 <li>Desease - for example &quot;Der Verlauf von <strong>Covid</strong> war bei mir zunächst mild, das Fieber kam erst am folgenden Tag.&quot;</li>
-<li>Symptom - Symptoms of an Covid-19 deasease, e.g.  &quot;Der Verlauf von Covid war bei mir zunächst mild, das <strong>Fieber</strong> kam erst am folgenden Tag.&quot;</li>
-<li>Measure - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. &quot;Die verordnete <strong>Quarantänezeit</strong> beträgt 14 Tage.&quot;</li>
+<li><strong>Symptom</strong> - Symptoms of a deasease (Covid or other) or resulting from side effects of a medicine/vaccine, e.g.  &quot;Der Verlauf von Covid war bei mir zunächst mild, das <strong>Fieber</strong> kam erst am folgenden Tag.&quot;</li>
+<li><strong>Measure</strong> - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. &quot;Die verordnete <strong>Quarantänezeit</strong> beträgt 14 Tage.&quot;</li>
 </ul>
-<p>Entity annotations are the last step in the topic-focused annotation pipeline: </p>
-<p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/entity.html">Named Entities</a></strong>.</p>
+<p>generally, negations should be included into the annotation, e.g.<br />
+&quot;In der letzten Änderung des Impfschemas gibt es ja nun die FN 5, die in diesem Fall [<strong>keine</strong> Auffrischungsimpfung] mehr empfiehlt (wenn  die [Infektion] [3 Monate nach] [2. Impfung] erfolgt.).&quot;</p>
 <p>Other layers that directly reference this layer:</p>
 <ul>
 <li><a href="schemas/relation.html">Relations</a></li>
@@ -369,62 +342,68 @@ Based on prior decisions on the <a href="schemas/informativeness.html">Informati
 <p>50% meiner Bekannten <strong>die</strong> sich Impfen lassen haben und vorher kein Leiden hatten sind jetzt zum Teil Arbeitsunfähig und Krank</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="relations"><a class="header" href="#relations">Relations</a></h1>
 <p>The relation layer points to <a href="schemas/entity.html">entity</a> identifiers. It marks two <a href="schemas/entity.html">Named Entities</a> as connected by a <a href="https://www.wikidata.org/wiki/Wikidata:List_of_properties">WikiData property</a>.</p>
-<p>Relation annotations are the last step in the topic-focused annotation pipeline: </p>
-<p>(1)  <a href="schemas/informativeness.html">Informativeness</a> - (2) <a href="schemas/topic.html">Topics</a> - <strong>(3) <a href="schemas/relation.html">Relations</a></strong>.</p>
-<p>Tags:</p>
+<h2 id="tags-overview"><a class="header" href="#tags-overview">Tags Overview</a></h2>
+<p>A. Time</p>
 <ol>
-<li><a href="schemas/relation.html#p155">follows</a></li>
-<li><a href="schemas/relation.html#p361">part of</a></li>
-<li><a href="schemas/relation.html#p495">country of origin</a></li>
-<li><a href="schemas/relation.html#p527">has part</a></li>
-<li><a href="schemas/relation.html#p580">start time</a></li>
-<li><a href="schemas/relation.html#p582">end time</a></li>
-<li><a href="schemas/relation.html#p1001">applies to jurisdiction</a></li>
-<li><a href="schemas/relation.html#p737">influenced by</a></li>
-<li><a href="schemas/relation.html#p3433">biological variant of</a></li>
-<li><a href="schemas/relation.html#p5973">synonym</a></li>
-<li><a href="schemas/relation.html#p780">symptoms and signs</a></li>
-<li><a href="schemas/relation.html#p828">has cause</a></li>
-<li><a href="schemas/relation.html#p2047">duration</a></li>
+<li><a href="schemas/relation.html#p155">follows (P155)</a></li>
+<li><a href="schemas/relation.html#p585">point in time (P585)</a></li>
+<li><a href="schemas/relation.html#p2047">duration (P2047)</a></li>
+<li><a href="schemas/relation.html#p580">start time (P580)</a></li>
+<li><a href="schemas/relation.html#p582">end time (P582)</a></li>
 </ol>
-<h2 id="tags-wikidata"><a class="header" href="#tags-wikidata">Tags (Wikidata)</a></h2>
-<h4 id="p155"><a class="header" href="#p155">P155</a></h4>
-<h5 id="follows"><a class="header" href="#follows">&quot;follows&quot;</a></h5>
-<p>Description: Immediately prior item in a series of which the subject is a part, preferably use as qualifier of P179 [if the subject has replaced the preceding item, e.g. political offices, use &quot;replaces&quot; (P1365)]</p>
+<p>B. Causal</p>
+<ol start="6">
+<li><a href="schemas/relation.html#p828">has cause (P828)</a></li>
+<li><a href="schemas/relation.html#p1479">has contributing factor (P1479)</a></li>
+</ol>
+<p>C. Covid-Related</p>
+<ol start="8">
+<li><a href="schemas/relation.html#p3433">biological variant of (P3433)</a></li>
+<li><a href="schemas/relation.html#p780">symptoms and signs (P780)</a></li>
+</ol>
+<p>D. Location</p>
+<ol start="10">
+<li><a href="schemas/relation.html#p276">location (P276)</a></li>
+<li><a href="schemas/relation.html#p1427">start point (P1427)</a></li>
+</ol>
+<p>E. Other</p>
+<ol start="12">
+<li><a href="schemas/relation.html#p5973">synonym (P5973)</a></li>
+<li><a href="schemas/relation.html#p361">part of (P361)</a></li>
+</ol>
+<hr />
+<h2 id="a-time"><a class="header" href="#a-time">A. Time</a></h2>
+<h3 id="p155"><a class="header" href="#p155">P155</a></h3>
+<h3 id="1-follows"><a class="header" href="#1-follows"><em>1. follows</em></a></h3>
+<p>Immediately prior item in a series of which the subject is a part. Not to be confused with &quot;has cause&quot;, which is a causal relation, we use &quot;follow&quot; as a temporal expression of consecutive events. Inverse propery of &quot;followed by&quot;.</p>
 <blockquote>
 <p>&quot;Nach einem Voraufenthalt in einem Virusvariantengebiet beträgt die Quarantäne 14 Tage und kann nicht verkürzt werden .&quot;</p>
 <blockquote>
-<p>Voraufenthalt in einem Virusvariantengebiet &gt; follows &gt; Quarantäne</p>
+<p>Voraufenthalt in einem Virusvariantengebiet &gt; follows &gt; Quarantäne<br />
+&quot;In der letzten Änderung des Impfschemas gibt es ja nun die FN 5, die in diesem Fall [keine Auffrischungsimpfung] mehr empfiehlt (wenn  die [Infektion] [3 Monate nach] [2. Impfung] erfolgt.).&quot;</p>
 </blockquote>
 </blockquote>
-<h4 id="p361"><a class="header" href="#p361">P361</a></h4>
-<h5 id="part-of"><a class="header" href="#part-of">&quot;part of&quot;</a></h5>
-<p>Description: Object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A). Inverse property of &quot;has part&quot; (P527, see also &quot;has parts of the class&quot; (P2670)).
-&gt;&quot;im schwer von COVID-19 betroffen Frankreich, waren im Frühjahr 2020 vor allem der Großraum Paris sowie der Region „Grand Est&quot; und dort vor allem die Départements Bas-Rhin und Haut- Rhin betroffen&quot;
-&gt;&gt; Großraum Paris &gt; part of &gt; Frankreich</p>
-<h4 id="p495"><a class="header" href="#p495">P495</a></h4>
-<h5 id="country-of-origin"><a class="header" href="#country-of-origin">&quot;country of origin&quot;</a></h5>
-<p>Description: Country of origin of this item (creative work, food, phrase, product, etc.)</p>
+<p>keine Auffrischungsimpfung &gt; has cause &gt; Infektion</p>
+<p>[2.Impfung]MEASURE &gt; start point &gt; [3 Monate]DURATION<br />
+[Infektion] &gt; follows &gt; [3 Monate]</p>
+<h3 id="p585"><a class="header" href="#p585">P585</a></h3>
+<h3 id="2-point-in-time"><a class="header" href="#2-point-in-time"><em>2. point in time</em></a></h3>
+<p>Time and date something took place, existed or a statement was true. Related properties &quot;start time&quot; and &quot;end time&quot; should be preferred if also possible.</p>
 <blockquote>
-<p>&quot;Weitere VOC wurden aus Brasilien (1.1.28.1) und Südafrika (501.V2) gemeldet. Zum aktuellen Zeitpunkt gibt es altersspezifische Daten nur für die Variante B.1.1.7 aus England&quot;</p>
+<p>In Kooperation mit dem @X macht unsere [ImpfenHilftTour] den nächsten Halt in Halle an der Saale am [22. und am 23.  März 2022] !  Dort warten ab 11 Uhr unsere mehrsprachigen Wertebotschafter:innen auf dich und beantworten deine Fragen zur  Coronaschutzimpfung!  ImpfenHilft&quot;&quot;
+&gt;ImpfenHilftTour &gt; point in time &gt; 22. und 23. März 2022</p>
+</blockquote>
+<h3 id="p2047"><a class="header" href="#p2047">P2047</a></h3>
+<h3 id="3-duration"><a class="header" href="#3-duration"><em>3. duration</em></a></h3>
+<p>Description: Length of time of an event or process</p>
 <blockquote>
-<p>1.1.28.1 &gt; country of origin &gt; Brasilien
-501.V2 &gt; country of origin &gt; Südafrika
-B.1.1.7 &gt; country of origin &gt; England</p>
-</blockquote>
-</blockquote>
-<h4 id="p527"><a class="header" href="#p527">P527</a></h4>
-<h5 id="has-part"><a class="header" href="#has-part">&quot;has part&quot;</a></h5>
-<p>Description: Part of this subject; inverse property of &quot;part of&quot; (P361). See also &quot;has parts of the class&quot; (P2670).</p>
+<p>&quot;Nach einem Voraufenthalt in einem Virusvariantengebiet beträgt die Quarantäne 14 Tage und kann nicht verkürzt werden.&quot;</p>
 <blockquote>
-<p>&quot;im schwer von COVID-19 betroffen Frankreich, waren im Frühjahr 2020 vor allem der Großraum Paris sowie der Region „Grand Est&quot; und dort vor allem die Départements Bas-Rhin und Haut- Rhin betroffen&quot;</p>
-<blockquote>
-<p>Frankreich &gt; has part &gt; Großraum Paris, „Grand Est&quot;, Bas-Rhin, Haut- Rhin
-&quot;Grand Est&quot; &gt; has part &gt; Bas-Rhin, Haut- Rhin</p>
+<p>Quarantäne &gt; duration &gt; 14 Tage</p>
 </blockquote>
 </blockquote>
-<h4 id="p580"><a class="header" href="#p580">P580</a></h4>
-<h5 id="start-time"><a class="header" href="#start-time">&quot;start time&quot;</a></h5>
+<h3 id="p580"><a class="header" href="#p580">P580</a></h3>
+<h3 id="4-start-time"><a class="header" href="#4-start-time"><em>4. start time</em></a></h3>
 <p>Description: Time a time period starts</p>
 <blockquote>
 <p>&quot;Zum 1. August ist außerdem die neue Einreiseverordnung in Kraft getreten.&quot;</p>
@@ -432,8 +411,8 @@ B.1.1.7 &gt; country of origin &gt; England</p>
 <p>Neue Einreiseverordnung &gt; start time &gt; 1. August</p>
 </blockquote>
 </blockquote>
-<h4 id="p582"><a class="header" href="#p582">P582</a></h4>
-<h5 id="end-time"><a class="header" href="#end-time">&quot;end time&quot;</a></h5>
+<h3 id="p582"><a class="header" href="#p582">P582</a></h3>
+<h3 id="5-end-time"><a class="header" href="#5-end-time"><em>5. end time</em></a></h3>
 <p>Description: Time a time period ends</p>
 <blockquote>
 <p>&quot;Darüber hinaus wurden nur Fälle mit Angabe Meldedatum bis einschließlich 17.3.2020 (Datenstand minus 14 Tage, um den Zeitverzug für die Erfassung des Krankheitsverlaufs schwerer Fälle zu berücksichtigen) berücksichtigt&quot;</p>
@@ -441,38 +420,78 @@ B.1.1.7 &gt; country of origin &gt; England</p>
 <p>Angabe Meldedatum &gt; end time &gt; 17.3.2020</p>
 </blockquote>
 </blockquote>
-<h4 id="p1001"><a class="header" href="#p1001">P1001</a></h4>
-<h5 id="applies-to-jurisdiction"><a class="header" href="#applies-to-jurisdiction">&quot;applies to jurisdiction&quot;</a></h5>
-<p>Description: The item (institution, law, public office, public register...) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, ...)</p>
+<h2 id="b-causal"><a class="header" href="#b-causal">B. Causal</a></h2>
+<h3 id="p828"><a class="header" href="#p828">P828</a></h3>
+<h3 id="6-has-cause"><a class="header" href="#6-has-cause"><em>6. has cause</em></a></h3>
+<p>Underlying cause, thing that ultimately resulted in this effect. If possible, prefer, the narrower relation &quot;symptoms and signs&quot;.</p>
+<h3 id="p1479"><a class="header" href="#p1479">P1479</a></h3>
+<h3 id="7-has-contributing-factor"><a class="header" href="#7-has-contributing-factor"><em>7. has contributing factor</em></a></h3>
+<p>Thing that significantly influenced the effect, but did not directly cause it.</p>
+<p>What is the difference between a &quot;cause&quot; and a &quot;contributing factor&quot;? In public health, law, social and natural science, the difference is that an effect would not have happened but for a cause, whereas it would have still happened but for a contributing factor. In other words, if you take away a contributing factor, the effect still would have happened. However if you took away a cause, the effect would not have happened.</p>
+<p>Here is a test for assigning something as a cause or a contributing factor:</p>
+<p>If the thing were removed, would that have prevented the effect?</p>
+<p><em>(1) Yes: the thing is a cause</em><br />
+<em>(2) No, but it significantly influenced the effect: the thing is a contributing factor</em></p>
+<p>(taken from: <a href="https://www.wikidata.org/wiki/Help:Modeling_causes">https://www.wikidata.org/wiki/Help:Modeling_causes</a>)</p>
+<p>Example:</p>
 <blockquote>
-<p>„In Deutschland muss gemäß Meldeverordnung jeder Nachweis von SARS-CoV-2 an das Gesundheitsamt gemeldet werden .&quot;</p>
+<p>&quot;Die [Warnung vor nicht notwendigen und touristischen Reisen] <strong>aufgrund von</strong>  [COVID-19] <strong>hängt stark</strong> mit der [Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet] <strong>zusammen</strong> .&quot;</p>
 <blockquote>
-<p>Meldeverordnung &gt; applies to jurisdiction &gt; Deutschland</p>
+<p>Warnung vor nicht notwendigen und touristischen Reisen &gt; has cause &gt; COVID-19
+Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet &gt; has contributing factor &gt; Warnung</p>
 </blockquote>
 </blockquote>
-<h4 id="p737"><a class="header" href="#p737">P737</a></h4>
-<h5 id="influenced-by"><a class="header" href="#influenced-by">&quot;influenced by&quot;</a></h5>
-<p>Description: This person, idea, etc. is informed by that other person, idea, etc., e.g. &quot;Heidegger was influenced by Aristotle&quot;</p>
-<blockquote>
-<p>&quot;Die Warnung vor nicht notwendigen und touristischen Reisen aufgrund von COVID-19 hängt stark mit der Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet zusammen .&quot;</p>
-<blockquote>
-<p>Warnung &gt; influenced by &gt; Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet </p>
-</blockquote>
-</blockquote>
-<h4 id="p3433"><a class="header" href="#p3433">P3433</a></h4>
-<h5 id="biological-variant-of"><a class="header" href="#biological-variant-of">&quot;biological variant of&quot;</a></h5>
-<p>Description: A variant of a physical biological entity (e.g., gene sequence, protein sequence, epigenetic mark)</p>
+<h2 id="c-covid-related"><a class="header" href="#c-covid-related">C. Covid-Related</a></h2>
+<h3 id="p3433"><a class="header" href="#p3433">P3433</a></h3>
+<h3 id="8-biological-variant-of"><a class="header" href="#8-biological-variant-of"><em>8. biological variant of</em></a></h3>
+<p>A variant of a physical biological entity (e.g., gene sequence, protein sequence, epigenetic mark)</p>
 <blockquote>
 <p>&quot;Eine neue SARS-CoV-2 Variante wurde im Dezember 2020 im Süden des Vereinigten Königreichs. (UK) als besorgniserregende Variante eingestuft (englische Nomenklatur: VOC: Variant of concern ). Die erste PatientInnenprobe, in der sie identifiziert werden konnte, stammte vom September 2020. Die Variante wird als VOC 202012/01, B.1.1.7 oder N501Y bezeichnet.&quot;</p>
 <blockquote>
-<p>B.1.1.7 &gt; variant of &gt; SARS-CoV-2
-VOC 202012/01 &gt; variant of &gt; SARS-CoV-2
-N501Y &gt; variant of &gt; SARS-CoV-2</p>
+<p>B.1.1.7 &gt; biological variant of &gt; SARS-CoV-2
+VOC 202012/01 &gt; biological variant of &gt; SARS-CoV-2
+N501Y &gt; biological variant of &gt; SARS-CoV-2</p>
 </blockquote>
 </blockquote>
-<h4 id="p5973"><a class="header" href="#p5973">P5973</a></h4>
-<h5 id="synonym"><a class="header" href="#synonym">&quot;synonym&quot;</a></h5>
-<p>Description: Sense of another lexeme with the same meaning as this sense, in the same language</p>
+<blockquote>
+<blockquote>
+<p><em>Pattern: DESEASE &gt; biological variant of &gt; DESEASE</em></p>
+</blockquote>
+</blockquote>
+<h3 id="p780"><a class="header" href="#p780">P780</a></h3>
+<h3 id="9-symptoms-and-signs"><a class="header" href="#9-symptoms-and-signs"><em>9. symptoms and signs</em></a></h3>
+<p>Description: Possible symptoms of a medical condition</p>
+<blockquote>
+<p>&quot;Ausnahmen bilden hier die Anteile zur Datenvollständigkeit für Fälle mit Husten und Fieber sowie für Fälle mit Pneumonie.&quot;</p>
+<blockquote>
+<p>Fälle &gt; symptoms and signs &gt; Husten, Fieber, Pneumonie</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><em>Pattern: DESEASE &gt; symptoms and signs &gt; SYMPTOM</em></p>
+</blockquote>
+</blockquote>
+<h2 id="d-local"><a class="header" href="#d-local">D. Local</a></h2>
+<h3 id="p276"><a class="header" href="#p276">P276</a></h3>
+<h3 id="12-location"><a class="header" href="#12-location"><em>12. location</em></a></h3>
+<p>Location of the object, structure or event. Summarizes all locations of an administrative entity (P131) and geograohical entities (P706).</p>
+<blockquote>
+<p>&quot;Weitere VOC wurden aus Brasilien (1.1.28.1) und Südafrika (501.V2) gemeldet. Zum aktuellen Zeitpunkt gibt es altersspezifische Daten nur für die Variante B.1.1.7 aus England&quot;</p>
+<blockquote>
+<p>1.1.28.1 &gt; location &gt; Brasilien
+501.V2 &gt; location &gt; Südafrika
+B.1.1.7 &gt; location &gt; England
+Wege entstanden und hat sich vom Tier auf den Menschen übertragen.&quot;</p>
+</blockquote>
+</blockquote>
+<h3 id="p1427"><a class="header" href="#p1427">P1427</a></h3>
+<h3 id="13-start-point"><a class="header" href="#13-start-point"><em>13. start point</em></a></h3>
+<p>Specification of &quot;location&quot; (P276), and exact match to <a href="https://schema.org/fromLocation">fromLocation</a> property from schema.org. Expresses the original location of the object or the agent before an action.</p>
+<h2 id="e-other"><a class="header" href="#e-other">E. Other</a></h2>
+<h3 id="p5973"><a class="header" href="#p5973">P5973</a></h3>
+<h3 id="10-synonym"><a class="header" href="#10-synonym"><em>10. synonym</em></a></h3>
+<p>Sense of another lexeme with the same meaning as this sense, in the same language.</p>
 <blockquote>
 <p>&quot;Die Variante wird als VOC 202012/01, B.1.1.7 oder _ N501Y bezeichnet.&quot;</p>
 <blockquote>
@@ -482,33 +501,11 @@ VOC 202012/01 &gt; synonym &gt; B.1.17
 VOC 202012/01 &gt; synonym &gt; N501Y</p>
 </blockquote>
 </blockquote>
-<h4 id="p780"><a class="header" href="#p780">P780</a></h4>
-<h5 id="symptoms-and-signs"><a class="header" href="#symptoms-and-signs">&quot;symptoms and signs&quot;</a></h5>
-<p>Description: Possible symptoms of a medical condition</p>
-<blockquote>
-<p>&quot;Ausnahmen bilden hier die Anteile zur Datenvollständigkeit für Fälle mit Husten und Fieber sowie für Fälle mit Pneumonie.&quot;</p>
-<blockquote>
-<p>Fälle &gt; symptoms &gt; Husten, Fieber, Pneumonie</p>
-</blockquote>
-</blockquote>
-<h4 id="p828"><a class="header" href="#p828">P828</a></h4>
-<h5 id="has-cause"><a class="header" href="#has-cause">&quot;has cause&quot;</a></h5>
-<p>Description: Underlying cause, thing that ultimately resulted in this effect</p>
-<blockquote>
-<p>&quot;Die Warnung vor nicht notwendigen und touristischen Reisen aufgrund von COVID-19 hängt stark mit der Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet zusammen .&quot;</p>
-<blockquote>
-<p>COVID-19 &gt; has cause &gt; Warnung vor nicht notwendigen und touristischen Reisen&quot;</p>
-</blockquote>
-</blockquote>
-<h4 id="p2047"><a class="header" href="#p2047">P2047</a></h4>
-<h5 id="duration"><a class="header" href="#duration">&quot;duration&quot;</a></h5>
-<p>Description: Length of time of an event or process</p>
-<blockquote>
-<p>&quot;Nach einem Voraufenthalt in einem Virusvariantengebiet beträgt die Quarantäne 14 Tage und kann nicht verkürzt werden.&quot;</p>
-<blockquote>
-<p>Quarantäne &gt; duration &gt; 14 Tage</p>
-</blockquote>
-</blockquote>
+<h3 id="p361"><a class="header" href="#p361">P361</a></h3>
+<h3 id="11-part-of"><a class="header" href="#11-part-of"><em>11. part of</em></a></h3>
+<p>Object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A). Inverse property of &quot;has part&quot; (P527, see also &quot;has parts of the class&quot; (P2670)).
+&gt;&quot;im schwer von COVID-19 betroffen Frankreich, waren im Frühjahr 2020 vor allem der Großraum Paris sowie der Region „Grand Est&quot; und dort vor allem die Départements Bas-Rhin und Haut- Rhin betroffen&quot;
+&gt;&gt; Großraum Paris &gt; part of &gt; Frankreich</p>
 <h2 id="information-on-relation-tags"><a class="header" href="#information-on-relation-tags">Information on Relation Tags</a></h2>
 <p>The Wikidata relations above constitute:</p>
 <ul>
@@ -516,26 +513,13 @@ VOC 202012/01 &gt; synonym &gt; N501Y</p>
 <p>a subset of <a href="https://drive.google.com/drive/folders/1c5-0YwnoJx8NS6CV2f-NoTHR__BdkNqw">DocRED relations</a></p>
 </li>
 <li>
-<p>additional Wikidata relations: </p>
+<p>additional Wikidata relations:</p>
 </li>
 </ul>
 <p>&quot;P3433&quot;: &quot;biological variant of&quot;, &quot;P5973&quot;: &quot;synonym&quot;, &quot;P780&quot;: &quot;symptoms&quot;, &quot;P878&quot;: &quot;has cause&quot;, &quot;P2047&quot;: &quot;duration&quot;</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="question-answering"><a class="header" href="#question-answering">Question Answering</a></h1>
-<p>The Question Answering layer contains one feature pointing to <a href="schemas/token.html">token</a> identifiers with two annotation labels: Answer and Context, and is attached to a free-text Question layer. The annotators are asked, given a text, to find questions whose answers can be directly found in the given text.</p>
-<h3 id="answer-and-context-labels"><a class="header" href="#answer-and-context-labels">Answer and Context Labels</a></h3>
-<p>The Answer label marks the shortest possible span of tokens for an answer to one or more questions. With the Context label a span surrounding the Answer span is marked.</p>
-<h3 id="question-relations"><a class="header" href="#question-relations">Question Relations</a></h3>
-<p>The Question Answering layer is attached to a relation layer called Question. The Question relation layer allows a free-text annotation containing the questions for the annotated answers.</p>
-<h2 id="contexts"><a class="header" href="#contexts">Contexts</a></h2>
-<p>The context layer points to <a href="schemas/./segment.html">segment</a> identifiers. It marks multiple segments as containing contextually relevant content for a <a href="schemas/./question_answering.html">question-answer</a> pair. </p>
-<h3 id="beginning-and-end"><a class="header" href="#beginning-and-end">Beginning and End</a></h3>
-<p>The beginning and the end of a context must coincide with sentence boundaries.</p>
-<h3 id="length"><a class="header" href="#length">Length</a></h3>
-<p>A context should consist of at least 20 and at most 200 words.</p>
-<h3 id="position-of-answer"><a class="header" href="#position-of-answer">Position of Answer</a></h3>
-<p>The position of the answers with their associated context must vary systematically: Sometimes, the answer will be at the beginning of the context, sometimes in the end, sometimes in the middle.</p>
-<h4 id="randomization"><a class="header" href="#randomization">Randomization</a></h4>
-<p>The exact answer position in a concrete case is to be chosen randomly. This choice will not be part of the <a href="schemas/../inter_annotator_agreement.html">inter-annotator agreement</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="factuality"><a class="header" href="#factuality">Factuality</a></h1>
+<p>Factuality annotations are the last step in the factuality based Events annotation pipeline: </p>
+<p>(1) <a href="schemas/entity.html">Named Entities</a>, (2) <a href="schemas/relation.html">Relations</a>, (3) Factuality</p>
 
                     </main>
 

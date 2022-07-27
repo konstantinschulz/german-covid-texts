@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Token - German Covid Texts</title>
+        <title>Content-Focused Credibility - German Covid Texts</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="../curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="../data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="../sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="../data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="../annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="../inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="../annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="../schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="../schemas/token.html" class="active"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="../schemas/informativeness.html"><strong aria-hidden="true">8.4.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="../schemas/topic.html"><strong aria-hidden="true">8.5.</strong> Topic</a></li><li class="chapter-item expanded "><a href="../schemas/credibility.html"><strong aria-hidden="true">8.6.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/political_bias.html"><strong aria-hidden="true">8.7.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="../schemas/entity.html"><strong aria-hidden="true">8.8.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="../schemas/relation.html"><strong aria-hidden="true">8.9.</strong> Relations</a></li><li class="chapter-item expanded "><a href="../schemas/question_answering.html"><strong aria-hidden="true">8.10.</strong> Question Answering</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="../curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="../data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="../sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="../data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="../annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="../inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="../span_types.html"><strong aria-hidden="true">8.</strong> Span Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../span_types/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="../span_types/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="../span_types/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li></ol></li><li class="chapter-item expanded "><a href="../annotation_schema.html"><strong aria-hidden="true">9.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../schemas/content_focused_credibility.html" class="active"><strong aria-hidden="true">9.1.</strong> Content-Focused Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/informativeness.html"><strong aria-hidden="true">9.2.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="../schemas/topic.html"><strong aria-hidden="true">9.3.</strong> Topic</a></li><li class="chapter-item expanded "><a href="../schemas/credibility.html"><strong aria-hidden="true">9.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/ner_factuality.html"><strong aria-hidden="true">9.5.</strong> NER and Factuality Values</a></li><li class="chapter-item expanded "><a href="../schemas/entity.html"><strong aria-hidden="true">9.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="../schemas/relation.html"><strong aria-hidden="true">9.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="../schemas/factuality.html"><strong aria-hidden="true">9.8.</strong> Factuality</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,21 +134,24 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="token"><a class="header" href="#token">Token</a></h1>
-<p>The token layer points character indices in the <a href="raw_text.html">raw text layer</a>. It marks spans of characters as belonging to the same token using unique identifiers.</p>
-<p>Other layers that directly reference this layer:</p>
-<ul>
-<li><a href="entity.html">Named Entities</a></li>
-<li><a href="credibility.html">Credibility</a></li>
-<li><a href="political_bias.html">Political Bias</a></li>
-<li><a href="question_answering.html">Question Answering</a></li>
-</ul>
+                        <h1 id="content-focused-credibility-pipeline"><a class="header" href="#content-focused-credibility-pipeline">Content-focused Credibility Pipeline</a></h1>
+<p>We create a topic or content-focused annotation pipeline with three annotation layers, to firm up the credibility annotations for our domain keeping the user-perspective on credibility as defined by others (see section Credibility Definition). </p>
+<p>The content-focused credibility pipeline includes three annotation layers in the following order:</p>
+<p>(1)  <a href="informativeness.html">Informativeness</a> - (2) <a href="topic.html">Topics</a> - (3) <a href="credibility.html">Credibility</a>.</p>
+<h2 id="credibility-definition"><a class="header" href="#credibility-definition">Credibility Definition</a></h2>
+<p>Following the definitions of Navok et al. and Gupta et al. we define credibility as the property of being trusted, i.e. a text is declared credible if a user, e.g. based on common sense, believes that the information it contains is to some extent credible [3,4]. 
+Based on the hypothesis in Castillo et al., that there are signals available in the social media environment itself that enable users to assess information credibility, we explore the credibility only based on the information the content of a post is giving. In contrast to Castillo et al., we anonymize the users’ names to avoid gender and other biases that distract the annotators from the content.</p>
+<hr />
+<h2 id="literature"><a class="header" href="#literature">Literature</a></h2>
+<p>Castillo, Carlos &amp; Mendoza, Marcelo &amp; Poblete, Barbara. (2011). Information credibility on Twitter. Proceedings of the 20th International Conference on World Wide Web. 675-684. 10.1145/1963405.1963500.</p>
+<p>Nakov P, Mihaylova T, M`arquez L, Shiroya Y, Koychev I. Do Not Trust the Trolls: Predicting Credibility in Community Question Answering Forums. In: Proceedings of the International Conference Recent Advances in Natural Language Processing, RANLP 2017. Varna, Bulgaria: INCOMA Ltd.; 2017. p. 551-60. Available from: https://doi.org/10.26615/978-954-452-049-6 072.</p>
+<p>Gupta A, Kumaraguru P, Castillo C, Meier P. In: Aiello LM, McFarland D, editors. TweetCred: Real-Time Credibility Assessment of Content on Twitter. Cham: Springer International Publishing; 2014. p. 228-43. Available from: https://doi.org/10.1007/978-3-319-13734-616</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../schemas/segment.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../annotation_schema.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                             <a rel="next" href="../schemas/informativeness.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
@@ -160,7 +163,7 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../schemas/segment.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../annotation_schema.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                     <a rel="next" href="../schemas/informativeness.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">

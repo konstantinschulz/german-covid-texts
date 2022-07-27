@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Political Bias - German Covid Texts</title>
+        <title>NER and Factuality Values - German Covid Texts</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="../curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="../data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="../sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="../data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="../annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="../inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="../annotation_schema.html"><strong aria-hidden="true">8.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../schemas/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="../schemas/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="../schemas/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li><li class="chapter-item expanded "><a href="../schemas/informativeness.html"><strong aria-hidden="true">8.4.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="../schemas/topic.html"><strong aria-hidden="true">8.5.</strong> Topic</a></li><li class="chapter-item expanded "><a href="../schemas/credibility.html"><strong aria-hidden="true">8.6.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/political_bias.html" class="active"><strong aria-hidden="true">8.7.</strong> Political Bias</a></li><li class="chapter-item expanded "><a href="../schemas/entity.html"><strong aria-hidden="true">8.8.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="../schemas/relation.html"><strong aria-hidden="true">8.9.</strong> Relations</a></li><li class="chapter-item expanded "><a href="../schemas/question_answering.html"><strong aria-hidden="true">8.10.</strong> Question Answering</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../repository_structure.html"><strong aria-hidden="true">1.</strong> Repository Structure</a></li><li class="chapter-item expanded "><a href="../curation_principles.html"><strong aria-hidden="true">2.</strong> Curation Principles</a></li><li class="chapter-item expanded "><a href="../data_formats.html"><strong aria-hidden="true">3.</strong> Data Formats</a></li><li class="chapter-item expanded "><a href="../sampling_criteria.html"><strong aria-hidden="true">4.</strong> Sampling Criteria</a></li><li class="chapter-item expanded "><a href="../data_processing.html"><strong aria-hidden="true">5.</strong> Data Processing</a></li><li class="chapter-item expanded "><a href="../annotation_platform.html"><strong aria-hidden="true">6.</strong> Annotation Platform</a></li><li class="chapter-item expanded "><a href="../inter_annotator_agreement.html"><strong aria-hidden="true">7.</strong> Inter-Annotator Agreement</a></li><li class="chapter-item expanded "><a href="../span_types.html"><strong aria-hidden="true">8.</strong> Span Types</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../span_types/raw_text.html"><strong aria-hidden="true">8.1.</strong> Raw Text</a></li><li class="chapter-item expanded "><a href="../span_types/segment.html"><strong aria-hidden="true">8.2.</strong> Segment</a></li><li class="chapter-item expanded "><a href="../span_types/token.html"><strong aria-hidden="true">8.3.</strong> Token</a></li></ol></li><li class="chapter-item expanded "><a href="../annotation_schema.html"><strong aria-hidden="true">9.</strong> Annotation Schemas</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../schemas/content_focused_credibility.html"><strong aria-hidden="true">9.1.</strong> Content-Focused Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/informativeness.html"><strong aria-hidden="true">9.2.</strong> Informativeness</a></li><li class="chapter-item expanded "><a href="../schemas/topic.html"><strong aria-hidden="true">9.3.</strong> Topic</a></li><li class="chapter-item expanded "><a href="../schemas/credibility.html"><strong aria-hidden="true">9.4.</strong> Credibility</a></li><li class="chapter-item expanded "><a href="../schemas/ner_factuality.html" class="active"><strong aria-hidden="true">9.5.</strong> NER and Factuality Values</a></li><li class="chapter-item expanded "><a href="../schemas/entity.html"><strong aria-hidden="true">9.6.</strong> Named Entities</a></li><li class="chapter-item expanded "><a href="../schemas/relation.html"><strong aria-hidden="true">9.7.</strong> Relations</a></li><li class="chapter-item expanded "><a href="../schemas/factuality.html"><strong aria-hidden="true">9.8.</strong> Factuality</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,43 +134,15 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="political-bias"><a class="header" href="#political-bias">Political Bias</a></h1>
-<p>The political bias layer points to <a href="token.html">token</a> identifiers. It marks spans of tokens as belonging to one of the 5 classes described in this paper: </p>
-<p>Aksenov, D., Bourgonje, P., Zaczynska, K., Ostendorff, M., Moreno-Schneider, J., &amp; Rehm, G. (2021). Fine-grained Classification of Political Bias in German News: A Data Set and Initial Experiments. Proceedings of the 5th Workshop on Online Abuse and Harms (WOAH 2021), 121–131. https://doi.org/10.18653/v1/2021.woah-1.13</p>
-<p>The token span is always equal to the length of the whole tweet.</p>
-<h2 id="classes"><a class="header" href="#classes">Classes</a></h2>
-<ul>
-<li>far-left</li>
-<li>center-left</li>
-<li>center</li>
-<li>center-right</li>
-<li>far-right</li>
-</ul>
-<h2 id="binary-model"><a class="header" href="#binary-model">Binary Model</a></h2>
-<p>The classes can be collapsed into a binary setup for detection of hyperpartisanship: <code>far-left</code> and <code>far-right</code> are hyperpartisan, the others are non-hyperpartisan.</p>
-<h2 id="definitions"><a class="header" href="#definitions">Definitions</a></h2>
-<h3 id="hyperpartisan-far-left-or-far-right"><a class="header" href="#hyperpartisan-far-left-or-far-right">Hyperpartisan (Far-Left or Far-Right)</a></h3>
-<ul>
-<li>the utterance includes violence/ threatening</li>
-<li>it includes conspiracy theories and fake news (Aksenov et al., 2021)</li>
-<li>Using slurs: “Slurs are lexical items that convey negative attitudes or heavy emotional connotations towards a social group (Hess, 2019), typically centered around race, nationality, religion, gender, or sexual orientation (Bianchi, 2014). As one of their functions, slurs derograte targeted groups or individuals, and they specifically call up one or more descriptive attributes of the targeted group” (Ruppenhofer, Siegel &amp; Struß 2020)</li>
-<li>it includes hate speech. According to de Gibert et al. (2018), hate speech is commonly defined as “a) a deliberate attack, b) directed towards a specific group of people, and c) motivated by actual or perceived aspects that form the group’s identity.”</li>
-</ul>
-<h3 id="far-left"><a class="header" href="#far-left">Far-Left</a></h3>
-<p>Left-wing politics is generally understood as striving for social equality. The freedom of the community is above that of the individual. Opinion researcher Elisabeth Noelle-Neumann discovered that people not only associate left-wing values with equality, but also with justice, formlessness, warmth, closeness, spontaneity, the international and cosmopolitan and the informal address.</p>
-<h4 id="examples"><a class="header" href="#examples">Examples</a></h4>
-<p><code>Nochmal für alle Impfschwurbler : Niemand hat behauptet , dass die Impfung immun gegen Corona macht .</code></p>
-<h3 id="center"><a class="header" href="#center">Center</a></h3>
-<p>The center label is used for politically neutral or balanced cases. It is also the default label for unpolitical statements.</p>
-<h3 id="center-right"><a class="header" href="#center-right">Center-Right</a></h3>
-<h4 id="examples-1"><a class="header" href="#examples-1">Examples</a></h4>
-<p><code>geht es beim impfen nur ums impfen oder darum Antikörper zu produzieren ? ohne Antikörper Test wissen wir das doch nicht !</code></p>
-<h3 id="far-right"><a class="header" href="#far-right">Far-Right</a></h3>
-<p>The political right assumes human inequality and advocates a hierarchy with traditional values and norms. Individual freedom is more important than social equality. With right-wing values, according to Elisabeth Noelle-Neumann, people associate distance, authority, discipline, regulated manners, the national and the formal address in addition to emphasizing differences.</p>
-<h4 id="examples-2"><a class="header" href="#examples-2">Examples</a></h4>
-<p><code>Aber in meiner Umgebung häufen sich derzeit Fälle ausschließlich bei Geimpften !</code></p>
-<p><code>Ich verleugne Corona nicht und bin generell kein Impfgegner , jedoch eine Impfpflicht lehne ich ab .</code></p>
-<p><code>50 % meiner Bekannten die sich Impfen lassen haben und vorher kein Leiden hatten sind jetzt zum Teil Arbeitsunfähig und Krank .</code></p>
+                        <h1 id="events-and-factuality-values-pipeline"><a class="header" href="#events-and-factuality-values-pipeline">Events and Factuality Values Pipeline</a></h1>
+<p>An entity is a span of text that indicates a certain type of information. A text span can consist of one or more words. In Named Entity Recognition (NER), entities represent the information that the user wants to extract from the text.
+We tag entities within our data (tweets) with the needed entities to express a meaningfull relation. The entity-relation-entity-tripple is called an event. With NER, the goal is to categorize and represent structured information taken from unstructured text.</p>
+<p>Going one step further, we want to explor if events related to covid in twitter tweets express different qualities of being factual. In other words, are claims in tweets expressed as hypotheses, speculations, or opinions, rather than explicit facts (propositions)?</p>
+<p>The factuality-based events annotation pipeline  includes three annotation layers in the following order:</p>
+<p>(1) <a href="entity.html">Named Entities</a>, (2) <a href="relation.html">Relations</a>, (3) <a href="factuality.html">Factuality</a></p>
+<hr />
+<h2 id="literature"><a class="header" href="#literature">Literature</a></h2>
+<p>Kilicoglu H, Rosemblat G, Rindflesch TC. Assigning factuality values to semantic relations extracted from biomedical research literature. PLoS One. 2017 Jul 5;12(7):e0179926. doi: 10.1371/journal.pone.0179926. PMID: 28678823; PMCID: PMC5497973.</p>
 
                     </main>
 
