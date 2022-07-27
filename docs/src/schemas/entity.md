@@ -61,7 +61,7 @@ In the case of nominalised verbs, the corresponding arguments should also be ann
 
 Based on: *jmd./etw. "stuft" jmdn./etw. als ein solches "ein"*. The arguments only serve as orientation to estimate the scope of the NE annotation.
 
-Not annotated should not be what is not essential for understanding.
+Not annotated should be what is not essential for the main entity meaning.
 
 - *Neben Erst-, Zweit- und Boosterimpfungen besteht auch ein Impfangebot mit Novavax sowie [Schutzimpfungen für Kinder] zwischen 5 und 11 Jahren.*
 - incorrect: *\*Neben Erst-, Zweit- und Boosterimpfungen besteht auch ein Impfangebot mit Novavax sowie [Schutzimpfungen für Kinder zwischen 5 und 11 Jahren].*
@@ -69,9 +69,9 @@ Not annotated should not be what is not essential for understanding.
 - *[Astra Zeneca], der Impfstoff der in Großbritannien genutzt wurde, (...))*  
 - incorrect: *\*[Astra Zeneca, der Impfstoff der in Großbritannien genutzt wurde, (...)]*
 
-In case of doubt which arguments to include, verb lexicons like [Elektronisches Valenzlexikon](https://grammis.ids-mannheim.de/verbvalenz) or [Netzverb](https://www.verben.de/) can be helpful.
+In case of doubt which arguments to include, a look into verb lexicons like [Elektronisches Valenzlexikon](https://grammis.ids-mannheim.de/verbvalenz) or [Netzverb](https://www.verben.de/) can help.
 
-Only measures related to Covid are annotated. Therefore, in cases like the following example, the annotation should be as follows:
+Only measures related to Covid are annotated. Therefore, like the following example, the annotation should be as follows:
 
 - *Die [Impfung] gegen Covid ist nun seit längerer Zeit verfügbar*
 - incorrect: *\*Die [Impfung gegen Covid] ist nun seit längerer Zeit verfügbar*

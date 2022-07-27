@@ -181,11 +181,12 @@ Object of which the subject is a part (if this subject is already part of object
 
 ### Multiple Occurences of Similar Entities
 
-In case a relation could be drawn between similar entities, only the first mentioned entity is annotated. In the next example, a relation between the Symptoms *Thrombose, Embolien* and the Measure *Impfung* as well as the (almous synonym) *Impfstoff* can be drawn.  
+In cases when relations can be drawn between similar entities, only the first mention is annotated. In the next example, a relation between the Symptoms *Thrombose, Embolien* and the Measure *Impfung* as well as the (almous synonymous) *Impfstoff* can be drawn. We only draw the relation between the Symptoms and the first occuring entity *Impfung*, while *Impfung* and *Impfstoff* can be connectied using a *part of* Relation. 
 
-In den Medien spricht man überhaupt nicht über Thrombosen, Embolien etc. die durch die Impfung ausgelöst wurden. Wer sich mit diesem Impfstoff impfen lässt, der ist wahnsinnig."
-
-We only draw the relation between the Symptoms and the first occuring entity *Impfung* while *Impfung* and *Impfstoff* can be connectied via part of relation.
+>*In den Medien spricht man überhaupt nicht über [Thrombosen], [Embolien] etc. die durch die [Impfung] ausgelöst wurden. Wer sich mit diesem [Impfstoff] impfen lässt, der ist wahnsinnig.*
+>>Thrombosen > symptoms and signs > Impfung  
+>>Embolien > symptoms and signs > Impfung  
+>>Impfstoff > part of > Impfung
 
 ## Information on Relation Tags
 
