@@ -89,7 +89,7 @@ Description: Time a time period ends
 
 ### *6. has cause*  
 
-Underlying cause, thing that ultimately resulted in this effect. If possible, prefer, the narrower relation "symptoms and signs".
+Underlying cause, thing that ultimately resulted in this effect. If possible, prefer the narrower relation "symptoms and signs".
 
 ### P1479
 
@@ -176,6 +176,16 @@ Sense of another lexeme with the same meaning as this sense, in the same languag
 Object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A). Inverse property of "has part" (P527, see also "has parts of the class" (P2670)).
 >"im schwer von COVID-19 betroffen Frankreich, waren im Frühjahr 2020 vor allem der Großraum Paris sowie der Region „Grand Est" und dort vor allem die Départements Bas-Rhin und Haut- Rhin betroffen"
 >> Großraum Paris > part of > Frankreich
+
+## Specifications
+
+### Multiple Occurences of Similar Entities
+
+In case a relation could be drawn between similar entities, only the first mentioned entity is annotated. In the next example, a relation between the Symptoms *Thrombose, Embolien* and the Measure *Impfung* as well as the (almous synonym) *Impfstoff* can be drawn.  
+
+In den Medien spricht man überhaupt nicht über Thrombosen, Embolien etc. die durch die Impfung ausgelöst wurden. Wer sich mit diesem Impfstoff impfen lässt, der ist wahnsinnig."
+
+We only draw the relation between the Symptoms and the first occuring entity *Impfung* while *Impfung* and *Impfstoff* can be connectied via part of relation.
 
 ## Information on Relation Tags
 
