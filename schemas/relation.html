@@ -217,7 +217,7 @@
 <h2 id="b-causal"><a class="header" href="#b-causal">B. Causal</a></h2>
 <h3 id="p828"><a class="header" href="#p828">P828</a></h3>
 <h3 id="6-has-cause"><a class="header" href="#6-has-cause"><em>6. has cause</em></a></h3>
-<p>Underlying cause, thing that ultimately resulted in this effect. If possible, prefer, the narrower relation &quot;symptoms and signs&quot;.</p>
+<p>Underlying cause, thing that ultimately resulted in this effect. If possible, prefer the narrower relation &quot;symptoms and signs&quot;.</p>
 <h3 id="p1479"><a class="header" href="#p1479">P1479</a></h3>
 <h3 id="7-has-contributing-factor"><a class="header" href="#7-has-contributing-factor"><em>7. has contributing factor</em></a></h3>
 <p>Thing that significantly influenced the effect, but did not directly cause it.</p>
@@ -300,6 +300,11 @@ VOC 202012/01 &gt; synonym &gt; N501Y</p>
 <p>Object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A). Inverse property of &quot;has part&quot; (P527, see also &quot;has parts of the class&quot; (P2670)).
 &gt;&quot;im schwer von COVID-19 betroffen Frankreich, waren im Frühjahr 2020 vor allem der Großraum Paris sowie der Region „Grand Est&quot; und dort vor allem die Départements Bas-Rhin und Haut- Rhin betroffen&quot;
 &gt;&gt; Großraum Paris &gt; part of &gt; Frankreich</p>
+<h2 id="specifications"><a class="header" href="#specifications">Specifications</a></h2>
+<h3 id="multiple-occurences-of-similar-entities"><a class="header" href="#multiple-occurences-of-similar-entities">Multiple Occurences of Similar Entities</a></h3>
+<p>In case a relation could be drawn between similar entities, only the first mentioned entity is annotated. In the next example, a relation between the Symptoms <em>Thrombose, Embolien</em> and the Measure <em>Impfung</em> as well as the (almous synonym) <em>Impfstoff</em> can be drawn.</p>
+<p>In den Medien spricht man überhaupt nicht über Thrombosen, Embolien etc. die durch die Impfung ausgelöst wurden. Wer sich mit diesem Impfstoff impfen lässt, der ist wahnsinnig.&quot;</p>
+<p>We only draw the relation between the Symptoms and the first occuring entity <em>Impfung</em> while <em>Impfung</em> and <em>Impfstoff</em> can be connectied via part of relation.</p>
 <h2 id="information-on-relation-tags"><a class="header" href="#information-on-relation-tags">Information on Relation Tags</a></h2>
 <p>The Wikidata relations above constitute:</p>
 <ul>

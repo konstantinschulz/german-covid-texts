@@ -144,26 +144,73 @@
 <p>We modified the ACE classes by joining Location and geo-political entities into one class, and only include the top-classes.</p>
 <p>Additionally, we add the following labels:</p>
 <ul>
-<li><strong>Duration</strong> - an entity describing a time span, e.g. &quot;Die verordnete Quarantänezeit beträgt <strong>14 Tage</strong>.&quot;</li>
-<li><strong>Time</strong> - an entity describing a point in time, e.g. &quot;<strong>Gestern</strong> wurde die neue Verordnung verabschiedet.&quot; </li>
-<li>Desease - for example &quot;Der Verlauf von <strong>Covid</strong> war bei mir zunächst mild, das Fieber kam erst am folgenden Tag.&quot;</li>
-<li><strong>Symptom</strong> - Symptoms of a deasease (Covid or other) or resulting from side effects of a medicine/vaccine, e.g.  &quot;Der Verlauf von Covid war bei mir zunächst mild, das <strong>Fieber</strong> kam erst am folgenden Tag.&quot;</li>
-<li><strong>Measure</strong> - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g. &quot;Die verordnete <strong>Quarantänezeit</strong> beträgt 14 Tage.&quot;</li>
+<li><strong>Time</strong> - an entity describing a point in time or atime span, e.g.<br />
+<em>[Gestern] wurde die neue Verordnung verabschiedet; Die verordnete Quarantänezeit beträgt [14 Tage].</em><br />
+The distinction between a point in time or duration is made using entities from the relation layer.</li>
+<li><strong>Desease</strong> - all mentioned deseases in a tweet, e.g.<br />
+<em>Der Verlauf von [Covid] war bei mir zunächst mild, das Fieber kam erst am folgenden Tag. Danach kam [Long-Covid].</em></li>
+<li><strong>Symptom</strong> - Symptoms of a deasease (Covid or other) or resulting from side effects of a medicine/vaccine, e.g.<br />
+<em>Der Verlauf von Covid war bei mir zunächst mild, das [Fieber] kam erst am folgenden Tag.</em></li>
+<li><strong>Measure</strong> - An entity describing a measure and decision by the federal governmenty related to Covid-19, e.g.<br />
+<em>Die verordnete [Quarantänezeit] beträgt 14 Tage.</em></li>
 </ul>
-<p>generally, negations should be included into the annotation, e.g.<br />
-&quot;In der letzten Änderung des Impfschemas gibt es ja nun die FN 5, die in diesem Fall [<strong>keine</strong> Auffrischungsimpfung] mehr empfiehlt (wenn  die [Infektion] [3 Monate nach] [2. Impfung] erfolgt.).&quot;</p>
+<p>We do not include preceding articles, titles or addresses into the annotation, e.g. &quot;Frau Dr. <em>[Merkel]</em>&quot;.</p>
 <p>Other layers that directly reference this layer:</p>
 <ul>
 <li><a href="relation.html">Relations</a></li>
 </ul>
-<h2 id="unnamed-entities"><a class="header" href="#unnamed-entities">Unnamed Entities</a></h2>
-<p>Entities without a name are <strong>not</strong> annotated in this layer. This also applies to anonymized mentions (e.g., Twitter handles).</p>
-<h3 id="example"><a class="header" href="#example">Example</a></h3>
-<p>&quot;generell kann man nie sagen <strong>wer</strong> schon vielleicht Antikörper hat&quot;</p>
-<h2 id="coreference-resolution"><a class="header" href="#coreference-resolution">Coreference Resolution</a></h2>
-<p>Coreferences through pronouns or other pointers (&quot;&quot;) are <strong>not</strong> resolved in this layer. Therefore, they do <strong>not</strong> get annotated as entities, due to our policy on Unnamed Entities.</p>
-<h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
-<p>50% meiner Bekannten <strong>die</strong> sich Impfen lassen haben und vorher kein Leiden hatten sind jetzt zum Teil Arbeitsunfähig und Krank</p>
+<h2 id="specifications"><a class="header" href="#specifications">Specifications</a></h2>
+<h3 id="1-unnamed-entities"><a class="header" href="#1-unnamed-entities">1. Unnamed Entities</a></h3>
+<p>Entities without a name are <strong>not</strong> annotated in this layer. This also applies to anonymized mentions (e.g., Twitter handles). Example:<br />
+<em>generell kann man nie sagen <strong>wer</strong> schon vielleicht Antikörper hat</em></p>
+<h3 id="2-coreference-resolution"><a class="header" href="#2-coreference-resolution">2. Coreference Resolution</a></h3>
+<p>Coreferences through pronouns or other pointers (&quot;&quot;) are <strong>not</strong> resolved in this layer. Therefore, they do <strong>not</strong> get annotated as entities, due to our policy on Unnamed Entities. Example:<br />
+<em>50% meiner Bekannten <strong>die</strong> sich Impfen lassen haben und vorher kein Leiden hatten sind jetzt zum Teil Arbeitsunfähig und Krank</em></p>
+<h3 id="3-negations"><a class="header" href="#3-negations">3. Negations</a></h3>
+<p>Generally, negations should be included into the annotation if it affects the resulting event, e.g.:<br />
+<em>In der letzten Änderung des Impfschemas gibt es ja nun die FN 5, die in diesem Fall [<strong>keine</strong> Auffrischungsimpfung] mehr empfiehlt (wenn  die Infektion 3 Monate nach 2. Impfung erfolgt.).</em></p>
+<h3 id="4-attributes"><a class="header" href="#4-attributes">4. Attributes</a></h3>
+<p>Attributes are only annotated if they are essential for understanding. Examples
+(symptoms):</p>
+<ul>
+<li><em>[laufende Nase]</em> (&quot;Nase&quot; alone is not a symptom)</li>
+<li><em>[erhöhte Temperatur]</em></li>
+<li><em>[schwerer Verlauf]</em></li>
+</ul>
+<p>The general rule is to only annotate what is essential for understanding.</p>
+<p>In the case of nominalised verbs, the corresponding arguments should also be annotated, if the meaning is otherwise not clearly preserved.</p>
+<ul>
+<li><em>Die [Einstufung eines Landes als Hochrisiko- bzw. Virusvariantengebiet]</em></li>
+<li>incorrect: <em>*Die [Einstufung] eines Landes als Hochrisiko- bzw. Virusvariantengebiet</em></li>
+</ul>
+<p>Based on: <em>jmd./etw. &quot;stuft&quot; jmdn./etw. als ein solches &quot;ein&quot;</em>. The arguments only serve as orientation to estimate the scope of the NE annotation.</p>
+<p>Not annotated should not be what is not essential for understanding.</p>
+<ul>
+<li>
+<p><em>Neben Erst-, Zweit- und Boosterimpfungen besteht auch ein Impfangebot mit Novavax sowie [Schutzimpfungen für Kinder] zwischen 5 und 11 Jahren.</em></p>
+</li>
+<li>
+<p>incorrect: <em>*Neben Erst-, Zweit- und Boosterimpfungen besteht auch ein Impfangebot mit Novavax sowie [Schutzimpfungen für Kinder zwischen 5 und 11 Jahren].</em></p>
+</li>
+<li>
+<p><em>[Astra Zeneca], der Impfstoff der in Großbritannien genutzt wurde, (...))</em></p>
+</li>
+<li>
+<p>incorrect: <em>*[Astra Zeneca, der Impfstoff der in Großbritannien genutzt wurde, (...)]</em></p>
+</li>
+</ul>
+<p>In case of doubt which arguments to include, verb lexicons like <a href="https://grammis.ids-mannheim.de/verbvalenz">Elektronisches Valenzlexikon</a> or <a href="https://www.verben.de/">Netzverb</a> can be helpful.</p>
+<p>Only measures related to Covid are annotated. Therefore, in cases like the following example, the annotation should be as follows:</p>
+<ul>
+<li><em>Die [Impfung] gegen Covid ist nun seit längerer Zeit verfügbar</em></li>
+<li>incorrect: <em>*Die [Impfung gegen Covid] ist nun seit längerer Zeit verfügbar</em></li>
+</ul>
+<h3 id="5-hyphenated-compunds"><a class="header" href="#5-hyphenated-compunds">5. Hyphenated compunds</a></h3>
+<p>Hyphenated compund words are marked as one entity, e.g.</p>
+<ul>
+<li><em>[Omicron-Variante]</em></li>
+<li><em>[Erst- und Zweitimpfung]</em></li>
+</ul>
 
                     </main>
 
