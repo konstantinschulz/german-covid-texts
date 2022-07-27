@@ -10,6 +10,4 @@ All schemas sorted by the following layers:
     - [Relations](./schemas/relation.md)
     - [Factuality](./schemas/factuality.md)  
 
-- [Question Answering](./schemas/question_answering.md)
-- [Political Bias](./schemas/political_bias.md)
 
