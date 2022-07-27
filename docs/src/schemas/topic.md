@@ -1,6 +1,6 @@
 # Topics
 ## Credibility Layer and Pipeline: Topics
-The credibility layer points to [segment](segment.md) identifiers, whereby full tweets are annotated (*document-based annotation*).
+The credibility layer points to [segment](../span_types/segment.md) identifiers, whereby full tweets are annotated (*document-based annotation*).
 Topic annotations are the second step in the topic-focused credibility annotation pipeline and prior to the actual credibility annotations: 
 
 (1)  [Informativeness](informativeness.md) - **(2) [Topics](topic.md)** - (3) [Credibility](credibility.md).  
