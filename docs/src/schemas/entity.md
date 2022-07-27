@@ -1,5 +1,5 @@
 # Named Entities
-The named entity layer points to [token](token.md) identifiers. It marks spans of tokens as belonging to one of the following classes described in [ACE annotation guidelines](https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-entities-guidelines-v6.6.pdf):
+The named entity layer points to [token](../span_types/token.md) identifiers. It marks spans of tokens as belonging to one of the following classes described in [ACE annotation guidelines](https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-entities-guidelines-v6.6.pdf):
 
 - **Person** - Person entities are limited to humans. A person may be a single individual or a group.
 - **Location** - Location entities are limited to geographical entities such as geographical areas and landmasses, bodies of water, and geological formations. They also include Geo-political entities are geographical regions defined by political and/or social groups (nations, regions).

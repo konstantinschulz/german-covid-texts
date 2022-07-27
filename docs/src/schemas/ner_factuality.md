@@ -7,7 +7,7 @@ Going one step further, we want to explor if events related to covid in twitter 
 
 The factuality-based events annotation pipeline  includes three annotation layers in the following order:
 
-(1) [Named Entities](entity.md), (2) [Relations](relations.md), (3) [Factuality](factuality.md)
+(1) [Named Entities](entity.md), (2) [Relations](relation.md), (3) [Factuality](factuality.md)
 
 ---
 ## Literature
